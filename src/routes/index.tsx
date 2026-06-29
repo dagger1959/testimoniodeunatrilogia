@@ -27,6 +27,7 @@ function Index() {
         <nav className="hidden gap-8 font-mono text-[11px] uppercase tracking-[0.25em] text-background mix-blend-difference md:flex">
           <a href="#obra" className="hover:opacity-70">La Obra</a>
           <a href="#trilogia" className="hover:opacity-70">Trilogía</a>
+          <a href="#galeria" className="hover:opacity-70">Galería</a>
           <a href="#descarga" className="hover:opacity-70">Descarga</a>
         </nav>
       </header>
