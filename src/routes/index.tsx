@@ -4,6 +4,7 @@ import tierraImg from "@/assets/personal-tierra.jpg";
 import pilotoImg from "@/assets/piloto.jpg";
 import avionImg from "@/assets/avion.jpg";
 import libroImg from "@/assets/libro-tapa.png";
+import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
   head: () => ({
