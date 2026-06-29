@@ -166,6 +166,9 @@ function Index() {
         </div>
       </section>
 
+      {/* GALERÍA HISTÓRICA */}
+      <GaleriaHistorica />
+
       {/* DESCARGA */}
       <section id="descarga" className="px-6 py-24 md:px-12 md:py-36">
         <div className="mx-auto max-w-3xl text-center">
