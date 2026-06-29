@@ -4,6 +4,7 @@ import tierraImg from "@/assets/personal-tierra.jpg";
 import pilotoImg from "@/assets/piloto.jpg";
 import avionImg from "@/assets/avion.jpg";
 import libroImg from "@/assets/libro-tapa.png";
+import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
@@ -184,9 +185,8 @@ function Index() {
           </p>
           <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="https://drive.google.com/uc?export=download&id=1rJRuqJFfYyG10KpwXaQCtTRd8qYRdis2"
-              target="_blank"
-              rel="noopener noreferrer"
+              href={trilogiaPdf.url}
+              download="trilogia.pdf"
               className="group inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
