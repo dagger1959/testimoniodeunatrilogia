@@ -14,7 +14,7 @@ const fotos = [
   { src: img1.url, caption: "Cabecera 07 de la BAM San Julián — Aviones Dagger alistándose, mayo 1982" },
   { src: img2.url, caption: "Despegue de Dagger desde la BAM San Julián, 1982" },
   { src: img3.url, caption: "Personal de Tierra del Escuadrón Aeromóvil Dagger — BAM San Julián" },
-  { src: img4.url, caption: "Armeros preparando tanques de combustible y armamento" },
+  { src: img4.url, caption: "Personal militar, civil y soldados alistando los equipos de apoyo" },
   { src: img5.url, caption: "P. Civil Martínez José Luis junto al Dagger C-420 y bombas — mayo 1982" },
   { src: img6.url, caption: "Los Héroes Silenciosos — mecánicos, armeros, técnicos e ingenieros" },
   { src: img7.url, caption: "Mecánicos alistando los tanques de 1700 litros — BAM San Julián, mayo 1982" },
