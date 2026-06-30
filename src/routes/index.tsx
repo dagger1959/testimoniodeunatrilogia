@@ -1,9 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-trilogia.jpg";
-import tierraImg from "@/assets/personal-tierra.jpg";
-import pilotoImg from "@/assets/piloto.jpg";
-import avionImg from "@/assets/avion.jpg";
+import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
+import pilotoAsset from "@/assets/galeria/IMG_5335.jpeg.asset.json";
+import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
 import libroImg from "@/assets/libro-tapa.png";
+const tierraImg = tierraAsset.url;
+const pilotoImg = pilotoAsset.url;
+const avionImg = avionAsset.url;
 import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
@@ -76,8 +79,8 @@ function Index() {
         <div className="mx-auto grid max-w-6xl gap-16 px-6 py-24 md:grid-cols-[1fr_1.2fr] md:px-12 md:py-32">
           <div className="relative">
             <div className="sticky top-12">
-              <div className="relative aspect-[3/4] w-full overflow-hidden shadow-page">
-                <img src={libroImg} alt="Tapa del libro Testimonio de una Trilogía" width={800} height={1066} className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+              <div className="relative w-full overflow-hidden bg-background shadow-page">
+                <img src={libroImg} alt="Tapa y contratapa del libro Testimonio de una Trilogía" width={1600} height={1066} className="h-auto w-full object-contain" loading="lazy" />
               </div>
               <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
                 Edición conmemorativa · Escuela Superior de Guerra Aérea
