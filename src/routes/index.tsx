@@ -1,9 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-trilogia.jpg";
-import tierraImg from "@/assets/personal-tierra.jpg";
-import pilotoImg from "@/assets/piloto.jpg";
-import avionImg from "@/assets/avion.jpg";
+import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
+import pilotoAsset from "@/assets/galeria/IMG_5335.jpeg.asset.json";
+import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
 import libroImg from "@/assets/libro-tapa.png";
+const tierraImg = tierraAsset.url;
+const pilotoImg = pilotoAsset.url;
+const avionImg = avionAsset.url;
 import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
