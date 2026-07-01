@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/galeria/trilogia-hero-v3.png";
+import heroImg from "@/assets/galeria/trilogia-hero-v4.png";
 import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
 import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
 import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
