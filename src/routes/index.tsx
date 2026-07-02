@@ -312,15 +312,15 @@ function Index() {
           </div>
           <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
             <p>Autor</p>
-            <p className="mt-1 text-foreground">VGM FAA José Luis Martínez</p>
+            <p className="mt-1 text-foreground">Pers. Civil Tec. Prof. FAA VGM José Luis Martínez Eyheramendi</p>
           </div>
           <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground md:text-right">
             <p>Origen</p>
-            <p className="mt-1 text-foreground">Escuela Superior de Guerra Aérea</p>
+            <p className="mt-1 text-foreground">Obra Documental y Vivencial — Escuela Superior de Guerra Aérea</p>
           </div>
         </div>
         <div className="border-t border-border px-6 py-6 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground md:px-12">
-          En homenaje a los Veteranos de Guerra de Malvinas — Por las huellas de un héroe
+          "Las Malvinas son Argentinas: ¡Ni olvidamos, ni renunciamos!"
         </div>
       </footer>
     </div>
