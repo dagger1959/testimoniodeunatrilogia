@@ -98,25 +98,20 @@ function Index() {
               Una obra <em className="text-[var(--bronce)]">documental y vivencial</em>
             </h2>
             <p>
-              Nacida en el seno de la <strong className="font-medium">Escuela Superior de Guerra Aérea</strong>,
-              esta obra rescata y pone en valor el rol fundamental, silencioso y profesional del
-              Personal de Tierra en el Teatro de Operaciones del Atlántico Sur, detallando las
-              operaciones de la BAM San Julián durante el conflicto de 1982.
+              Nacida en el seno de la <strong className="font-medium">Escuela Superior de Guerra Aérea (ESGA)</strong>,
+              esta obra documental y vivencial constituye un legado fundamental para la memoria institucional de nuestra Patria.
             </p>
             <p>
-              Desde donde operó la Fuerza Aérea Sur (FAS) se planificó, alistó y ejecutó la mayoría
-              de las operaciones aéreas, para las cuales se desplegaron diferentes sistemas de armas
-              que constituyeron los llamados escuadrones aeromóviles.
+              Con una extensión de <strong className="font-medium">366 páginas</strong> y actualizada en su
+              <strong className="font-medium"> Versión 2.0 (Junio 2024)</strong>, este libro rescata el profesionalismo
+              y la abnegación de quienes operaron desde las bases continentales durante el Conflicto del Atlántico Sur.
             </p>
             <blockquote className="my-10 border-l-2 border-[var(--ocre)] pl-6 font-display text-2xl italic leading-snug text-foreground/90">
-              "Todos fuimos partícipes necesarios de las acciones bélicas y cumplimos con nuestro rol
-              de combate como integrantes de los escuadrones aeromóviles."
+              "Manteniendo viva la causa, sus hechos y protagonistas."
             </blockquote>
             <p>
-              Detrás de los Halcones y sus aeronaves, estaba la labor y el eficaz desempeño cumplido
-              en tierra por oficiales, suboficiales, personal civil y soldados, que trabajaron
-              arduamente en pos del único objetivo: lograr producirle grandes bajas y enormes daños
-              al enemigo, pese a la gran diferencia tecnológica existente.
+              Desde donde operó la Fuerza Aérea Sur (FAS) se planificó, alistó y ejecutó la mayoría de las operaciones aéreas,
+              para las cuales se desplegaron diferentes sistemas de armas que constituyeron los llamados escuadrones aeromóviles.
             </p>
           </div>
         </div>
