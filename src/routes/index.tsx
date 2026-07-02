@@ -65,12 +65,17 @@ function Index() {
       <section id="obra" className="px-6 py-24 md:px-12 md:py-36">
         <div className="mx-auto max-w-5xl">
           <div className="divider-ornament mb-12 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-            Detrás de los Halcones
+            Obra documental y vivencial
           </div>
-          <p className="font-display text-3xl font-light leading-[1.3] text-balance md:text-5xl">
-            El conflicto bélico del Atlántico Sur no sólo se libró en las Islas y sus zonas adyacentes,
-            <span className="italic text-[var(--bronce)]"> sino también en las seis Bases Continentales</span>,
-            porque eran objetivo militar del enemigo.
+          <p className="font-display text-2xl font-light leading-[1.3] text-balance md:text-4xl">
+            El testimonio de la <span className="italic text-[var(--bronce)]">Fuerza Aérea Sur 1982</span> contada desde el continente:
+            la historia completa detrás de cada misión.
+          </p>
+          <p className="mt-8 text-lg leading-relaxed text-foreground/85">
+            Esta obra documental y vivencial, nacida en el seno de la <strong className="font-medium">Escuela Superior de Guerra Aérea (ESGA)</strong>,
+            constituye un legado fundamental para la memoria institucional de nuestra Patria. Con una extensión de <strong className="font-medium">366 páginas</strong>
+            y actualizada en su <strong className="font-medium">Versión 2.0 (Junio 2024)</strong>, este libro rescata el profesionalismo y la abnegación
+            de quienes operaron desde las bases continentales durante el Conflicto del Atlántico Sur.
           </p>
         </div>
       </section>
