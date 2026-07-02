@@ -122,17 +122,21 @@ function Index() {
         <div className="mx-auto max-w-6xl">
           <div className="mb-16 text-center">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-              Una unidad indisoluble e indivisible
+              Una unidad técnica y humana indisoluble
             </p>
             <h2 className="mt-4 font-display text-5xl font-light italic md:text-7xl">
               La Trilogía Operativa
             </h2>
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+              En el Teatro de Operaciones, el accionar de la Fuerza Aérea Sur se cimentó en el reconocimiento conceptual
+              de la "Trilogía Operativa", una unidad técnica y humana indisoluble conformada por:
+            </p>
           </div>
           <div className="grid gap-px bg-border md:grid-cols-3">
             {[
-              { num: "I", title: "El Avión", img: avionImg, text: "Los sistemas de armas desplegados desde la Zona Continental. La herramienta forjada en metal que cruzó el Atlántico Sur." },
-              { num: "II", title: "El Piloto", img: pilotoImg, text: "Los Halcones que llevaron adelante la misión, formados en la férrea disciplina de los institutos de la Fuerza Aérea." },
-              { num: "III", title: "El Personal de Tierra", img: tierraImg, text: "Oficiales, suboficiales, personal civil y soldados. El esfuerzo técnico, logístico y armero sin el cual no habría existido vuelo posible." },
+              { num: "I", title: "El Avión", img: avionImg, text: "El sistema de armas IAI M-5 Dagger (Mirage V), tecnología probada en combate que fue llevada al límite de su capacidad operativa." },
+              { num: "II", title: "El Piloto", img: pilotoImg, text: "El ejecutor de la misión, quien en la soledad de su cabina asumió la responsabilidad final del ataque." },
+              { num: "III", title: "El Personal de Tierra", img: tierraImg, text: "Los especialistas, de diferentes especialidades, personal Militar, Civil y conscriptos — la gran mayoría perteneciente a la VI Brigada Aérea - Grupo Técnico 6 (GT6) y demás organismos necesarios para las actividades aéreas. Conocidos históricamente como 'Los Magos'." },
             ].map((p) => (
               <article key={p.num} className="group relative overflow-hidden bg-card">
                 <div className="relative aspect-[4/5] overflow-hidden">
@@ -148,9 +152,35 @@ function Index() {
             ))}
           </div>
           <p className="mx-auto mt-16 max-w-3xl text-center font-display text-2xl italic leading-snug text-foreground/80 md:text-3xl">
-            Sin el esfuerzo técnico, logístico y armero del Personal de Tierra en las bases desplegadas,
-            el esfuerzo en el aire no habría sido posible.
+            Representaron el "último eslabón humano" antes del despegue, siendo los encargados de artillar, reparar
+            y dar el saludo final con el pulgar en alto a sus pilotos.
           </p>
+        </div>
+      </section>
+
+      {/* BAM SAN JULIÁN */}
+      <section className="border-y border-border bg-card">
+        <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
+          <div className="mb-10 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Sacrificio en tierra</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
+              El Sacrificio en la BAM San Julián
+            </h2>
+          </div>
+          <div className="space-y-6 text-lg leading-relaxed text-foreground/85">
+            <p>
+              Es imperativo honrar el rol del <strong className="font-medium">II Escuadrón Aeromóvil "La Marinete"</strong> en la Base Aérea Militar San Julián.
+            </p>
+            <p>
+              En aquel invierno de 1982, el personal de mantenimiento desafió condiciones extremas con <strong className="font-medium">vientos de 60 km/h</strong>
+              y temperaturas de hasta <strong className="font-medium">19 grados bajo cero</strong>. Sin hangares, protegiendo sus herramientas en carpas
+              y alineando las bombas al costado de la plataforma, estos especialistas demostraron que sin su esfuerzo técnico y logístico,
+              el esfuerzo en el aire no habría sido posible.
+            </p>
+            <blockquote className="my-10 border-l-2 border-[var(--ocre)] pl-6 font-display text-2xl italic leading-snug text-foreground/90">
+              "Sin su esfuerzo técnico y logístico, el esfuerzo en el aire no habría sido posible."
+            </blockquote>
+          </div>
         </div>
       </section>
 
