@@ -208,33 +208,97 @@ function Index() {
       <section id="descarga" className="px-6 py-24 md:px-12 md:py-36">
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-            Divulgación histórica
+            Acceso 100% libre y gratuito
           </p>
           <h2 className="mt-4 font-display text-5xl font-light text-balance md:text-6xl">
-            Acceso <em className="text-[var(--bronce)]">libre y gratuito</em>
+            Fines de <em className="text-[var(--bronce)]">divulgación histórica</em>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Este espacio está destinado a la divulgación histórica de la obra. Descargue el libro
-            completo en formato PDF y compártalo. La memoria pertenece a todos.
+            Para mantener viva la causa, sus hechos y protagonistas, esta obra está disponible de forma internacional
+            para toda la ciudadanía a través de las siguientes plataformas:
           </p>
+
+          <div className="mt-10 overflow-hidden rounded-sm border border-border">
+            <table className="w-full text-left text-sm">
+              <thead className="bg-muted font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                <tr>
+                  <th className="px-4 py-3">Plataforma</th>
+                  <th className="px-4 py-3">Instrucciones y enlaces</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                <tr>
+                  <td className="px-4 py-4 font-medium">Google Play Libros</td>
+                  <td className="px-4 py-4 text-muted-foreground">
+                    Busque por título: <em>"Testimonio de una Trilogía"</em> o por autor: <em>"José Luis Martínez Eyheramendi"</em>.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-4 font-medium">Biblioteca Histórica y Cultural</td>
+                  <td className="px-4 py-4">
+                    <a
+                      href={trilogiaPdf.url}
+                      download="testimonio-de-una-trilogia.pdf"
+                      className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
+                    >
+                      Descargar Libro Gratis (PDF)
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="mt-10 font-display text-2xl italic text-foreground/90">
+            "Manteniendo viva la causa, sus hechos y protagonistas."
+          </p>
+
           <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href={trilogiaPdf.url}
-              download="trilogia.pdf"
+              download="testimonio-de-una-trilogia.pdf"
               className="group inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
             >
               <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
               Descargar PDF
             </a>
             <a
-              href="#obra"
+              href="https://misvivenciasenlaguerrademalvinas.blogspot.com/"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-3 border border-foreground/30 px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:border-foreground"
             >
-              Compartir la obra
+              Visitar el blog
             </a>
           </div>
           <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-            PDF · Edición digital · 40° Aniversario
+            PDF · Edición digital 2.0 · Escuela Superior de Guerra Aérea
+          </p>
+        </div>
+      </section>
+
+      {/* BLOG */}
+      <section className="border-y border-border bg-card">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">El lado humano</p>
+          <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
+            Blog de Vivencias
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
+            Invitamos a explorar los relatos en primera persona, documentos inéditos, fotos y videos que capturan la esencia
+            del valor y el sentimiento patriótico vigente. Malvinas no es solo un hecho del pasado, sino una herida y un orgullo
+            que debemos transmitir a las nuevas generaciones.
+          </p>
+          <a
+            href="https://misvivenciasenlaguerrademalvinas.blogspot.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-10 inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
+          >
+            Enlace al Blog
+          </a>
+          <p className="mx-auto mt-12 max-w-2xl font-display text-2xl italic leading-snug text-foreground/90">
+            "Que la entrega de nuestros 649 Héroes y el esfuerzo de cada integrante de los Escuadrones Aeromóviles no sea en vano."
           </p>
         </div>
       </section>
