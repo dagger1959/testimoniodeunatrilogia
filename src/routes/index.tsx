@@ -184,19 +184,19 @@ function Index() {
         </div>
       </section>
 
-      {/* CITA HERMANDAD */}
+      {/* VALORES Y CIERRE INSTITUCIONAL */}
       <section className="relative isolate overflow-hidden bg-primary text-primary-foreground">
         <div className="absolute inset-0 opacity-20">
           <img src={tierraImg} alt="" width={1280} height={1280} loading="lazy" className="h-full w-full object-cover" />
         </div>
         <div className="relative mx-auto max-w-4xl px-6 py-32 text-center md:px-12 md:py-40">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-primary-foreground/60">Consigna</p>
-          <p className="mt-8 font-display text-5xl italic leading-tight md:text-7xl">
-            "Dios, Patria, Hogar"
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-primary-foreground/60">Valores y cierre institucional</p>
+          <p className="mt-8 font-display text-4xl italic leading-tight md:text-6xl">
+            "Honrar el pasado, defender el presente, asegurar el futuro."
           </p>
           <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-primary-foreground/80">
-            Un vínculo muy estrecho se estableció en la trilogía: una relación de hermandad,
-            forjada en la férrea disciplina de los institutos de formación de nuestra querida Fuerza Aérea.
+            "Gloria y Honor a nuestros Héroes."<br />
+            "Las Malvinas son Argentinas: ¡Ni olvidamos, ni renunciamos!"
           </p>
         </div>
       </section>
