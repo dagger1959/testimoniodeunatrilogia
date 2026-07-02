@@ -46,15 +46,16 @@ function Index() {
               <span className="h-px w-10 bg-background/60" />
               40° Aniversario · Atlántico Sur
             </div>
-            <h1 className="font-display text-5xl font-light leading-[0.95] text-background text-balance md:text-7xl lg:text-[8rem]">
-              Testimonio<br />
-              <span className="italic text-[var(--celeste)]">de una Trilogía</span>
+            <h1 className="font-display text-3xl font-light leading-[1.05] text-background text-balance md:text-5xl lg:text-6xl">
+              UNA OBRA DOCUMENTAL Y VIVENCIAL<br />
+              <span className="italic text-[var(--celeste)]">TESTIMONIO DE UNA TRILOGÍA</span><br />
+              <span className="text-2xl md:text-4xl lg:text-5xl">GUERRA DE MALVINAS (VERSIÓN DIGITAL 2.0)</span>
             </h1>
             <p className="mt-6 max-w-2xl font-display text-xl italic text-background/90 md:text-2xl">
-              Guerra de Malvinas · 1982
+              El testimonio de la Fuerza Aérea Sur 1982 contada desde el continente: la historia completa detrás de cada misión.
             </p>
             <p className="mt-2 font-mono text-xs uppercase tracking-[0.3em] text-background/70">
-              VGM FAA José Luis Martínez
+              Pers. Civil Tec. Prof. FAA VGM José Luis Martínez Eyheramendi
             </p>
           </div>
         </div>
