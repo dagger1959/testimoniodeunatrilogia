@@ -8,6 +8,7 @@ const tierraImg = tierraAsset.url;
 const pilotoImg = pilotoAsset.url;
 const avionImg = avionAsset.url;
 import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
+import dossierEscolarPdf from "@/assets/La_Gesta_de_Malvinas_en_las_Aulas.pdf.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
