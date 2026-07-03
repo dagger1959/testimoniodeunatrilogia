@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/galeria/trilogia-hero-v5.png";
+import heroImg from "@/assets/galeria/trilogia-hero-v6.png";
 import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
 import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
 import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
@@ -376,18 +376,12 @@ function Index() {
             Colaboración voluntaria con el autor
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
-            Esta obra es de distribución 100% gratuita para difundir la memoria histórica de la Fuerza Aérea Sur en el conflicto de 1982. Si deseas apoyar la continuidad de este proyecto de investigación y mantener viva la historia de nuestra Trilogía, podés realizar una contribución voluntaria a voluntad a través de:
+            Esta obra es de distribución 100% gratuita para difundir la memoria histórica de la Fuerza Aérea Sur en el conflicto de 1982. Si deseas apoyar la continuidad de este proyecto de investigación y mantener viva la historia de nuestra Trilogía, podés realizar una contribución voluntaria a través de:
           </p>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
-            <div className="border border-border bg-background p-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Alias</p>
-              <p className="mt-2 font-mono text-lg tracking-wider text-foreground">1959dagger</p>
-            </div>
-            <div className="border border-border bg-background p-6">
-              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">CBU</p>
-              <p className="mt-2 font-mono text-lg tracking-wider text-foreground">0110599530000050030665</p>
-            </div>
+          <div className="mt-10 inline-block border border-border bg-background p-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Alias</p>
+            <p className="mt-2 font-mono text-2xl tracking-wider text-foreground">1959dagger</p>
           </div>
 
           <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-muted-foreground">
