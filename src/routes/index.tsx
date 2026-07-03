@@ -248,6 +248,18 @@ function Index() {
                     </a>
                   </td>
                 </tr>
+                <tr>
+                  <td className="px-4 py-4 font-medium">Dossier Escolar</td>
+                  <td className="px-4 py-4">
+                    <a
+                      href={dossierEscolarPdf.url}
+                      download="La_Gesta_de_Malvinas_en_las_Aulas.pdf"
+                      className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
+                    >
+                      Descargar material para aulas (PDF)
+                    </a>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
