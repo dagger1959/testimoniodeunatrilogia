@@ -8,6 +8,7 @@ const tierraImg = tierraAsset.url;
 const pilotoImg = pilotoAsset.url;
 const avionImg = avionAsset.url;
 import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
+import dossierEscolarPdf from "@/assets/La_Gesta_de_Malvinas_en_las_Aulas.pdf.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
@@ -32,7 +33,9 @@ function Index() {
           <a href="#obra" className="hover:opacity-70">La Obra</a>
           <a href="#trilogia" className="hover:opacity-70">Trilogía</a>
           <a href="#galeria" className="hover:opacity-70">Galería</a>
+          <a href="#dossier" className="hover:opacity-70">Dossier</a>
           <a href="#descarga" className="hover:opacity-70">Descarga</a>
+          <a href="#colaborar" className="hover:opacity-70">Colaborar</a>
         </nav>
       </header>
 
@@ -245,6 +248,18 @@ function Index() {
                     </a>
                   </td>
                 </tr>
+                <tr>
+                  <td className="px-4 py-4 font-medium">Dossier Escolar</td>
+                  <td className="px-4 py-4">
+                    <a
+                      href={dossierEscolarPdf.url}
+                      download="La_Gesta_de_Malvinas_en_las_Aulas.pdf"
+                      className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
+                    >
+                      Descargar material para aulas (PDF)
+                    </a>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -299,6 +314,72 @@ function Index() {
           </a>
           <p className="mx-auto mt-12 max-w-2xl font-display text-2xl italic leading-snug text-foreground/90">
             "Que la entrega de nuestros 649 Héroes y el esfuerzo de cada integrante de los Escuadrones Aeromóviles no sea en vano."
+          </p>
+        </div>
+      </section>
+
+      {/* DOSSIER ESCOLAR */}
+      <section id="dossier" className="border-y border-border bg-muted/20">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-24 md:grid-cols-2 md:items-center md:px-12 md:py-32">
+          <div className="order-2 md:order-1">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Material educativo</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-5xl">
+              Dossier Escolar
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-foreground/85">
+              Un dossier escolar es una recopilación organizada de documentos, trabajos y evidencias de aprendizaje. Sirve para evaluar el progreso de un estudiante o como material de apoyo que reúne recursos, actividades y unidades didácticas sobre un tema de la gesta de Malvinas.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Este material reúne propuestas para trabajar en el aula los fundamentos históricos, jurídicos y operativos del conflicto, con especial énfasis en la Trilogía Operativa y la experiencia de quienes operaron desde las bases continentales.
+            </p>
+            <a
+              href={dossierEscolarPdf.url}
+              download="La_Gesta_de_Malvinas_en_las_Aulas.pdf"
+              className="mt-10 inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
+            >
+              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
+              Descargar Dossier Escolar
+            </a>
+          </div>
+          <div className="order-1 md:order-2">
+            <div className="relative border border-border bg-card p-2 shadow-page">
+              <div className="aspect-[3/4] w-full overflow-hidden bg-muted">
+                <div className="flex h-full flex-col items-center justify-center gap-3 p-8 text-center">
+                  <span className="font-display text-4xl italic text-foreground/30">La Gesta de Malvinas</span>
+                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">en las Aulas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* COLABORACIÓN VOLUNTARIA */}
+      <section id="colaborar" className="bg-card">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Apoyo al proyecto</p>
+          <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
+            Colaboración voluntaria con el autor
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
+            Esta obra es de distribución 100% gratuita para difundir la memoria histórica de la Fuerza Aérea Sur en el conflicto de 1982. Si deseas apoyar la continuidad de este proyecto de investigación y mantener viva la historia de nuestra Trilogía, podés realizar una contribución voluntaria a voluntad a través de:
+          </p>
+
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+            <div className="border border-border bg-background p-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Alias</p>
+              <p className="mt-2 font-mono text-lg tracking-wider text-foreground">1959dagger</p>
+            </div>
+            <div className="border border-border bg-background p-6">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">CBU</p>
+              <p className="mt-2 font-mono text-lg tracking-wider text-foreground">0110599530000050030665</p>
+            </div>
+          </div>
+
+          <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-muted-foreground">
+            Muchas gracias por apoyar la difusión de nuestra soberanía.
+            <br />
+            <span className="mt-2 block text-foreground">Pers. Civil Tec. Prof. FAA VGM José Luis Martínez</span>
           </p>
         </div>
       </section>
