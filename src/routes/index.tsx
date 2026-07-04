@@ -363,7 +363,7 @@ function Index() {
               </a>
             </div>
             <p className="mt-4 text-sm text-muted-foreground italic">
-              Incluye una ilustración en formato historieta pensada para acercar la gesta a los más chicos.
+              Incluye una ilustración en formato historieta, un video pensado para los más chicos, y un PDF con imágenes de aquellos días.
             </p>
           </div>
           <div className="order-1 md:order-2 space-y-6">
