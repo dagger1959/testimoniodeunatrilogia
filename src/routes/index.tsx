@@ -357,7 +357,7 @@ function Index() {
               Incluye una ilustración en formato historieta pensada para acercar la gesta a los más chicos.
             </p>
           </div>
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-2 space-y-6">
             <div className="relative border border-border bg-card p-2 shadow-page">
               <div className="aspect-[3/4] w-full overflow-hidden bg-muted">
                 <div className="flex h-full flex-col items-center justify-center gap-3 p-8 text-center">
@@ -365,6 +365,18 @@ function Index() {
                   <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">en las Aulas</span>
                 </div>
               </div>
+            </div>
+            <div className="relative border border-border bg-card p-2 shadow-page">
+              <p className="mb-2 px-2 pt-2 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+                Video para los chicos
+              </p>
+              <video
+                src={videoChicos.url}
+                controls
+                playsInline
+                preload="metadata"
+                className="aspect-video w-full bg-black"
+              />
             </div>
           </div>
         </div>
