@@ -1,15 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImg from "@/assets/galeria/trilogia-hero-v6.png";
+import heroAsset from "@/assets/galeria/dagger-marinete.jpg.asset.json";
 import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
 import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
 import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
 import libroImg from "@/assets/libro-tapa.png";
+const heroImg = heroAsset.url;
 const tierraImg = tierraAsset.url;
 const pilotoImg = pilotoAsset.url;
 const avionImg = avionAsset.url;
 import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
 import dossierEscolarPdf from "@/assets/La_Gesta_de_Malvinas_en_las_Aulas.pdf.asset.json";
 import ilustracionChicosPdf from "@/assets/ilustracion_para_chicos.pdf.asset.json";
+import videoChicos from "@/assets/video-chicos.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
