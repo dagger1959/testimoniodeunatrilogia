@@ -16,6 +16,8 @@ import malvinasEnsenaPdf from "@/assets/malvinas-tambien-se-ensena.pdf.asset.jso
 import heroesSecundarioPdf from "@/assets/heroes-del-cielo-y-de-la-tierra.pdf.asset.json";
 import videoChicos from "@/assets/video-chicos.mp4.asset.json";
 import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
+import fuerzaAereaBatallaVideo from "@/assets/fuerza-aerea-sur-batalla.mp4.asset.json";
+import historiaFuerzaAereaVideo from "@/assets/historia-fuerza-aerea-sur.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
@@ -168,6 +170,32 @@ function Index() {
             </p>
             <video
               src={trilogiaOperativaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="mx-auto mt-12 max-w-4xl">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Por qué fue tan importante la Trilogía
+            </p>
+            <video
+              src={historiaFuerzaAereaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="mx-auto mt-12 max-w-4xl">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Fuerza Aérea Sur 1982 — Dando batalla
+            </p>
+            <video
+              src={fuerzaAereaBatallaVideo.url}
               controls
               playsInline
               preload="metadata"
