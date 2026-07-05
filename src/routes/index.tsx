@@ -14,6 +14,7 @@ import ilustracionChicosPdf from "@/assets/ilustracion_para_chicos.pdf.asset.jso
 import diapositivasPdf from "@/assets/diapositivas-malvinas.pdf.asset.json";
 import malvinasEnsenaPdf from "@/assets/malvinas-tambien-se-ensena.pdf.asset.json";
 import videoChicos from "@/assets/video-chicos.mp4.asset.json";
+import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
