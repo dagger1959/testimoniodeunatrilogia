@@ -177,6 +177,32 @@ function Index() {
             />
           </div>
 
+          <div className="mx-auto mt-12 max-w-4xl">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Por qué fue tan importante la Trilogía
+            </p>
+            <video
+              src={historiaFuerzaAereaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="mx-auto mt-12 max-w-4xl">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Fuerza Aérea Sur 1982 — Dando batalla
+            </p>
+            <video
+              src={fuerzaAereaBatallaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
           <p className="mx-auto mt-16 max-w-3xl text-center font-display text-2xl italic leading-snug text-foreground/80 md:text-3xl">
             Representaron el "último eslabón humano" antes del despegue, siendo los encargados de artillar, reparar
             y dar el saludo final con el pulgar en alto a sus pilotos.
