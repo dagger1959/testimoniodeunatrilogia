@@ -13,6 +13,7 @@ import dossierEscolarPdf from "@/assets/La_Gesta_de_Malvinas_en_las_Aulas.pdf.as
 import ilustracionChicosPdf from "@/assets/ilustracion_para_chicos.pdf.asset.json";
 import diapositivasPdf from "@/assets/diapositivas-malvinas.pdf.asset.json";
 import malvinasEnsenaPdf from "@/assets/malvinas-tambien-se-ensena.pdf.asset.json";
+import heroesSecundarioPdf from "@/assets/heroes-del-cielo-y-de-la-tierra.pdf.asset.json";
 import videoChicos from "@/assets/video-chicos.mp4.asset.json";
 import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
