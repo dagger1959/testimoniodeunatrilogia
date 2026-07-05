@@ -14,6 +14,7 @@ import ilustracionChicosPdf from "@/assets/ilustracion_para_chicos.pdf.asset.jso
 import diapositivasPdf from "@/assets/diapositivas-malvinas.pdf.asset.json";
 import malvinasEnsenaPdf from "@/assets/malvinas-tambien-se-ensena.pdf.asset.json";
 import videoChicos from "@/assets/video-chicos.mp4.asset.json";
+import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
@@ -159,6 +160,20 @@ function Index() {
               </article>
             ))}
           </div>
+
+          <div className="mx-auto mt-16 max-w-4xl">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Video de la Trilogía Operativa
+            </p>
+            <video
+              src={trilogiaOperativaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
           <p className="mx-auto mt-16 max-w-3xl text-center font-display text-2xl italic leading-snug text-foreground/80 md:text-3xl">
             Representaron el "último eslabón humano" antes del despegue, siendo los encargados de artillar, reparar
             y dar el saludo final con el pulgar en alto a sus pilotos.
