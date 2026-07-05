@@ -16,6 +16,8 @@ import malvinasEnsenaPdf from "@/assets/malvinas-tambien-se-ensena.pdf.asset.jso
 import heroesSecundarioPdf from "@/assets/heroes-del-cielo-y-de-la-tierra.pdf.asset.json";
 import videoChicos from "@/assets/video-chicos.mp4.asset.json";
 import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
+import fuerzaAereaBatallaVideo from "@/assets/fuerza-aerea-sur-batalla.mp4.asset.json";
+import historiaFuerzaAereaVideo from "@/assets/historia-fuerza-aerea-sur.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
