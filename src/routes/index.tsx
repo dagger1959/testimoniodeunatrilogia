@@ -77,18 +77,49 @@ function Index() {
       <section id="obra" className="px-6 py-24 md:px-12 md:py-36">
         <div className="mx-auto max-w-5xl">
           <div className="divider-ornament mb-12 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-            Obra documental y vivencial
+            La trilogía probada en combate
           </div>
           <p className="font-display text-2xl font-light leading-[1.3] text-balance md:text-4xl">
-            El testimonio de la <span className="italic text-[var(--bronce)]">Fuerza Aérea Sur 1982</span> contada desde el continente:
-            la historia completa detrás de cada misión.
+            El poder aéreo nace mucho antes del despegue.
           </p>
-          <p className="mt-8 text-lg leading-relaxed text-foreground/85">
-            Esta obra documental y vivencial, nacida en el seno de la <strong className="font-medium">Escuela Superior de Guerra Aérea (ESGA)</strong>,
-            constituye un legado fundamental para la memoria institucional de nuestra Patria. Con una extensión de <strong className="font-medium">366 páginas</strong>
-            y actualizada en su <strong className="font-medium">Versión 2.0 (Junio 2024)</strong>, este libro rescata el profesionalismo y la abnegación
-            de quienes operaron desde las bases continentales durante el Conflicto del Atlántico Sur.
-          </p>
+          <div className="mt-8 space-y-6 text-lg leading-relaxed text-foreground/85">
+            <p>
+              Durante el <strong className="font-medium">Conflicto del Atlántico Sur de 1982</strong>, la Fuerza Aérea Sur escribió una de las páginas más extraordinarias de la historia militar argentina. Aquellas acciones que asombraron al mundo no fueron obra del azar ni del esfuerzo de un solo hombre: fueron el resultado de una <strong className="font-medium">trilogía operativa</strong>, inseparable e indispensable, forjada en el sacrificio, la disciplina y el compromiso.
+            </p>
+            <p className="font-display text-xl font-light italic md:text-2xl">
+              AVIÓN · PILOTO · PERSONAL DE TIERRA
+            </p>
+            <p>
+              <strong className="font-medium">Tres protagonistas. Una sola misión.</strong><br />
+              Cada uno dependía del otro para cumplir su cometido.
+            </p>
+            <ul className="list-none space-y-2 pl-0">
+              <li>Sin el personal de tierra, no hay avión operativo.</li>
+              <li>Sin el avión, no hay piloto en combate.</li>
+              <li>Sin el piloto, no hay misión cumplida.</li>
+            </ul>
+            <p className="font-display text-xl italic">
+              Esta es la verdadera esencia del poder aéreo.
+            </p>
+            <p>
+              Mucho antes de que una aeronave acelerara por la pista, existía un trabajo silencioso e incansable que rara vez ocupó los titulares. En hangares, plataformas y talleres, mecánicos, técnicos, armamentistas, electricistas, especialistas en aviónica, abastecedores y personal logístico trabajaban día y noche bajo una enorme presión, sabiendo que de la calidad de su tarea dependían el éxito de la misión y, muchas veces, la vida de quienes despegaban hacia el combate.
+            </p>
+            <p>
+              Cada avión que regresó… y cada avión que no volvió… llevaba consigo el esfuerzo, la capacidad profesional y la entrega de hombres y mujeres que también combatieron desde tierra.
+            </p>
+            <p>
+              Esta página nace con el propósito de preservar esa memoria, difundir documentos, testimonios, fotografías, videos y material de investigación que permitan comprender la verdadera dimensión del esfuerzo realizado por la <strong className="font-medium">Fuerza Aérea Sur</strong> durante la Guerra del Atlántico Sur.
+            </p>
+            <p>
+              Es también un reconocimiento a quienes permanecieron durante décadas en un injusto silencio, pese a haber sido parte fundamental de una de las campañas aéreas más importantes de la historia contemporánea.
+            </p>
+            <p>
+              Porque la historia no pertenece únicamente a quienes empuñaron los mandos de un avión. También pertenece a quienes, con sus manos, su conocimiento y su vocación de servicio, hicieron posible que cada misión pudiera despegar.
+            </p>
+            <p className="font-display text-xl italic">
+              La Trilogía Probada en Combate no es solo un concepto. Es el reconocimiento de una verdad histórica: el avión, el piloto y el personal de tierra combatieron como una sola unidad.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -459,20 +490,32 @@ function Index() {
           <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
             Colaboración voluntaria con el autor
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
-            Esta obra es de distribución 100% gratuita para difundir la memoria histórica de la Fuerza Aérea Sur en el conflicto de 1982. Si deseas apoyar la continuidad de este proyecto de investigación y mantener viva la historia de nuestra Trilogía, podés realizar una contribución voluntaria a través de:
-          </p>
+          <div className="mx-auto mt-6 max-w-2xl space-y-6 text-lg leading-relaxed text-foreground/85">
+            <p>
+              Todo el contenido disponible en este sitio, incluido mi libro Testimonio de una Trilogía y el material complementario, se ofrece de manera completamente gratuita con el único objetivo de difundir, preservar y mantener viva la memoria de quienes sirvieron a la Patria.
+            </p>
+            <p>
+              Si considerás valioso este trabajo y deseás colaborar para que esta investigación continúe creciendo, incorporando nuevos documentos, testimonios y recursos educativos, podés realizar una contribución voluntaria.
+            </p>
+          </div>
 
           <div className="mt-10 inline-block border border-border bg-background p-8">
             <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Alias</p>
             <p className="mt-2 font-mono text-2xl tracking-wider text-foreground">1959dagger</p>
           </div>
 
-          <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Muchas gracias por apoyar la difusión de nuestra soberanía.
-            <br />
-            <span className="mt-2 block text-foreground">Pers. Civil Tec. Prof. FAA VGM José Luis Martínez</span>
-          </p>
+          <div className="mx-auto mt-10 max-w-2xl space-y-4 text-base leading-relaxed text-muted-foreground">
+            <p>
+              Cada aporte, por pequeño que sea, contribuye a mantener vivo este proyecto y a que la historia de la Fuerza Aérea Sur continúe llegando a las generaciones presentes y futuras.
+            </p>
+            <p className="text-foreground">
+              José Luis Martínez<br />
+              Veterano de Guerra de Malvinas – Fuerza Aérea Argentina
+            </p>
+            <p className="text-foreground">
+              Contacto: <a href="mailto:dagger1959@gmail.com" className="underline underline-offset-4 hover:text-[var(--bronce)]">dagger1959@gmail.com</a>
+            </p>
+          </div>
         </div>
       </section>
 
