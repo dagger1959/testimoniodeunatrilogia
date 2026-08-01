@@ -20,6 +20,9 @@ import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
 import fuerzaAereaBatallaVideo from "@/assets/fuerza-aerea-sur-batalla.mp4.asset.json";
 import historiaFuerzaAereaVideo from "@/assets/historia-fuerza-aerea-sur.mp4.asset.json";
 import fuerzaAereaProbadaCombateVideo from "@/assets/fuerza-aerea-sur-probada-combate.mp4.asset.json";
+import noFueronVideo from "@/assets/no-fueron-ni-1-ni-2-ni-3.mp4.asset.json";
+import verdadIncomodaVideo from "@/assets/la-verdad-que-incomoda-fas.mp4.asset.json";
+import martinezVideo from "@/assets/martinez-jose-luis.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
