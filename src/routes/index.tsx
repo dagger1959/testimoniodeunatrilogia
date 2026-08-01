@@ -19,6 +19,7 @@ import videoChicos from "@/assets/video-chicos.mp4.asset.json";
 import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
 import fuerzaAereaBatallaVideo from "@/assets/fuerza-aerea-sur-batalla.mp4.asset.json";
 import historiaFuerzaAereaVideo from "@/assets/historia-fuerza-aerea-sur.mp4.asset.json";
+import fuerzaAereaProbadaCombateVideo from "@/assets/fuerza-aerea-sur-probada-combate.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
@@ -228,6 +229,19 @@ function Index() {
             </p>
             <video
               src={fuerzaAereaBatallaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="mx-auto mt-12 max-w-4xl">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              La Fuerza Aérea Sur probada en combate
+            </p>
+            <video
+              src={fuerzaAereaProbadaCombateVideo.url}
               controls
               playsInline
               preload="metadata"
