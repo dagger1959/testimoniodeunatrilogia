@@ -14,6 +14,7 @@ import ilustracionChicosPdf from "@/assets/ilustracion_para_chicos.pdf.asset.jso
 import diapositivasPdf from "@/assets/diapositivas-malvinas.pdf.asset.json";
 import malvinasEnsenaPdf from "@/assets/malvinas-tambien-se-ensena.pdf.asset.json";
 import heroesSecundarioPdf from "@/assets/heroes-del-cielo-y-de-la-tierra.pdf.asset.json";
+import recopiladoFasPdf from "@/assets/recopilado-comprender-fas.pdf.asset.json";
 import videoChicos from "@/assets/video-chicos.mp4.asset.json";
 import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
 import fuerzaAereaBatallaVideo from "@/assets/fuerza-aerea-sur-batalla.mp4.asset.json";
@@ -452,6 +453,14 @@ function Index() {
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
                 Cuadernillo Nivel Secundario
+              </a>
+              <a
+                href={recopiladoFasPdf.url}
+                download="recopilado-comprender-fas.pdf"
+                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
+              >
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
+                Cómo funcionó la Fuerza Aérea Sur
               </a>
             </div>
             <p className="mt-4 text-sm text-muted-foreground italic">
