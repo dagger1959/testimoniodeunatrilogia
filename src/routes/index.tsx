@@ -20,6 +20,9 @@ import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
 import fuerzaAereaBatallaVideo from "@/assets/fuerza-aerea-sur-batalla.mp4.asset.json";
 import historiaFuerzaAereaVideo from "@/assets/historia-fuerza-aerea-sur.mp4.asset.json";
 import fuerzaAereaProbadaCombateVideo from "@/assets/fuerza-aerea-sur-probada-combate.mp4.asset.json";
+import noFueronVideo from "@/assets/no-fueron-ni-1-ni-2-ni-3.mp4.asset.json";
+import verdadIncomodaVideo from "@/assets/la-verdad-que-incomoda-fas.mp4.asset.json";
+import martinezVideo from "@/assets/martinez-jose-luis.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 
 export const Route = createFileRoute("/")({
@@ -242,6 +245,45 @@ function Index() {
             </p>
             <video
               src={fuerzaAereaProbadaCombateVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="mx-auto mt-12 max-w-4xl">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              No fueron ni 1, ni 2, ni 3...
+            </p>
+            <video
+              src={noFueronVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="mx-auto mt-12 max-w-4xl">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              La verdad que incomoda — Fuerza Aérea Sur
+            </p>
+            <video
+              src={verdadIncomodaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="mx-auto mt-12 max-w-4xl">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Fuerza Aérea Argentina — PC VGM Martínez José Luis
+            </p>
+            <video
+              src={martinezVideo.url}
               controls
               playsInline
               preload="metadata"
