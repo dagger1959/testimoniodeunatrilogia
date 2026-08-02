@@ -586,6 +586,8 @@ function Index() {
         </div>
       </section>
 
+      <LibroDeVisitas />
+
       {/* FOOTER */}
       <footer className="border-t border-border bg-card">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3 md:px-12">
