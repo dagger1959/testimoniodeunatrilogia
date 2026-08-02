@@ -51,8 +51,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Testimonio de una Trilogía — Guerra de Malvinas 1982" },
       { name: "twitter:description", content: "Obra histórica y vivencial sobre el Personal de Tierra en la BAM San Julián durante el conflicto del Atlántico Sur. Acceso libre y gratuito." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/d94eee0b-e387-4c61-898b-cf1b1728b11f" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/d94eee0b-e387-4c61-898b-cf1b1728b11f" },
+      { property: "og:image", content: "https://testimoniodeunatrilogia.lovable.app/__l5e/assets-v1/e72b1fcc-e93d-43c8-ae2b-e7fda71f992d/og-tapa.jpg" },
+      { name: "twitter:image", content: "https://testimoniodeunatrilogia.lovable.app/__l5e/assets-v1/e72b1fcc-e93d-43c8-ae2b-e7fda71f992d/og-tapa.jpg" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
