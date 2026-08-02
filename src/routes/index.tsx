@@ -24,6 +24,7 @@ import noFueronVideo from "@/assets/no-fueron-ni-1-ni-2-ni-3.mp4.asset.json";
 import verdadIncomodaVideo from "@/assets/la-verdad-que-incomoda-fas.mp4.asset.json";
 import martinezVideo from "@/assets/martinez-jose-luis.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
+import { LibroDeVisitas, ContadorVisitas } from "@/components/libro-de-visitas";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -50,6 +51,7 @@ function Index() {
           <a href="#dossier" className="hover:opacity-70">Dossier</a>
           <a href="#descarga" className="hover:opacity-70">Descarga</a>
           <a href="#colaborar" className="hover:opacity-70">Colaborar</a>
+          <a href="#comentarios" className="hover:opacity-70">Comentarios</a>
         </nav>
       </header>
 
@@ -584,6 +586,8 @@ function Index() {
         </div>
       </section>
 
+      <LibroDeVisitas />
+
       {/* FOOTER */}
       <footer className="border-t border-border bg-card">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:grid-cols-3 md:px-12">
@@ -600,8 +604,9 @@ function Index() {
             <p className="mt-1 text-foreground">Obra Documental y Vivencial — Escuela Superior de Guerra Aérea</p>
           </div>
         </div>
-        <div className="border-t border-border px-6 py-6 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground md:px-12">
-          "Las Malvinas son Argentinas: ¡Ni olvidamos, ni renunciamos!"
+        <div className="flex flex-col items-center gap-3 border-t border-border px-6 py-6 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground md:px-12">
+          <p>"Las Malvinas son Argentinas: ¡Ni olvidamos, ni renunciamos!"</p>
+          <ContadorVisitas />
         </div>
       </footer>
     </div>
