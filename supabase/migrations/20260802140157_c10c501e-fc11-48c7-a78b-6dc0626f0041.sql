@@ -1,0 +1,1 @@
+delete from public.comentarios where nombre = 'Prueba' and mensaje = 'Mensaje de prueba de moderacion';
