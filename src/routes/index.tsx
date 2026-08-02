@@ -24,6 +24,7 @@ import noFueronVideo from "@/assets/no-fueron-ni-1-ni-2-ni-3.mp4.asset.json";
 import verdadIncomodaVideo from "@/assets/la-verdad-que-incomoda-fas.mp4.asset.json";
 import martinezVideo from "@/assets/martinez-jose-luis.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
+import { LibroDeVisitas, ContadorVisitas } from "@/components/libro-de-visitas";
 
 export const Route = createFileRoute("/")({
   head: () => ({
