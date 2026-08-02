@@ -604,8 +604,9 @@ function Index() {
             <p className="mt-1 text-foreground">Obra Documental y Vivencial — Escuela Superior de Guerra Aérea</p>
           </div>
         </div>
-        <div className="border-t border-border px-6 py-6 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground md:px-12">
-          "Las Malvinas son Argentinas: ¡Ni olvidamos, ni renunciamos!"
+        <div className="flex flex-col items-center gap-3 border-t border-border px-6 py-6 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground md:px-12">
+          <p>"Las Malvinas son Argentinas: ¡Ni olvidamos, ni renunciamos!"</p>
+          <ContadorVisitas />
         </div>
       </footer>
     </div>
