@@ -432,31 +432,6 @@ function Index() {
         </div>
       </section>
 
-      {/* BLOG */}
-      <section className="border-y border-border bg-card">
-        <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">El lado humano</p>
-          <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
-            Blog de Vivencias
-          </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
-            Invitamos a explorar los relatos en primera persona, documentos inéditos, fotos y videos que capturan la esencia
-            del valor y el sentimiento patriótico vigente. Malvinas no es solo un hecho del pasado, sino una herida y un orgullo
-            que debemos transmitir a las nuevas generaciones.
-          </p>
-          <a
-            href="https://misvivenciasenlaguerrademalvinas.blogspot.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="mt-10 inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
-          >
-            Enlace al Blog
-          </a>
-          <p className="mx-auto mt-12 max-w-2xl font-display text-2xl italic leading-snug text-foreground/90">
-            "Que la entrega de nuestros 649 Héroes y el esfuerzo de cada integrante de los Escuadrones Aeromóviles no sea en vano."
-          </p>
-        </div>
-      </section>
 
       {/* DOSSIER ESCOLAR */}
       <section id="dossier" className="border-y border-border bg-muted/20">
@@ -559,6 +534,31 @@ function Index() {
         </div>
       </section>
 
+      {/* BLOG */}
+      <section className="border-y border-border bg-card">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">El lado humano</p>
+          <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
+            Blog de Vivencias
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
+            Invitamos a explorar los relatos en primera persona, documentos inéditos, fotos y videos que capturan la esencia
+            del valor y el sentimiento patriótico vigente. Malvinas no es solo un hecho del pasado, sino una herida y un orgullo
+            que debemos transmitir a las nuevas generaciones.
+          </p>
+          <a
+            href="https://misvivenciasenlaguerrademalvinas.blogspot.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-10 inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
+          >
+            Enlace al Blog
+          </a>
+          <p className="mx-auto mt-12 max-w-2xl font-display text-2xl italic leading-snug text-foreground/90">
+            "Que la entrega de nuestros 649 Héroes y el esfuerzo de cada integrante de los Escuadrones Aeromóviles no sea en vano."
+          </p>
+        </div>
+      </section>
       {/* COLABORACIÓN VOLUNTARIA */}
       <section id="colaborar" className="bg-card">
         <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
