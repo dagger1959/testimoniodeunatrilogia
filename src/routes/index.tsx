@@ -515,7 +515,7 @@ function Index() {
               </a>
             </div>
             <p className="mt-4 text-sm text-muted-foreground italic">
-              Incluye una ilustración en formato historieta, un video pensado para los más chicos, y un PDF con imágenes de aquellos días.
+              Incluye una ilustración en formato historieta, un video pensado para los más chicos, y un PDF con imágenes de aquellos días, como así también estudios de investigación de documentación desclasificada de documentos oficiales de la Guerra de Malvinas.
             </p>
           </div>
           <div className="order-1 md:order-2 space-y-6">
