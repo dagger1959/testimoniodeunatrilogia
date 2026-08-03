@@ -559,9 +559,6 @@ function Index() {
           </p>
         </div>
       </section>
-
-
-
       {/* COLABORACIÓN VOLUNTARIA */}
       <section id="colaborar" className="bg-card">
         <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
