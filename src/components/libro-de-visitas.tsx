@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
+import { registrarVisita } from "@/lib/visitas.functions";
 
 type Comentario = {
   id: string;
@@ -22,11 +23,15 @@ export function ContadorVisitas() {
     async function run() {
       const yaContada = sessionStorage.getItem("visita-registrada") === "1";
       if (!yaContada) {
-        const { data, error } = await supabase.rpc("registrar_visita");
-        if (!cancelado && !error && typeof data === "number") {
-          sessionStorage.setItem("visita-registrada", "1");
-          setTotal(data);
-          return;
+        try {
+          const res = await registrarVisita();
+          if (!cancelado && typeof res?.total === "number") {
+            sessionStorage.setItem("visita-registrada", "1");
+            setTotal(res.total);
+            return;
+          }
+        } catch {
+          // fall through to plain read
         }
       }
       const { data } = await supabase.from("visitas").select("total").eq("id", 1).maybeSingle();
@@ -37,6 +42,7 @@ export function ContadorVisitas() {
       cancelado = true;
     };
   }, []);
+
 
   if (total === null) return null;
 
