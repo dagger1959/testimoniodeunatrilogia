@@ -3,7 +3,7 @@ import heroAsset from "@/assets/galeria/dagger-marinete.jpg.asset.json";
 import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
 import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
 import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
-import libroImg from "@/assets/libro-tapa.png";
+import qrAcceso from "@/assets/qr-acceso.png";
 const heroImg = heroAsset.url;
 const tierraImg = tierraAsset.url;
 const pilotoImg = pilotoAsset.url;
