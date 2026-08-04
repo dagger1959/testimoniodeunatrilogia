@@ -4,6 +4,7 @@ import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
 import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
 import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
 import libroImg from "@/assets/libro-tapa.png";
+import qrAcceso from "@/assets/qr-acceso.png";
 const heroImg = heroAsset.url;
 const tierraImg = tierraAsset.url;
 const pilotoImg = pilotoAsset.url;
@@ -53,6 +54,7 @@ function Index() {
           <a href="#dossier" className="hover:opacity-70">Dossier</a>
           <a href="#descarga" className="hover:opacity-70">Descarga</a>
           <a href="#colaborar" className="hover:opacity-70">Colaborar</a>
+          <a href="#difundir" className="hover:opacity-70">Difundir</a>
           <a href="#comentarios" className="hover:opacity-70">Comentarios</a>
         </nav>
       </header>
@@ -600,6 +602,67 @@ function Index() {
             <p className="text-foreground">
               Contacto: <a href="mailto:dagger1959@gmail.com" className="underline underline-offset-4 hover:text-[var(--bronce)]">dagger1959@gmail.com</a>
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* DIFUNDIR — QR Y FOLLETO DIGITAL */}
+      <section id="difundir" className="border-y border-border bg-background">
+        <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
+          <div className="mb-12 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Compartí la historia</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
+              Acceso directo a la página
+            </h2>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
+              Escaneá el código QR para ingresar desde cualquier celular. Es una manera sencilla de difundir el proyecto entre chicos, jóvenes, escuelas y en redes sociales.
+            </p>
+          </div>
+
+          <div className="mx-auto grid max-w-4xl gap-10 md:grid-cols-[auto_1fr] md:items-center">
+            <div className="mx-auto flex flex-col items-center gap-4">
+              <div className="rounded-sm border-4 border-white bg-white p-3 shadow-page">
+                <img
+                  src={qrAcceso}
+                  alt="Código QR para acceder a testimoniodeunatrilogia.lovable.app"
+                  width={540}
+                  height={540}
+                  className="h-auto w-56 max-w-full"
+                />
+              </div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground text-center">
+                Escaneá con la cámara de tu celular
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <div className="border-l-2 border-[var(--ocre)] pl-6">
+                <h3 className="font-display text-2xl font-light italic">Un folleto para difundir</h3>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                  Este código funciona como un folleto digital: podés mostrarlo en aulas, actos escolares, charlas, encuentros de veteranos o publicarlo en redes sociales para que más personas conozcan la historia de la Trilogía Operativa.
+                </p>
+              </div>
+              <div className="space-y-3 text-base text-foreground/85">
+                <p>
+                  <strong className="font-medium">¿Para qué sirve?</strong> Permite acceder al libro, los videos, el dossier escolar, la galería histórica y el blog de vivencias desde cualquier dispositivo, sin tener que escribir la dirección.
+                </p>
+                <p>
+                  <strong className="font-medium">Ideal para:</strong> escuelas, centros de jubilados, bibliotecas, actos patrios y campañas de difusión en redes sociales.
+                </p>
+              </div>
+              <a
+                href="https://testimoniodeunatrilogia.lovable.app"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
+              >
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                </svg>
+                Compartir el enlace
+              </a>
+            </div>
           </div>
         </div>
       </section>
