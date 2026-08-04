@@ -54,6 +54,7 @@ function Index() {
           <a href="#dossier" className="hover:opacity-70">Dossier</a>
           <a href="#descarga" className="hover:opacity-70">Descarga</a>
           <a href="#colaborar" className="hover:opacity-70">Colaborar</a>
+          <a href="#difundir" className="hover:opacity-70">Difundir</a>
           <a href="#comentarios" className="hover:opacity-70">Comentarios</a>
         </nav>
       </header>
