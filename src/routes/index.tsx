@@ -224,6 +224,20 @@ function Index() {
                 </p>
               </div>
 
+              <figure className="mx-auto mb-12 max-w-4xl">
+                <img
+                  src={folletoImg}
+                  alt="Folleto informativo de la Fuerza Aérea Sur 1982: Escuadrones Aeromóviles de Guerra probados en combate real"
+                  width={1600}
+                  height={900}
+                  loading="lazy"
+                  className="w-full border border-border bg-background shadow-page"
+                />
+                <figcaption className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Folleto de difusión · Fuerza Aérea Sur 1982
+                </figcaption>
+              </figure>
+
               <div className="mb-12 border-l-2 border-[var(--ocre)] pl-6">
                 <p className="font-display text-2xl italic leading-snug text-foreground/90 md:text-3xl">
                   LA DISCUSIÓN TERMINA DONDE COMIENZAN LOS HECHOS
