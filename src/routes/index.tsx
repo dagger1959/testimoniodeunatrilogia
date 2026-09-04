@@ -3,12 +3,14 @@ import heroAsset from "@/assets/galeria/dagger-marinete.jpg.asset.json";
 import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
 import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
 import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
+import folletoAsset from "@/assets/galeria/fuerza-aerea-sur-folleto.jpeg.asset.json";
 import libroImg from "@/assets/libro-tapa.png";
 import qrAcceso from "@/assets/qr-acceso.png";
 const heroImg = heroAsset.url;
 const tierraImg = tierraAsset.url;
 const pilotoImg = pilotoAsset.url;
 const avionImg = avionAsset.url;
+const folletoImg = folletoAsset.url;
 import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
 import dossierEscolarPdf from "@/assets/La_Gesta_de_Malvinas_en_las_Aulas.pdf.asset.json";
 import ilustracionChicosPdf from "@/assets/ilustracion_para_chicos.pdf.asset.json";
@@ -221,6 +223,20 @@ function Index() {
                   PROBADOS EN COMBATE REAL
                 </p>
               </div>
+
+              <figure className="mx-auto mb-12 max-w-4xl">
+                <img
+                  src={folletoImg}
+                  alt="Folleto informativo de la Fuerza Aérea Sur 1982: Escuadrones Aeromóviles de Guerra probados en combate real"
+                  width={1600}
+                  height={900}
+                  loading="lazy"
+                  className="w-full border border-border bg-background shadow-page"
+                />
+                <figcaption className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Folleto de difusión · Fuerza Aérea Sur 1982
+                </figcaption>
+              </figure>
 
               <div className="mb-12 border-l-2 border-[var(--ocre)] pl-6">
                 <p className="font-display text-2xl italic leading-snug text-foreground/90 md:text-3xl">
