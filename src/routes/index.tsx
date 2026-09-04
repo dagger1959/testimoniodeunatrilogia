@@ -206,6 +206,239 @@ function Index() {
             ))}
           </div>
 
+          {/* FUERZA AÉREA SUR — MANIFIESTO */}
+          <section id="fuerza-aerea-sur" className="mt-20 border-y border-border bg-card">
+            <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
+              <div className="mb-12 text-center">
+                <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Reconocimiento operativo</p>
+                <h2 className="mt-4 font-display text-4xl font-light md:text-6xl">
+                  FUERZA AÉREA SUR
+                </h2>
+                <p className="mt-3 font-display text-2xl font-light italic text-[var(--bronce)] md:text-3xl">
+                  ESCUADRONES AEROMÓVILES DE GUERRA
+                </p>
+                <p className="mt-2 font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
+                  PROBADOS EN COMBATE REAL
+                </p>
+              </div>
+
+              <div className="mb-12 border-l-2 border-[var(--ocre)] pl-6">
+                <p className="font-display text-2xl italic leading-snug text-foreground/90 md:text-3xl">
+                  LA DISCUSIÓN TERMINA DONDE COMIENZAN LOS HECHOS
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                  Basándonos en los análisis doctrinarios, las normas operativas militares y las declaraciones testimoniales y documentales emitidas por nuestros propios mandos de la época —en especial los testimonios del Brigadier Ernesto Horacio Crespo y del Comando de la Fuerza Aérea Sur—, sostenemos que existen fundamentos probatorios categóricos para demostrar por qué todos los integrantes de los Escuadrones Aeromóviles de la Fuerza Aérea Sur (FAS) debemos ser reconocidos formalmente como Veteranos de Guerra, y por qué nos constituimos en Escuadrones Aeromóviles de Guerra, probados en combate real.
+                </p>
+              </div>
+
+              <div className="space-y-14 text-lg leading-relaxed text-foreground/85">
+                <div>
+                  <h3 className="font-display text-2xl font-light md:text-3xl">
+                    1. ¿POR QUÉ DEBEMOS CONSIDERARNOS VETERANOS DE GUERRA?
+                  </h3>
+
+                  <div className="mt-6 space-y-6">
+                    <div>
+                      <h4 className="font-medium">1.1. Cumplimiento directo de la misión de combate asignada</h4>
+                      <p className="mt-2">
+                        La legislación aplicable y la doctrina militar establecen que la condición del combatiente no puede definirse únicamente por el lugar geográfico donde se encontraba, sino por su integración, misión y participación efectiva dentro de las operaciones desarrolladas en el Teatro de Operaciones o en el espacio asignado a la confrontación bélica.
+                      </p>
+                      <p className="mt-2">
+                        La Fuerza Aérea Sur fue formalmente activada y desplegada como la fuerza aérea responsable de las operaciones de combate en el Atlántico Sur.
+                      </p>
+                      <p className="mt-2">
+                        Los hombres que estuvimos desplegados en las bases continentales patagónicas no estábamos en situación de paz ni cumplíamos tareas administrativas de rutina. Estábamos orgánicamente integrados a unidades de combate, bajo una estructura operacional de guerra y sometidos a las exigencias propias de una situación bélica, durante las 24 horas del día.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-medium">1.2. Amenaza activa y riesgo de vida real</h4>
+                      <p className="mt-2">
+                        Las bases continentales desde las cuales operamos —Río Gallegos, San Julián, Río Grande, Comodoro Rivadavia, Trelew y Santa Cruz— constituían instalaciones estratégicas vinculadas directamente con las operaciones aéreas.
+                      </p>
+                      <p className="mt-2">
+                        El personal de tierra y de vuelo operamos bajo una situación permanente de tensión y amenaza, incluyendo la posibilidad de incursiones de fuerzas especiales británicas, operaciones de reconocimiento y sabotaje, ataques aéreos y navales, así como la acción de submarinos enemigos.
+                      </p>
+                      <p className="mt-2">
+                        Vivimos bajo alertas, oscurecimientos, defensas activas, vigilancia permanente y condiciones operacionales extremas. No era una simulación. Era una guerra.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h4 className="font-medium">1.3. Inexistencia de una distinción operativa entre roles</h4>
+                      <p className="mt-2">
+                        La estructura operacional de la FAS comprendió a miles de hombres de distintas especialidades:
+                      </p>
+                      <ul className="mt-3 grid list-none grid-cols-2 gap-2 pl-0 sm:grid-cols-3">
+                        <li>Pilotos</li>
+                        <li>Mecánicos</li>
+                        <li>Armeros</li>
+                        <li>Radaristas</li>
+                        <li>Personal de comunicaciones</li>
+                        <li>Personal de sanidad</li>
+                        <li>Personal de logística y abastecimiento</li>
+                        <li>Defensa antiaérea</li>
+                        <li>Personal de pista y reabastecimiento</li>
+                        <li>Meteorología</li>
+                        <li>Control de tránsito aéreo</li>
+                        <li>Y todas las especialidades necesarias</li>
+                      </ul>
+                      <p className="mt-4">
+                        Pretender dividirlos entre quienes "combatieron" y quienes simplemente "estuvieron en tierra" desconoce la realidad de una operación aérea de guerra. El ataque se planificaba, se preparaba, se armaba, se abastecía, se controlaba y se sostenía desde el continente para proyectarse sobre el Atlántico Sur. La misión era una sola. El sistema era uno solo. El riesgo era de todos.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-display text-2xl font-light md:text-3xl">
+                    2. DE ESCUADRONES AEROMÓVILES A ESCUADRONES AEROMÓVILES DE GUERRA
+                  </h3>
+                  <p className="mt-4">
+                    Antes del conflicto, los Escuadrones Aeromóviles constituían unidades destinadas al despliegue y al adiestramiento táctico. Con la activación de la Fuerza Aérea Sur y el inicio de las operaciones de guerra, esa realidad cambió radicalmente. Nos transformamos, en los hechos, en:
+                  </p>
+                  <p className="my-6 text-center font-display text-2xl font-light italic text-[var(--bronce)] md:text-3xl">
+                    ESCUADRONES AEROMÓVILES DE GUERRA
+                  </p>
+                  <p className="mt-2">
+                    Y no por una denominación honorífica. Por haber sido empleados en combate real.
+                  </p>
+
+                  <div className="mt-6 space-y-6">
+                    <div>
+                      <h4 className="font-medium">2.1. Alineación con el plan operativo de guerra</h4>
+                      <p className="mt-2">
+                        Dejamos de ser unidades destinadas exclusivamente al adiestramiento para convertirnos en elementos operativos integrados a la ejecución de las operaciones aéreas de combate en el Atlántico Sur.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium">2.2. Operatividad bajo fuego real y adaptación táctica</h4>
+                      <p className="mt-2">
+                        Durante el conflicto debimos adaptar procedimientos, armamento, mantenimiento, logística y empleo operativo a las exigencias concretas de una guerra. Se modificaron procedimientos de empleo de armamento, se desarrollaron tácticas de vuelo a muy baja altura para reducir la exposición a la detección enemiga y se implementaron procedimientos de reabastecimiento en vuelo mediante los KC-130 Hércules, entre muchas otras adaptaciones realizadas en condiciones reales de combate.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium">2.3. La prueba definitiva: el combate</h4>
+                      <p className="mt-2">
+                        Nuestros escuadrones aeromóviles —Dagger, A-4B, A-4C, A-4Q, Mirage, Pucará, Learjet, Hércules y helicópteros— participaron en las operaciones de guerra, sufrieron pérdidas humanas y materiales y mantuvieron su actividad operacional hasta el final del conflicto. Eso constituye la prueba definitiva:
+                      </p>
+                      <p className="mt-4 text-center font-display text-2xl italic text-foreground/90 md:text-3xl">
+                        FUIMOS PROBADOS EN COMBATE REAL.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-display text-2xl font-light md:text-3xl">
+                    3. LA TRILOGÍA INDIVISIBLE
+                  </h3>
+                  <p className="mt-4 text-center font-display text-xl italic text-[var(--bronce)] md:text-2xl">
+                    AVIÓN — PILOTO — PERSONAL DE TIERRA
+                  </p>
+                  <p className="mt-4">
+                    La Trilogía Indivisible no es para nosotros una metáfora poética. Es la expresión de una realidad operacional: el avión, su tripulación y todo el personal que sostiene técnica y operativamente el sistema de armas forman una única cadena de combate.
+                  </p>
+                  <p className="mt-2 text-center font-mono text-sm uppercase tracking-[0.2em] text-muted-foreground">
+                    SISTEMA DE ARMAS = PLATAFORMA + TRIPULACIÓN + SOSTÉN OPERATIVO Y TÉCNICO
+                  </p>
+                  <p className="mt-4">
+                    No existe un sistema de armas operativo sin cada uno de esos componentes.
+                  </p>
+
+                  <div className="mt-6">
+                    <h4 className="font-medium">3.1. Sin personal de tierra no hay despegue ni ataque</h4>
+                    <p className="mt-2">
+                      Un A-4 o un Dagger no podía iniciar una misión de combate por sí mismo. Antes del despegue existía una cadena humana y técnica imprescindible:
+                    </p>
+                    <ul className="mt-3 list-disc space-y-2 pl-6">
+                      <li>El armador y armero cargaba, configuraba y verificaba el armamento bajo condiciones extremas y con el riesgo permanente asociado a su manipulación.</li>
+                      <li>El mecánico ponía a punto el motor y reparaba las averías producidas durante las misiones anteriores, muchas veces contra reloj.</li>
+                      <li>El personal de pista y reabastecimiento aseguraba el combustible necesario para la misión.</li>
+                      <li>El radarista y controlador contribuían al control y conducción de las operaciones.</li>
+                      <li>El personal de meteorología proporcionaba la información indispensable para la planificación y ejecución.</li>
+                      <li>Comunicaciones, sanidad, logística y abastecimiento garantizaban la continuidad operacional.</li>
+                    </ul>
+                    <p className="mt-4">
+                      Cuando finalmente la aeronave despegaba, la misión ya llevaba detrás el trabajo de todo un escuadrón.
+                    </p>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-display text-2xl font-light md:text-3xl">
+                    4. LA RESPONSABILIDAD COMPARTIDA DEL RESULTADO BÉLICO
+                  </h3>
+                  <p className="mt-4">
+                    Cuando una tripulación alcanzaba un objetivo enemigo, ese resultado no era producto exclusivamente de quienes estaban dentro de la cabina. Era el resultado final de una cadena operacional completa.
+                  </p>
+                  <p className="mt-4">
+                    Si una aeronave lograba hundir o averiar un buque enemigo —como ocurrió con unidades de la Royal Navy y otros objetivos durante el conflicto—, ese resultado era posible porque detrás de ella existía un sistema entero trabajando para que pudiera llegar al combate.
+                  </p>
+                  <p className="mt-4">
+                    Y cuando una aeronave no regresaba, la pérdida golpeaba a toda la unidad. Porque éramos nosotros quienes habíamos preparado esa máquina. Éramos nosotros quienes la habíamos armado. Éramos nosotros quienes la habíamos puesto en marcha. Éramos nosotros quienes la vimos despegar. Y éramos nosotros quienes la esperábamos regresar. Algunas veces, no regresó.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-display text-2xl font-light md:text-3xl">
+                    5. CONCLUSIÓN PROBATORIA
+                  </h3>
+                  <p className="mt-4">
+                    La historia operacional de la Fuerza Aérea Sur demuestra que durante la Gesta de Malvinas funcionamos como un sistema de combate integrado.
+                  </p>
+                  <ul className="mt-4 list-none space-y-2 pl-0 font-display text-lg italic">
+                    <li>No se puede separar el avión del piloto.</li>
+                    <li>No se puede separar al piloto del personal que preparó, armó, mantuvo, abasteció y sostuvo esa aeronave.</li>
+                    <li>No se puede reconocer el resultado del combate y negar a quienes hicieron posible ese resultado.</li>
+                  </ul>
+                  <div className="my-8 space-y-2 text-center font-display text-xl italic text-foreground/90 md:text-2xl">
+                    <p>SIN PERSONAL DE TIERRA, NO HAY AVIÓN.</p>
+                    <p>SIN AVIÓN, NO HAY PILOTO.</p>
+                    <p>SIN PILOTO, NO HAY MISIÓN.</p>
+                    <p>SIN TODO EL SISTEMA, NO HAY COMBATE.</p>
+                  </div>
+                  <p className="mt-4">
+                    Los hombres de la FAS no elegimos nuestro lugar geográfico. Cumplimos una orden. Integramos unidades desplegadas para sostener y ejecutar las operaciones aéreas de guerra. Estuvimos bajo mando operacional. Trabajamos en condiciones de combate. Sostuvimos aeronaves que fueron al combate. Sufrimos pérdidas. Y cumplimos nuestra misión.
+                  </p>
+                  <p className="mt-4">
+                    Por eso, la discusión no puede reducirse a una cuestión de metros, kilómetros o coordenadas. La verdadera pregunta es:
+                  </p>
+                  <p className="my-6 text-center font-display text-xl italic text-[var(--bronce)] md:text-2xl">
+                    ¿QUÉ UNIDAD INTEGRABA CADA HOMBRE, QUÉ MISIÓN CUMPLÍA Y QUÉ FUNCIÓN DESEMPEÑABA DENTRO DEL SISTEMA DE COMBATE?
+                  </p>
+                  <p className="mt-4">
+                    Porque una cosa es indiscutible: la Fuerza Aérea Sur combatió como un todo. Y quienes integramos sus unidades operativas fuimos parte de ese sistema.
+                  </p>
+                  <p className="mt-4">
+                    Por eso sostenemos que quienes integramos los Escuadrones Aeromóviles de Guerra, probados en combate real, merecemos el pleno reconocimiento de nuestra condición de:
+                  </p>
+                  <p className="mt-6 text-center font-display text-3xl italic text-foreground/90 md:text-4xl">
+                    VETERANOS DE GUERRA.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-16 border-t border-border pt-10 text-center">
+                <p className="font-display text-2xl italic leading-snug text-foreground/90 md:text-3xl">
+                  FUERZA AÉREA SUR
+                </p>
+                <div className="mt-4 space-y-1 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                  <p>TODOS FUIMOS UNO.</p>
+                  <p>TODOS CUMPLIMOS UNA MISIÓN.</p>
+                  <p>TODOS FORMAMOS PARTE DEL SISTEMA DE COMBATE.</p>
+                </div>
+                <p className="mx-auto mt-6 max-w-2xl font-display text-lg italic leading-relaxed text-foreground/80">
+                  No pedimos privilegios. No pedimos honores. Pedimos verdad. Porque la verdad de Malvinas no puede seguir contándose por mitades.
+                </p>
+                <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+                  PC FAA VGM Martínez José Luis<br />
+                  Integrante del II Escuadrón Aeromóvil de Guerra (EAG) M5 IAI Dagger “La Marinete”
+                </p>
+              </div>
+            </div>
+          </section>
+
           <div className="mx-auto mt-16 max-w-4xl">
             <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
               Video de la Trilogía Operativa
