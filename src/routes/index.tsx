@@ -28,6 +28,7 @@ import fuerzaAereaProbadaCombateVideo from "@/assets/fuerza-aerea-sur-probada-co
 import noFueronVideo from "@/assets/no-fueron-ni-1-ni-2-ni-3.mp4.asset.json";
 import verdadIncomodaVideo from "@/assets/la-verdad-que-incomoda-fas.mp4.asset.json";
 import martinezVideo from "@/assets/martinez-jose-luis.mp4.asset.json";
+import fuerzaAereaSurVideo from "@/assets/fuerza-aerea-sur-video.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 import { LibroDeVisitas, ContadorVisitas } from "@/components/libro-de-visitas";
 
