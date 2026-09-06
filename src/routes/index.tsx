@@ -600,16 +600,148 @@ function Index() {
       {/* VIDEO FUERZA AÉREA SUR */}
       <section className="border-y border-border bg-card">
         <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
-          <div className="mb-10 text-center">
+          <div className="mb-16">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Archivo audiovisual</p>
             <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
               Fuerza Aérea Sur
             </h2>
-            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
-              Material de difusión histórica para comprender el accionar de quienes operaron desde las bases continentales durante el Conflicto del Atlántico Sur.
+            <p className="mt-3 font-display text-2xl font-light italic text-[var(--bronce)] md:text-3xl">
+              La historia que también se libró en tierra
             </p>
           </div>
-          <div className="mx-auto max-w-4xl">
+
+          <div className="space-y-10 text-lg leading-relaxed text-foreground/85">
+            <p className="font-display text-2xl font-light leading-snug text-foreground/90 md:text-3xl">
+              Fuerza Aérea Sur: una historia de hombres, máquinas y compromiso
+            </p>
+
+            <p>
+              La Guerra de Malvinas dejó una enorme cantidad de testimonios, documentos y experiencias que permiten reconstruir aquellos días de 1982. Sin embargo, toda guerra tiene diferentes protagonistas y, muchas veces, algunas de esas historias quedan relegadas detrás de las imágenes más conocidas.
+            </p>
+
+            <p>
+              En el caso de la Fuerza Aérea Sur, existe una realidad que resulta fundamental comprender: cada misión aérea fue el resultado del trabajo conjunto de una verdadera estructura de combate.
+            </p>
+
+            <p className="font-display text-xl font-light italic md:text-2xl">
+              El avión, el piloto y el personal de tierra conformaron una unidad inseparable.
+            </p>
+
+            <p>
+              Mientras las aeronaves enfrentaban al enemigo, en las bases continentales cientos de hombres trabajaban para mantenerlas operativas. Técnicos, mecánicos, especialistas en armamento, combustible, electrónica, comunicaciones y mantenimiento asumieron jornadas interminables, muchas veces en condiciones adversas y bajo la presión de saber que aquellos aviones que preparaban regresarían al combate pocas horas después.
+            </p>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              <p className="flex items-center justify-center border border-border bg-background p-6 font-display text-xl italic text-center">
+                No eran espectadores de la guerra.
+              </p>
+              <p className="flex items-center justify-center border border-border bg-background p-6 font-display text-xl italic text-center">
+                Eran parte de ella.
+              </p>
+            </div>
+
+            <p>
+              Cada inspección, cada reparación, cada componente reemplazado y cada puesta en servicio tenía una consecuencia directa: permitir que un avión pudiera volver a despegar y cumplir su misión.
+            </p>
+
+            <p>
+              Por eso, cuando hablamos de los resultados obtenidos por la Fuerza Aérea Sur durante el conflicto, no alcanza con mirar solamente lo ocurrido en el aire.
+            </p>
+
+            <p>
+              Hay que mirar también hacia las bases.
+            </p>
+
+            <p>
+              Allí estaba el otro componente indispensable de la misión: el personal de tierra.
+            </p>
+
+            <div className="border-y border-border bg-background py-12">
+              <h3 className="mb-8 text-center font-display text-3xl font-light md:text-4xl">
+                La Trilogía
+              </h3>
+
+              <p className="mx-auto max-w-3xl text-center">
+                La experiencia de Malvinas permite comprender una realidad que constituye uno de los ejes de este proyecto:
+              </p>
+
+              <p className="mx-auto mt-6 max-w-3xl text-center font-display text-2xl font-light italic md:text-3xl">
+                AVIÓN – PILOTO – PERSONAL DE TIERRA
+              </p>
+
+              <p className="mx-auto mt-6 max-w-3xl text-center">
+                Tres componentes de una misma misión.
+              </p>
+
+              <div className="mx-auto mt-10 max-w-2xl space-y-4 text-center">
+                <p className="font-display text-xl italic">SIN PERSONAL DE TIERRA, NO HAY AVIÓN.</p>
+                <p className="font-display text-xl italic">SIN AVIÓN, NO HAY PILOTO.</p>
+                <p className="font-display text-xl italic">SIN PILOTO, NO HAY MISIÓN.</p>
+              </div>
+
+              <p className="mx-auto mt-10 max-w-3xl text-center">
+                Esta concepción no pretende quitar protagonismo a quienes combatieron desde las cabinas. Todo lo contrario. Busca completar la dimensión humana, técnica y operacional de aquella guerra.
+              </p>
+
+              <p className="mx-auto mt-6 max-w-3xl text-center font-display text-xl italic">
+                El heroísmo de un piloto no comienza cuando cierra la cabina.
+              </p>
+
+              <p className="mx-auto mt-4 max-w-3xl text-center">
+                Comienza mucho antes, cuando un equipo de hombres prepara la máquina con la que ese piloto irá al combate.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="mb-6 font-display text-3xl font-light md:text-4xl">
+                Un testimonio para preservar
+              </h3>
+
+              <p>
+                El video que acompaña esta nota forma parte de ese esfuerzo por recuperar y preservar la memoria.
+              </p>
+
+              <p>
+                Un testimonio no es solamente el relato de quien estuvo allí. Es también una pieza que permite a las nuevas generaciones comprender cómo se vivió la guerra desde otro lugar, conocer el trabajo que existió detrás de cada misión y rescatar experiencias que con el paso del tiempo corren el riesgo de desaparecer.
+              </p>
+
+              <p>
+                A más de cuatro décadas de Malvinas, todavía quedan historias por contar.
+              </p>
+
+              <div className="grid gap-4 py-6 sm:grid-cols-3">
+                <p className="text-center font-display text-xl italic">Historias de pilotos.</p>
+                <p className="text-center font-display text-xl italic">Historias de aviones.</p>
+                <p className="text-center font-display text-xl italic">Historias de quienes hicieron posible que esos aviones volaran.</p>
+              </div>
+
+              <p>
+                Porque la memoria de la Guerra de Malvinas debe ser completa.
+              </p>
+
+              <p>
+                Y dentro de esa memoria, la historia de la Fuerza Aérea Sur ocupa un lugar que merece ser conocido, estudiado y preservado.
+              </p>
+
+              <p>
+                Esta es la razón de ser de <em className="font-display text-xl not-italic">Testimonio de una Trilogía</em>: recuperar la historia completa de la misión.
+              </p>
+
+              <div className="mt-10 grid gap-4 border border-border bg-background p-8 text-center sm:grid-cols-3">
+                <p className="font-display text-2xl font-light italic">AVIÓN.</p>
+                <p className="font-display text-2xl font-light italic">PILOTO.</p>
+                <p className="font-display text-2xl font-light italic">PERSONAL DE TIERRA.</p>
+              </div>
+
+              <div className="mt-6 space-y-2 text-center font-display text-xl italic">
+                <p>Una misma misión.</p>
+                <p>Un mismo compromiso.</p>
+                <p>Una misma historia.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mx-auto mt-16 max-w-4xl">
             <video
               src={fuerzaAereaSurVideo.url}
               controls
