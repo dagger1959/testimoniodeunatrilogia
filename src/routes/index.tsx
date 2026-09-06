@@ -28,6 +28,7 @@ import fuerzaAereaProbadaCombateVideo from "@/assets/fuerza-aerea-sur-probada-co
 import noFueronVideo from "@/assets/no-fueron-ni-1-ni-2-ni-3.mp4.asset.json";
 import verdadIncomodaVideo from "@/assets/la-verdad-que-incomoda-fas.mp4.asset.json";
 import martinezVideo from "@/assets/martinez-jose-luis.mp4.asset.json";
+import fuerzaAereaSurVideo from "@/assets/fuerza-aerea-sur-video.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 import { LibroDeVisitas, ContadorVisitas } from "@/components/libro-de-visitas";
 
@@ -592,6 +593,33 @@ function Index() {
           <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-primary-foreground/80">
             "Gloria y Honor a nuestros Héroes."<br />
             "Las Malvinas son Argentinas: ¡Ni olvidamos, ni renunciamos!"
+          </p>
+        </div>
+      </section>
+
+      {/* VIDEO FUERZA AÉREA SUR */}
+      <section className="border-y border-border bg-card">
+        <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
+          <div className="mb-10 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Archivo audiovisual</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
+              Fuerza Aérea Sur
+            </h2>
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+              Material de difusión histórica para comprender el accionar de quienes operaron desde las bases continentales durante el Conflicto del Atlántico Sur.
+            </p>
+          </div>
+          <div className="mx-auto max-w-4xl">
+            <video
+              src={fuerzaAereaSurVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+          <p className="mt-6 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+            Archivo personal · VGM FAA José Luis Martínez
           </p>
         </div>
       </section>
