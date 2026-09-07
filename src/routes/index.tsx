@@ -842,7 +842,265 @@ function Index() {
             PDF · Edición digital 2.0 · Escuela Superior de Guerra Aérea
           </p>
         </div>
+
+      {/* LA VERDAD DOCUMENTADA */}
+      <section id="verdad-documentada" className="border-y border-border bg-card">
+        <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[var(--bronce)]">La verdad documentada</p>
+          <h2 className="mt-4 font-display text-3xl font-light leading-tight md:text-5xl">
+            Fuerza Aérea Sur: una historia que no puede ser borrada
+          </h2>
+          <p className="mt-6 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+            Ley 23.118 — Resoluciones 540/85, 231/2000, 855/2006, 466/2007 y 1400/2013
+          </p>
+          <p className="mt-4 text-lg italic text-foreground/85">
+            Documentos oficiales. Una historia. Una realidad que debe ser conocida.
+          </p>
+
+          <div className="mt-10 space-y-5 text-lg leading-relaxed text-foreground/85">
+            <p>
+              Durante más de cuatro décadas, la participación de numerosos integrantes de la Fuerza Aérea Sur (FAS) y de sus Bases de Despliegue Continental ha quedado atrapada en una discusión administrativa, jurídica e histórica que todavía no ha sido resuelta de manera coherente.
+            </p>
+            <p>No se trata solamente de una cuestión de beneficios. No se trata de una disputa entre veteranos. Y mucho menos de quitarle méritos a quienes combatieron en las islas.</p>
+            <p>Se trata de algo mucho más elemental:</p>
+            <blockquote className="border-l-2 border-[var(--ocre)] pl-6 font-display text-2xl font-light italic">
+              ¿Qué reconoció oficialmente el Estado argentino y qué reconoció la propia Fuerza Aérea Argentina?
+            </blockquote>
+            <p>
+              La respuesta no debe buscarse en opiniones actuales. Debe buscarse en los documentos. Por eso ponemos a disposición de quien quiera conocer, estudiar, verificar y sacar sus propias conclusiones los textos originales en PDF de la legislación y de las resoluciones que forman parte de esta historia documental.
+            </p>
+            <p>Porque cuando existen documentos oficiales, la discusión debe comenzar por ellos.</p>
+          </div>
+
+          <div className="mt-14 space-y-12">
+            <article>
+              <h3 className="font-display text-2xl font-light">1. La guerra aérea fue un sistema</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>Una Fuerza Aérea no combate con el avión solamente: combate mediante un sistema operacional. Detrás de cada aeronave hubo hombres y mujeres.</p>
+                <p>Hubo pilotos, mecánicos, especialistas, armeros, personal de comunicaciones, operadores, abastecimiento, meteorología, sanidad, seguridad, transporte, logística, mantenimiento, técnicos civiles y militares y soldados. Y hubo Bases de Despliegue desde las cuales se sostuvo diariamente la capacidad de combate.</p>
+                <p className="font-mono text-sm uppercase tracking-[0.2em] text-[var(--bronce)]">Avión — Piloto — Personal de Tierra. Una trilogía operacional.</p>
+                <p>Sin personal de tierra no hay avión disponible. Sin avión disponible no hay piloto que pueda cumplir la misión. Y sin piloto no hay misión aérea. No son tres historias diferentes: son tres componentes de una misma operación.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">2. La Fuerza Aérea Sur</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>La Fuerza Aérea Sur fue una estructura operacional creada para conducir las operaciones aéreas durante el conflicto del Atlántico Sur, con medios y personal desplegados en diferentes puntos del territorio continental argentino.</p>
+                <p>Las Bases de Despliegue no fueron simples lugares de estacionamiento: fueron parte del dispositivo mediante el cual se sostuvo la capacidad operacional. Desde ellas se prepararon, mantuvieron, abastecieron y lanzaron medios aéreos. Allí se trabajó bajo alerta, se realizaron tareas de mantenimiento y armamento, se recibieron y procesaron órdenes, se sostuvo la logística y se esperó cada misión.</p>
+                <p>La guerra aérea no comenzaba cuando el avión cruzaba la costa. La misión comenzaba mucho antes.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">3. La Ley 23.118: el Congreso de la Nación habló</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>Sancionada el 30 de septiembre de 1984 y promulgada mediante el Decreto 3522/84, la ley lleva un título inequívoco: “Condecoraciones a combatientes”.</p>
+                <p>Su artículo 1.º establece la condecoración con medalla y diploma para quienes lucharon en la guerra por la reivindicación territorial de las Islas Malvinas, Georgias y Sandwich del Sur, entre el 2 de abril y el 14 de junio de 1982. El artículo 2.º establece que las condecoraciones serían de una sola y única clase para todos los combatientes. Y el artículo 3.º dispone expresamente:</p>
+                <blockquote className="border-l-2 border-[var(--ocre)] pl-6 italic">
+                  “Serán acreedores a la condecoración mencionada los civiles y militares que hubieren combatido en el conflicto bélico…”
+                </blockquote>
+                <p>El Congreso de la Nación reconoció mediante una ley una categoría de participación que comprendía tanto a militares como a civiles. Además, la propia documentación de la Fuerza Aérea conserva la Ley 23.118 dentro de su Colección Temática Malvinas.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">4. Resolución 540/85: el primer gran documento de la Fuerza Aérea</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>Dictada por el Estado Mayor General de la Fuerza Aérea, estableció los distintivos de campaña correspondientes a la participación en el conflicto. Dentro de sus anexos aparece contemplado el personal vinculado con la Fuerza Aérea Sur y sus Bases de Despliegue.</p>
+                <p>El reconocimiento no quedó limitado a una única categoría profesional: comprendió personal militar, civil y soldados según las categorías establecidas por la propia resolución. No se trata de una interpretación nacida décadas después, sino de un documento producido por la institución poco tiempo después del conflicto.</p>
+                <p>Existe además un antecedente parlamentario que reproduce expresamente la vinculación entre la Ley 23.118 y los reconocimientos de la Resolución 540/85, señalando que esos reconocimientos “no pueden desconocerse”.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">5. Resolución 231/2000: la palabra que cambia la discusión</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>Aquí aparece expresamente la denominación “Veterano de Guerra”. La documentación parlamentaria oficial reproduce su artículo 1.º:</p>
+                <blockquote className="border-l-2 border-[var(--ocre)] pl-6 italic">
+                  “Será reconocido como ‘Veterano de Guerra’ todo personal militar superior, subalterno, tropa y personal civil que participó en la Guerra del Atlántico Sur, y que se le haya otorgado algún distintivo de campaña, instituido en la Resolución 540/85 del Estado Mayor General de la Fuerza Aérea Argentina.”
+                </blockquote>
+                <p>Existe entonces una cadena administrativa: 540/85 establece los distintivos de campaña; 231/2000 establece el reconocimiento como “Veterano de Guerra” en función de esos distintivos.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">6. ¿Qué pasa con el personal civil?</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>La Resolución 231/2000 incluye expresamente personal militar superior, personal militar subalterno, tropa y personal civil. La propia norma administrativa de la Fuerza Aérea contempla un universo heterogéneo.</p>
+                <p>El mantenimiento de una aeronave de combate no es una actividad secundaria. Tampoco el armamento, el abastecimiento o la logística. Son componentes indispensables del sistema operacional.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">7. Resolución 855/2006: la acción efectiva de combate</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>Su valor histórico y doctrinario está relacionado con las nuevas definiciones incorporadas por la Fuerza Aérea respecto del concepto de acción efectiva de combate, definida como aquella que:</p>
+                <blockquote className="border-l-2 border-[var(--ocre)] pl-6 italic">
+                  “realiza un combatiente cumpliendo funciones que contribuyen a lograr un resultado bélico concreto”.
+                </blockquote>
+                <p>Coloca el centro de la discusión en la función cumplida dentro del sistema operacional, y no solamente en la ubicación física del individuo, en quién disparó o en quién estuvo frente al enemigo. La cuestión pasa a ser: ¿esa función contribuyó a producir un resultado bélico concreto?</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">8. Resolución 466/2007: el sistema operacional</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>La documentación parlamentaria reproduce que la Acción Efectiva de Combate realizada por una Fuerza Aérea es llevada a cabo por un grupo heterogéneo de personas asignado a un Comando Estratégico Operacional, que constituye parte indivisa de un sistema capaz de producir un resultado bélico concreto —una ventaja militar— aun sin estar necesariamente en contacto directo con el enemigo.</p>
+                <p>El resultado de combate es el producto de un sistema. No de un hombre. No de una especialidad. No de una sola función.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">9. El personal de tierra no fue “apoyo” ajeno al combate</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>En una Fuerza Aérea de combate, el mantenimiento, el armamento, la logística y la preparación de las aeronaves forman parte del sistema que permite producir el resultado operacional. El avión necesita mantenimiento, combustible, armamento, inspecciones, reparaciones, sistemas funcionando y personal especializado. Y necesita que todo esté listo antes de que el piloto se siente en la cabina.</p>
+                <p className="font-mono text-sm uppercase tracking-[0.2em] text-[var(--bronce)]">Sin personal de tierra, no hay avión. Sin avión, no hay piloto. Sin piloto, no hay misión.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">10. Claves para entender la FAS</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>Estas normas permiten comprender la guerra aérea no como una sucesión de actos individuales, sino como un sistema de combate integrado. Una falla en mantenimiento puede impedir una misión; una falla de armamento puede impedir el empleo del avión; una falla logística puede dejar una aeronave en tierra; una falla de comunicaciones puede comprometer una operación; una demora en el abastecimiento puede alterar una salida.</p>
+                <p>Por eso, cuando se analiza una operación aérea, hay que mirar el conjunto. Y eso es precisamente lo que permite comprender el concepto de acción efectiva de combate.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">11. Resolución 1400/2013: VGM</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>La documentación disponible atribuye a esta resolución la incorporación de la sigla VGM — Veterano de Guerra de Malvinas para la identificación del personal reconocido por la Fuerza Aérea. Este antecedente debe leerse junto con las resoluciones anteriores y no como un documento aislado.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">12. Reconocimiento no es lo mismo que beneficio</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>La Ley 23.118 es una ley de condecoración. Las resoluciones de la Fuerza Aérea son actos administrativos e institucionales. Las pensiones honoríficas y otros beneficios posteriores poseen legislación, reglamentaciones y requisitos propios.</p>
+                <p>Esta página no pretende afirmar que una resolución de la Fuerza Aérea, por sí sola, sustituya una ley previsional. Lo que esta documentación permite demostrar es que existe un reconocimiento institucional documentado, y que ese reconocimiento no puede ser ignorado cuando se analiza históricamente la participación del personal de la Fuerza Aérea Sur.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">13. La discusión previsional existe, pero no puede borrar la historia</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>Existen antecedentes judiciales que han citado expresamente las Resoluciones 855/06 y 466/07 para explicar que una acción efectiva de combate puede ser realizada por un grupo heterogéneo de personal integrado en un sistema operacional, aun sin contacto directo con el enemigo.</p>
+                <p>También existen decisiones judiciales recientes en las que se ordenó a la Fuerza Aérea emitir certificados de Veterano de Guerra en casos concretos. Es una cuestión que lleva décadas en el ámbito administrativo, parlamentario y judicial.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">14. La documentación habla de un sistema, no de una persona</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>El piloto era indispensable. El avión era indispensable. Pero también era indispensable todo aquello que hacía posible que ese avión estuviera en condiciones de cumplir una misión.</p>
+                <p>Por eso la historia de Malvinas no puede reducirse a la imagen del avión despegando. Hay que contar también quién lo mantuvo, quién lo armó, quién lo abasteció, quién lo inspeccionó, quién lo reparó, quién mantuvo la base operativa, quién sostuvo la logística y quién esperó su regreso.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">15. Una cadena documental de casi tres décadas</h3>
+              <ul className="mt-4 space-y-4 border-l border-border pl-6">
+                {[
+                  ["1984", "Ley 23.118", "El Congreso de la Nación condecora a los combatientes del conflicto."],
+                  ["1985", "Resolución 540/85", "La Fuerza Aérea establece los distintivos de campaña y comprende a los distintos sectores de personal vinculados con la estructura operacional."],
+                  ["2000", "Resolución 231/2000", "Establece expresamente el reconocimiento como “Veterano de Guerra” para el personal comprendido bajo los distintivos de la 540/85."],
+                  ["2006", "Resolución 855/06", "Se incorpora y desarrolla el concepto de Acción Efectiva de Combate."],
+                  ["2007", "Resolución 466/07", "Se profundiza el concepto como resultado de un sistema operacional integrado."],
+                  ["2013", "Resolución 1400/13", "Antecedente posterior dentro de la evolución del reconocimiento institucional y de la identificación VGM."],
+                ].map(([anio, norma, texto]) => (
+                  <li key={norma}>
+                    <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--bronce)]">{anio}</p>
+                    <p className="mt-1 font-display text-xl font-light">{norma}</p>
+                    <p className="mt-1 text-base leading-relaxed text-muted-foreground">{texto}</p>
+                  </li>
+                ))}
+              </ul>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">16. No es una discusión entre veteranos</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>No queremos quitarle nada a nadie. Reconocer al personal de tierra no disminuye el heroísmo de los pilotos. Reconocer a los técnicos no disminuye el sacrificio de quienes estuvieron en las islas. Reconocer a los civiles no modifica el valor de los soldados. Reconocer a las Bases de Despliegue no cambia la historia de quienes murieron en combate.</p>
+                <p>Al contrario: completa la historia. Porque una nación que honra a sus combatientes debe conocer cómo funcionó realmente su instrumento militar.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">17. El problema no es la memoria. Es el olvido.</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>Durante años, muchos integrantes de la Fuerza Aérea Sur quedaron fuera de los relatos más difundidos de la guerra. No porque no hubieran estado, ni porque no hubieran trabajado, ni porque sus funciones fueran irrelevantes, sino porque la historia terminó muchas veces concentrándose exclusivamente en la imagen del piloto y del avión.</p>
+                <p>Detrás de cada fotografía de un avión de combate hay cientos de horas de trabajo. Y detrás de cada misión hay una cadena humana. Esa cadena también merece ser conocida.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">18. Los documentos, a disposición de todos</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>Esta página no pretende que el visitante crea simplemente en nuestra palabra. Todo lo contrario: queremos que los documentos puedan ser consultados. Por eso ponemos a disposición el texto original de la Ley 23.118 y de las Resoluciones 540/85, 231/2000, 855/06, 466/07 y 1400/13.</p>
+                <p>Que cada persona pueda leer. Que cada persona pueda comprobar. Que cada persona pueda sacar sus propias conclusiones. Porque la mejor defensa de la verdad histórica no es el discurso: es el documento.</p>
+              </div>
+              <a
+                href={leyResolucionesPdf.url}
+                download="ley-23118-y-resoluciones-faa.pdf"
+                className="group mt-8 inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.2em] text-background transition-all hover:bg-[var(--bronce)]"
+              >
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
+                Ley 23.118 y todas las resoluciones (PDF)
+              </a>
+              <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+                Incluye RES 540/1985 · RES 231/2000 · RES 855/2006 · RES 466/2007 · RES 1400/2013 · Ley 23.118
+              </p>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">19. Una invitación a investigar</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>A los veteranos, a sus familias, a investigadores, periodistas, historiadores, estudiantes, docentes y a las nuevas generaciones: los invitamos a consultar estos documentos, a leerlos completos, a comparar fechas, verificar firmas, revisar anexos y estudiar sus antecedentes. Y también a cuestionar aquello que consideren necesario.</p>
+                <p>Porque preservar la memoria no significa impedir el debate: significa garantizar que el debate se produzca sobre documentos y no sobre relatos sin respaldo.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">20. La historia de la Fuerza Aérea Sur merece ser contada completa</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>La FAS existió. Sus Bases de Despliegue existieron. Sus escuadrones, sus aeronaves y sus misiones existieron. Sus pilotos, su personal técnico, sus civiles y sus soldados existieron. Y sus documentos también existen.</p>
+                <p>Esta página no busca construir una nueva historia: busca recuperar la historia documentada. Una historia en la que cada componente tenga el lugar que realmente ocupó.</p>
+              </div>
+            </article>
+          </div>
+
+          <div className="mt-16 border border-border bg-muted/30 p-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[var(--bronce)]">Referencias institucionales · Fuerza Aérea Argentina</p>
+            <ul className="mt-5 space-y-5 text-base leading-relaxed text-foreground/85">
+              <li>
+                La página oficial de la FAA declara que su Departamento Gesta de Malvinas tiene entre sus funciones resaltar el accionar de sus 7.164 Veteranos de Guerra de Malvinas, entre ellos oficiales, suboficiales, soldados conscriptos y personal civil convocado.{" "}
+                <a href="https://www.argentina.gob.ar/sites/default/files/2020/04/nomina_del_personal_que_tuvo_participacion_en_el_conflicto_del_atlantico_sur.pdf" target="_blank" rel="noreferrer" className="underline decoration-[var(--ocre)] underline-offset-4 hover:opacity-70">
+                  Nómina oficial del personal (PDF)
+                </a>
+              </li>
+              <li>
+                Los tres tomos de la obra oficial “La Fuerza Aérea en Malvinas”, de la Comisión BANIM, pueden descargarse de forma gratuita en español e inglés.{" "}
+                <a href="https://www.argentina.gob.ar/fuerzaaerea/gesta-de-malvinas/fuerza-aerea-en-malvinas-libro-digital-de-la-comision-banim" target="_blank" rel="noreferrer" className="underline decoration-[var(--ocre)] underline-offset-4 hover:opacity-70">
+                  Libro digital de la Comisión BANIM
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mt-14 border-t border-border pt-10 text-center">
+            <p className="font-display text-2xl font-light italic">La historia no se borra. La historia se investiga. La historia se documenta.</p>
+            <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.35em] text-muted-foreground">
+              Avión — Piloto — Personal de Tierra · Una trilogía operacional
+            </p>
+            <p className="mt-6 font-mono text-xs uppercase tracking-[0.25em] text-[var(--bronce)]">
+              PC FAA VGM Martínez José Luis
+            </p>
+          </div>
+        </div>
       </section>
+
+
 
 
       {/* DOSSIER ESCOLAR */}
