@@ -1106,6 +1106,104 @@ function Index() {
 
 
 
+      {/* MARCO DOCTRINARIO Y NORMATIVO */}
+      <section id="marco-doctrinario" className="border-y border-border bg-card">
+        <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[var(--bronce)]">Apartado del dossier</p>
+          <h2 className="mt-4 font-display text-3xl font-light leading-tight md:text-5xl">
+            Marco doctrinario y normativo de la Acción Efectiva de Combate según las Resoluciones 855/06 y 466/07
+          </h2>
+
+          <div className="mt-10 space-y-6 text-lg leading-relaxed text-foreground/85">
+            <h3 className="font-display text-2xl font-light">Introducción</h3>
+            <p>
+              El concepto de "Acción Efectiva de Combate" en el ámbito de la guerra aérea no puede analizarse desde una óptica meramente individual o geográfica. Como establece la propia doctrina de la Fuerza Aérea Argentina, cristalizada en las Resoluciones 855/06 y 466/07, una operación bélica es el producto final de un grupo heterogéneo organizado sistémicamente. A continuación, se detallan las bases doctrinarias emanadas de dichos documentos oficiales que sustentan la inseparabilidad de la trilogía "Avión - Piloto - Personal de Tierra" en el marco de la Fuerza Aérea Sur (FAS).
+            </p>
+          </div>
+
+          <div className="mt-14 space-y-12">
+            <article>
+              <h3 className="font-display text-2xl font-light">1. El combate como resultado de un sistema integral y no individual</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p className="font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">Cita textual</p>
+                <blockquote className="border-l-2 border-[var(--ocre)] pl-6 italic">
+                  "La valoración del empeñamiento de los hombres de la Fuerza Aérea en un conflicto armado debe medirse, no por la cantidad de personas que entran en contacto con el enemigo, sino por los efectos alcanzados por el conjunto del sistema operativo organizado para actuar en esa situación particular."
+                </blockquote>
+                <p className="font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">Ubicación: Resolución 855/2006, Anexo, Conclusión N° 1.</p>
+                <p>
+                  <strong className="font-medium">Interpretación:</strong> La Fuerza Aérea redefine normativamente qué significa el "empeñamiento" (la participación en combate). El documento prohíbe explícitamente reducir la acción de combate a quien tuvo "contacto directo" (el piloto). Por el contrario, obliga a valorar los efectos logrados por el sistema operativo en su conjunto.
+                </p>
+                <p>
+                  <strong className="font-medium">Relación concreta con la FAS:</strong> Esto ratifica que el personal de tierra (mecánicos, armeros, radaristas, sanidad) no era un elemento accesorio, sino "parte indivisa" del sistema de armas. El misil que impactó en la flota enemiga o la bomba que alcanzó un objetivo fue el "efecto alcanzado" por la totalidad de la estructura de la FAS, haciendo de la función en tierra una Acción Efectiva de Combate inseparable del vuelo.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">2. La irrelevancia del emplazamiento geográfico en la guerra aérea</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p className="font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">Cita textual</p>
+                <blockquote className="border-l-2 border-[var(--ocre)] pl-6 italic">
+                  "Por consiguiente, una fuerza aérea al entrar en operaciones debe necesariamente emplear sus medios desde bases que le brinden el apoyo necesario y que, al mismo tiempo que estén favorablemente ubicadas para proyectar el poder de fuego, estén protegidas del accionar enemigo por ser sus blancos prioritarios, independientemente del emplazamiento geográfico."
+                </blockquote>
+                <p className="font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">Ubicación: Resolución 855/2006, Anexo, Párrafo 10.</p>
+                <p>
+                  <strong className="font-medium">Interpretación:</strong> La doctrina aérea reconoce la "vulnerabilidad" de sus medios en superficie, por lo que el despliegue requiere operar desde bases protegidas. Lo fundamental es el concepto "independientemente del emplazamiento geográfico", destruyendo el argumento de que "estar en el continente" equivalía a "estar fuera de la guerra".
+                </p>
+                <p>
+                  <strong className="font-medium">Relación concreta con la FAS:</strong> La FAS operó exactamente bajo este precepto estratégico doctrinal. Las bases desplegadas en la Patagonia brindaban el apoyo logístico vital y proyectaban el poder de fuego hacia las Islas. Que el personal operara desde el continente no fue una limitación de su participación bélica, sino una exigencia táctica de la doctrina aérea, cumpliendo roles de combate desde ubicaciones continentales.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">3. El reemplazo del límite geográfico por el "ámbito aéreo de interés"</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p className="font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">Cita textual</p>
+                <blockquote className="border-l-2 border-[var(--ocre)] pl-6 italic">
+                  "Los límites geográficos de los teatros de operaciones no son aplicables para las operaciones aéreas de la fuerza asignada a ese nivel de comando, sino que debe entenderse que existe un 'ámbito aéreo de interés' vinculado a ese teatro donde se ejecutarán las operaciones aéreas necesarias para contribuir al logro del objetivo estratégico operacional..."
+                </blockquote>
+                <p className="font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">Ubicación: Resolución 855/2006, Anexo, Conclusión N° 2.</p>
+                <p>
+                  <strong className="font-medium">Interpretación:</strong> La Resolución dictamina que las tradicionales divisiones geográficas (TOM / TOAS) son conceptualmente incompatibles e inaplicables con la naturaleza de la guerra aérea. En su lugar, impone el concepto de "ámbito aéreo de interés".
+                </p>
+                <p>
+                  <strong className="font-medium">Relación concreta con la FAS:</strong> Destruye legalmente la pregunta básica de “¿Estuvo o no estuvo en las islas?”. La jurisdicción operativa de la FAS abarcaba íntegramente este "ámbito aéreo de interés". Cualquier efectivo de la FAS que cumplía su función específica (armar un Dagger, mantener un radar, reabastecer aeronaves) estaba operando orgánicamente dentro de este ámbito vinculado al Teatro de Operaciones, aportando directamente al resultado militar.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">4. La actividad operativa debe probarse por la función y el rol</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p className="font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">Cita textual</p>
+                <blockquote className="border-l-2 border-[var(--ocre)] pl-6 italic">
+                  "El interesado (...) presentará ante la Dirección General de Personal (Departamento Malvinas) un expediente donde conste la actividad operativa realizada por el requirente durante el Conflicto del Atlántico Sur (...). Dicho expediente deberá ser acompañado por todos los elementos probatorios de la citada actividad operativa: (...) Documentación respaldatoria: Planillas de vuelo, resúmenes mensuales de vuelo (...) Testimonios de testigos presenciales (...) manifestando el cargo que ocupaba, la relación orgánica que lo ligaba con el causante..."
+                </blockquote>
+                <p className="font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">Ubicación: Resolución 466/2007, Anexo "ALFA", Puntos 1 y 2.</p>
+                <p>
+                  <strong className="font-medium">Interpretación:</strong> La inclusión como Ex-Combatiente requiere un escrutinio minucioso basado en la función orgánica y probada ("actividad operativa", "cargo que ocupaba", "relación orgánica"), no en la mera ubicación geográfica. Se exige respaldar la actuación de cada individuo de manera particular (órdenes de operaciones, testimonios funcionales, registros de misiones).
+                </p>
+                <p>
+                  <strong className="font-medium">Relación concreta con la FAS:</strong> Esto avala la postura fundamental: no todo el que estuvo en el continente fue combatiente, pero quienes conformaban el andamiaje orgánico y funcional de la FAS sí lo fueron. La Resolución 466 otorga la herramienta administrativa para separar a quienes hacían tareas ajenas a la misión bélica de aquellos que integraban la cadena logística-operativa directa ("Tierra → Avión → Piloto → Misión") en las bases patagónicas de la FAS.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div className="mt-14 border-t border-border pt-10">
+            <h3 className="font-display text-2xl font-light">Conclusión del apartado</h3>
+            <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+              <p>
+                La interrelación de estas resoluciones cristaliza institucionalmente que la Acción Efectiva de Combate en la Fuerza Aérea es el resultado indivisible de un grupo heterogéneo. Desvincular al personal de tierra (preparación técnica, armamentística y táctica en el continente) de los resultados bélicos generados sobre los cielos del archipiélago atenta de forma directa contra el marco doctrinario fijado por las Resoluciones 855/06 y 466/07. La FAS combatió como un solo sistema orgánico.
+              </p>
+              <p className="mt-6 font-mono text-xs uppercase tracking-[0.25em] text-[var(--bronce)]">
+                PC FAA VGM Martínez José Luis
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* DOSSIER ESCOLAR */}
       <section id="dossier" className="border-y border-border bg-muted/20">
