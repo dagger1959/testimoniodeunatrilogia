@@ -13,6 +13,7 @@ const avionImg = avionAsset.url;
 const folletoImg = folletoAsset.url;
 import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
 import dossierEscolarPdf from "@/assets/La_Gesta_de_Malvinas_en_las_Aulas.pdf.asset.json";
+import leyResolucionesPdf from "@/assets/ley-23118-resoluciones-faa.pdf.asset.json";
 import ilustracionChicosPdf from "@/assets/ilustracion_para_chicos.pdf.asset.json";
 import diapositivasPdf from "@/assets/diapositivas-malvinas.pdf.asset.json";
 import malvinasEnsenaPdf from "@/assets/malvinas-tambien-se-ensena.pdf.asset.json";
