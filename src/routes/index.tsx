@@ -842,6 +842,9 @@ function Index() {
             PDF · Edición digital 2.0 · Escuela Superior de Guerra Aérea
           </p>
         </div>
+      </section>
+
+
 
       {/* LA VERDAD DOCUMENTADA */}
       <section id="verdad-documentada" className="border-y border-border bg-card">
