@@ -1507,67 +1507,6 @@ function Index() {
         </div>
       </section>
 
-      {/* BLOG */}
-      <section className="border-y border-border bg-card">
-        <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">El lado humano</p>
-          <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
-            Blog de Vivencias
-          </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
-            Invitamos a explorar los relatos en primera persona, documentos inéditos, fotos y videos que capturan la esencia
-            del valor y el sentimiento patriótico vigente. Malvinas no es solo un hecho del pasado, sino una herida y un orgullo
-            que debemos transmitir a las nuevas generaciones.
-          </p>
-          <a
-            href="https://misvivenciasenlaguerrademalvinas.blogspot.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="mt-10 inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
-          >
-            Enlace al Blog
-          </a>
-          <p className="mx-auto mt-12 max-w-2xl font-display text-2xl italic leading-snug text-foreground/90">
-            "Que la entrega de nuestros 649 Héroes y el esfuerzo de cada integrante de los Escuadrones Aeromóviles no sea en vano."
-          </p>
-        </div>
-      </section>
-      {/* COLABORACIÓN VOLUNTARIA */}
-      <section id="colaborar" className="bg-card">
-        <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Apoyo al proyecto</p>
-          <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
-            Colaboración voluntaria con el autor
-          </h2>
-          <div className="mx-auto mt-6 max-w-2xl space-y-6 text-lg leading-relaxed text-foreground/85">
-            <p>
-              Todo el contenido disponible en este sitio, incluido mi libro Testimonio de una Trilogía y el material complementario, se ofrece de manera completamente gratuita con el único objetivo de difundir, preservar y mantener viva la memoria de quienes sirvieron a la Patria.
-            </p>
-            <p>
-              Si considerás valioso este trabajo y deseás colaborar para que esta investigación continúe creciendo, incorporando nuevos documentos, testimonios y recursos educativos, podés realizar una contribución voluntaria.
-            </p>
-          </div>
-
-          <div className="mt-10 inline-block border border-border bg-background p-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Alias</p>
-            <p className="mt-2 font-mono text-2xl tracking-wider text-foreground">1959dagger</p>
-          </div>
-
-          <div className="mx-auto mt-10 max-w-2xl space-y-4 text-base leading-relaxed text-muted-foreground">
-            <p>
-              Cada aporte, por pequeño que sea, contribuye a mantener vivo este proyecto y a que la historia de la Fuerza Aérea Sur continúe llegando a las generaciones presentes y futuras.
-            </p>
-            <p className="text-foreground">
-              José Luis Martínez<br />
-              Veterano de Guerra de Malvinas – Fuerza Aérea Argentina
-            </p>
-            <p className="text-foreground">
-              Contacto: <a href="mailto:dagger1959@gmail.com" className="underline underline-offset-4 hover:text-[var(--bronce)]">dagger1959@gmail.com</a>
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* DIFUNDIR — QR Y FOLLETO DIGITAL */}
       <section id="difundir" className="border-y border-border bg-background">
         <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
@@ -1630,6 +1569,67 @@ function Index() {
       </section>
 
       <LibroDeVisitas />
+      {/* BLOG */}
+      <section className="border-y border-border bg-card">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">El lado humano</p>
+          <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
+            Blog de Vivencias
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
+            Invitamos a explorar los relatos en primera persona, documentos inéditos, fotos y videos que capturan la esencia
+            del valor y el sentimiento patriótico vigente. Malvinas no es solo un hecho del pasado, sino una herida y un orgullo
+            que debemos transmitir a las nuevas generaciones.
+          </p>
+          <a
+            href="https://misvivenciasenlaguerrademalvinas.blogspot.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-10 inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
+          >
+            Enlace al Blog
+          </a>
+          <p className="mx-auto mt-12 max-w-2xl font-display text-2xl italic leading-snug text-foreground/90">
+            "Que la entrega de nuestros 649 Héroes y el esfuerzo de cada integrante de los Escuadrones Aeromóviles no sea en vano."
+          </p>
+        </div>
+      </section>
+      {/* COLABORACIÓN VOLUNTARIA */}
+      <section id="colaborar" className="bg-card">
+        <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Apoyo al proyecto</p>
+          <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
+            Colaboración voluntaria con el autor
+          </h2>
+          <div className="mx-auto mt-6 max-w-2xl space-y-6 text-lg leading-relaxed text-foreground/85">
+            <p>
+              Todo el contenido disponible en este sitio, incluido mi libro Testimonio de una Trilogía y el material complementario, se ofrece de manera completamente gratuita con el único objetivo de difundir, preservar y mantener viva la memoria de quienes sirvieron a la Patria.
+            </p>
+            <p>
+              Si considerás valioso este trabajo y deseás colaborar para que esta investigación continúe creciendo, incorporando nuevos documentos, testimonios y recursos educativos, podés realizar una contribución voluntaria.
+            </p>
+          </div>
+
+          <div className="mt-10 inline-block border border-border bg-background p-8">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Alias</p>
+            <p className="mt-2 font-mono text-2xl tracking-wider text-foreground">1959dagger</p>
+          </div>
+
+          <div className="mx-auto mt-10 max-w-2xl space-y-4 text-base leading-relaxed text-muted-foreground">
+            <p>
+              Cada aporte, por pequeño que sea, contribuye a mantener vivo este proyecto y a que la historia de la Fuerza Aérea Sur continúe llegando a las generaciones presentes y futuras.
+            </p>
+            <p className="text-foreground">
+              José Luis Martínez<br />
+              Veterano de Guerra de Malvinas – Fuerza Aérea Argentina
+            </p>
+            <p className="text-foreground">
+              Contacto: <a href="mailto:dagger1959@gmail.com" className="underline underline-offset-4 hover:text-[var(--bronce)]">dagger1959@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
 
       {/* FOOTER */}
       <footer className="border-t border-border bg-card">
