@@ -1615,6 +1615,19 @@ function Index() {
             <p className="mt-2 font-mono text-2xl tracking-wider text-foreground">1959dagger</p>
           </div>
 
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <a
+              href="mailto:dagger1959@gmail.com"
+              className="inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
+            >
+              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Contactar al autor y administrador
+            </a>
+          </div>
+
           <div className="mx-auto mt-10 max-w-2xl space-y-4 text-base leading-relaxed text-muted-foreground">
             <p>
               Cada aporte, por pequeño que sea, contribuye a mantener vivo este proyecto y a que la historia de la Fuerza Aérea Sur continúe llegando a las generaciones presentes y futuras.
