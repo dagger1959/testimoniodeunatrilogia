@@ -4,6 +4,7 @@ import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
 import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
 import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
 import folletoAsset from "@/assets/galeria/fuerza-aerea-sur-folleto.jpeg.asset.json";
+import bastaDeAgraviosAsset from "@/assets/galeria/basta-de-agravios-fuerza-aerea-sur.jpg.asset.json";
 import libroImg from "@/assets/libro-tapa.png";
 import qrAcceso from "@/assets/qr-acceso.png";
 const heroImg = heroAsset.url;
@@ -11,6 +12,7 @@ const tierraImg = tierraAsset.url;
 const pilotoImg = pilotoAsset.url;
 const avionImg = avionAsset.url;
 const folletoImg = folletoAsset.url;
+const bastaDeAgraviosImg = bastaDeAgraviosAsset.url;
 import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
 import dossierEscolarPdf from "@/assets/La_Gesta_de_Malvinas_en_las_Aulas.pdf.asset.json";
 import leyResolucionesPdf from "@/assets/ley-23118-resoluciones-faa.pdf.asset.json";
@@ -1202,6 +1204,197 @@ function Index() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* COROLARIO FINAL DEL DOSSIER */}
+      <section id="corolario" className="border-y border-border bg-card">
+        <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[var(--bronce)]">Corolario final del dossier</p>
+          <h2 className="mt-4 font-display text-3xl font-light leading-tight md:text-5xl">
+            Basta de agravios: la guerra aérea fue una sola y se libró en equipo
+          </h2>
+          <p className="mt-6 font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+            Marco doctrinario y normativo de la Acción Efectiva de Combate según las Resoluciones 855/06 y 466/07
+          </p>
+
+          <figure className="mx-auto my-12 max-w-4xl">
+            <img
+              src={bastaDeAgraviosImg}
+              alt="Afiche Basta de Agravios: el conflicto del Atlántico Sur e Islas Malvinas fue uno solo. Avión, Piloto, Personal de Tierra."
+              width={1200}
+              height={1697}
+              loading="lazy"
+              className="w-full border border-border bg-background shadow-page"
+            />
+            <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+              Ilustración de difusión · Fuerza Aérea Sur 1982
+            </figcaption>
+          </figure>
+
+          <div className="mt-10 space-y-6 text-lg leading-relaxed text-foreground/85">
+            <p>
+              El marco normativo, doctrinario, operacional y testimonial desarrollado en este dossier permite arribar a una conclusión que no depende de opiniones, interpretaciones personales ni relatos construidos a posteriori.
+            </p>
+            <p>
+              La guerra no se libra solamente en el lugar donde impacta una bomba. Se libra allí donde un sistema militar desarrolla, sostiene y ejecuta efectivamente las operaciones necesarias para enfrentar al enemigo.
+            </p>
+            <p>
+              Por eso, resulta necesario terminar con una mirada reduccionista que pretende medir la participación en la Guerra de Malvinas exclusivamente por el lugar físico donde cada hombre desempeñó su función.
+            </p>
+            <p>
+              Decir que alguien no participó de la guerra porque «no estuvo en las islas» o porque «no pisó la turba» significa desconocer cómo funciona el poder aéreo y, fundamentalmente, desconocer la naturaleza sistémica de una guerra moderna.
+            </p>
+          </div>
+
+          <div className="mt-14 space-y-12">
+            <article>
+              <h3 className="font-display text-2xl font-light">La guerra aérea fue una sola</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>
+                  La Fuerza Aérea Sur constituyó un sistema operacional integrado. Desde sus bases continentales se planificó, condujo, sostuvo y ejecutó una campaña aérea real contra un enemigo real.
+                </p>
+                <p>
+                  Allí estuvieron los medios aéreos, los sistemas de detección y vigilancia, las comunicaciones, la logística, el armamento, el mantenimiento, la meteorología, las operaciones, la sanidad y, fundamentalmente, los hombres que hicieron posible que cada aeronave pudiera despegar y regresar.
+                </p>
+                <p>El avión no combatía solo.</p>
+                <p>El piloto no combatía solo.</p>
+                <p>Y el personal de tierra tampoco era un elemento ajeno al combate.</p>
+                <p>
+                  Eran partes inseparables de una misma capacidad operacional. Cada aeronave que despegaba llevaba consigo el trabajo previo de decenas de hombres. Cada misión ejecutada era el resultado de una cadena operacional en la que cada eslabón tenía una función concreta y necesaria.
+                </p>
+                <p>
+                  Si esa cadena se interrumpía, el avión no despegaba. Si el avión no despegaba, la misión no se cumplía. Y si la misión no se cumplía, el efecto sobre el enemigo no existía.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">La Acción Efectiva de Combate no se mide en metros</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>
+                  Las Resoluciones 855/06 y 466/07, analizadas en este dossier, permiten comprender precisamente esta cuestión: la valoración de los efectivos hechos bélicos o de acciones bélicas no puede reducirse a una concepción exclusivamente geográfica del combate.
+                </p>
+                <p>
+                  La acción militar efectiva debe analizarse en función de la misión cumplida, la función desempeñada, la contribución concreta al esfuerzo bélico y su integración dentro del sistema operacional.
+                </p>
+                <p>
+                  Ese concepto resulta particularmente significativo para comprender la actuación de la Fuerza Aérea Sur. El personal de las bases continentales no permaneció como espectador de la guerra. Estuvo trabajando para la guerra, operando para la guerra y sosteniendo operaciones de combate durante la guerra.
+                </p>
+                <p>
+                  Se prepararon aeronaves, se cargaron y acondicionaron armamentos, se repararon sistemas, se mantuvieron motores y estructuras, se operaron radares y comunicaciones, se procesó información, se atendieron emergencias, se sostuvo la logística y se mantuvo en funcionamiento, día tras día, una estructura sometida a las exigencias extraordinarias de un conflicto armado.
+                </p>
+                <p>
+                  Mientras unos volaban, otros hacían posible que pudieran volar. Mientras unos enfrentaban al enemigo desde el aire, otros sostenían desde tierra la capacidad que permitía continuar haciéndolo.
+                </p>
+                <p className="font-display text-xl italic">Eso también fue combatir.</p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">No existió una guerra para unos y otra para otros</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>
+                  No hubo una «guerra de las islas» separada de una «guerra del continente». Hubo una sola Guerra de Malvinas, con diferentes teatros, posiciones, funciones y niveles de exposición al riesgo.
+                </p>
+                <p>
+                  El hecho de que determinados integrantes de la Fuerza Aérea Sur hayan desarrollado su misión desde las bases continentales no disminuye la naturaleza de la función que cumplieron ni convierte su participación en una actividad ajena al conflicto. Por el contrario, esa ubicación respondía precisamente a la misión asignada y a la estructura operacional mediante la cual se desarrolló la campaña aérea.
+                </p>
+                <p>
+                  Pretender que la distancia geográfica determina por sí misma quién participó y quién no participó de una acción bélica equivale a desconocer la esencia misma de las operaciones militares modernas.
+                </p>
+                <p>
+                  La guerra no se define por dónde estaba parado cada hombre, sino por qué misión cumplía, para quién la cumplía y qué efecto produjo su acción dentro del esfuerzo bélico.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">Una sola cadena de combate</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>
+                  Durante el conflicto, la Fuerza Aérea Sur sostuvo una campaña aérea que obligó al enemigo a emplear importantes recursos para defender su flota y sus fuerzas desplegadas en el Atlántico Sur.
+                </p>
+                <p>
+                  Ese resultado no fue obra exclusiva de quienes ocuparon una cabina. Fue producto de un sistema. Y en ese sistema estuvieron los pilotos, pero también los mecánicos, especialistas, técnicos, armeros, operadores, comunicaciones, radaristas, personal de abastecimiento, sanidad, meteorología, seguridad, logística y todos aquellos que, desde sus respectivas funciones, hicieron posible que la operación continuara.
+                </p>
+                <p>
+                  Por eso, intentar separar artificialmente al avión del piloto o al piloto del personal de tierra no es solamente injusto. Es operacionalmente absurdo.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">El tiempo puede borrar detalles. No puede cambiar los hechos.</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>
+                  Han pasado más de cuatro décadas. Los protagonistas envejecimos. Muchos ya no están. Los recuerdos pueden ser diferentes y las interpretaciones pueden discutirse.
+                </p>
+                <p>Pero hay algo que no puede modificarse: los hechos ocurrieron.</p>
+                <p>
+                  La Fuerza Aérea Sur fue creada, desplegó sus medios, operó desde sus bases, ejecutó misiones de combate y sostuvo esas operaciones hasta el final del conflicto. Quienes integramos ese sistema cumplimos las funciones que nos fueron asignadas.
+                </p>
+                <p>
+                  No elegimos dónde combatir. No elegimos cuál sería nuestra misión. Cumplimos con nuestro deber donde la conducción militar determinó que éramos necesarios.
+                </p>
+                <p>Por eso, no reclamamos privilegios. Reclamamos que la historia sea analizada con rigor.</p>
+                <p>
+                  No pedimos que se quite mérito a nadie. Pedimos que no se quite mérito a quienes también cumplieron su misión.
+                </p>
+                <p>
+                  No buscamos dividir a los veteranos. Buscamos terminar con una división que nunca existió durante la guerra: la división entre quienes combatían y quienes hacían posible el combate.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">El corolario</h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>
+                  Las Resoluciones 855/06 y 466/07 no pueden ser leídas aisladamente ni utilizadas para construir nuevas divisiones. Deben ser comprendidas dentro del marco doctrinario y operacional que reconoce que una acción bélica es el resultado de la actuación coordinada de un sistema.
+                </p>
+                <p>
+                  Y ese sistema existió. Se llamó Fuerza Aérea Sur. Sus integrantes actuaron en diferentes lugares, con diferentes responsabilidades y distintos niveles de exposición, pero formando parte de una misma estructura operacional y de una misma misión.
+                </p>
+                <p>
+                  Por eso, frente a quienes todavía pretenden establecer categorías de «más» o «menos» guerra según la distancia recorrida, la respuesta no necesita agravios. Necesita hechos.
+                </p>
+                <p>
+                  Frente a quienes sostienen que la guerra comenzó y terminó únicamente donde estaba la turba, la respuesta es la doctrina.
+                </p>
+                <p>
+                  Frente a quienes desconocen la función del personal de tierra, la respuesta es la realidad operacional.
+                </p>
+                <p>
+                  Y frente a quienes intentan fragmentar la historia, la respuesta es una sola:
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div className="mt-14 border-y border-border bg-background p-8 text-center md:p-12">
+            <p className="font-display text-2xl font-light italic md:text-3xl">
+              La guerra aérea fue una sola.<br />
+              El enemigo fue uno solo.<br />
+              La misión fue una sola.<br />
+              Y el combate se libró en equipo.
+            </p>
+            <div className="mt-8 grid gap-4 border-t border-border pt-8 sm:grid-cols-3">
+              <p className="font-display text-xl font-light italic">AVIÓN</p>
+              <p className="font-display text-xl font-light italic">PILOTO</p>
+              <p className="font-display text-xl font-light italic">PERSONAL DE TIERRA</p>
+            </div>
+            <p className="mt-6 font-mono text-sm uppercase tracking-[0.2em] text-[var(--bronce)]">
+              Una sola misión. Un solo sistema. Una sola Fuerza Aérea Sur.
+            </p>
+            <p className="mt-4 font-display text-xl italic">
+              Cumplimos con nuestro deber. Ahora la historia debe cumplir con la verdad.
+            </p>
+          </div>
+
+          <p className="mt-10 text-center font-mono text-xs uppercase tracking-[0.25em] text-[var(--bronce)]">
+            PC FAA VGM Martínez José Luis
+          </p>
         </div>
       </section>
 
