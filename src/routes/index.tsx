@@ -61,7 +61,7 @@ function Index() {
           <a href="#trilogia" className="hover:opacity-70">Trilogía</a>
           <a href="#galeria" className="hover:opacity-70">Galería</a>
           <a href="#dossier" className="hover:opacity-70">Dossier</a>
-          <a href="#descarga" className="hover:opacity-70">Descarga</a>
+          <a href="#acceso" className="hover:opacity-70">Descarga</a>
           <a href="#colaborar" className="hover:opacity-70">Colaborar</a>
           <a href="#difundir" className="hover:opacity-70">Difundir</a>
           <a href="#comentarios" className="hover:opacity-70">Comentarios</a>
@@ -87,56 +87,67 @@ function Index() {
               Acceso 100% libre y gratuito<br />
               Fines de divulgación histórica
             </p>
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-background/80 md:text-lg">
-              Para mantener viva la causa, sus hechos y protagonistas, esta obra está disponible de forma internacional para toda la ciudadanía a través de las siguientes plataformas:
-            </p>
-
-            <div className="mt-6 max-w-3xl overflow-hidden rounded-sm border border-background/20 bg-background/10 backdrop-blur-sm">
-              <table className="w-full text-left text-sm">
-                <thead className="bg-background/15 font-mono text-[10px] uppercase tracking-[0.2em] text-background/70">
-                  <tr>
-                    <th className="px-4 py-3">Plataforma</th>
-                    <th className="px-4 py-3">Instrucciones y enlaces</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-background/15">
-                  <tr>
-                    <td className="px-4 py-4 font-medium text-background">Google Play Libros</td>
-                    <td className="px-4 py-4 text-background/80">
-                      Busque por título: <em>"Testimonio de una Trilogía"</em> o por autor: <em>"José Luis Martínez Eyheramendi"</em>.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-4 font-medium text-background">Biblioteca Histórica y Cultural</td>
-                    <td className="px-4 py-4">
-                      <a
-                        href={trilogiaPdf.url}
-                        download="testimonio-de-una-trilogia.pdf"
-                        className="text-[var(--celeste)] underline underline-offset-4 hover:text-background"
-                      >
-                        Descargar Libro Gratis (PDF)
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-4 py-4 font-medium text-background">Dossier Escolar</td>
-                    <td className="px-4 py-4">
-                      <a
-                        href={dossierEscolarPdf.url}
-                        download="La_Gesta_de_Malvinas_en_las_Aulas.pdf"
-                        className="text-[var(--celeste)] underline underline-offset-4 hover:text-background"
-                      >
-                        Descargar material para aulas (PDF)
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p className="mt-6 font-mono text-xs uppercase tracking-[0.3em] text-background/70">
+            <p className="mt-2 font-mono text-xs uppercase tracking-[0.3em] text-background/70">
               Pers. Civil Tec. Prof. FAA VGM José Luis Martínez Eyheramendi
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ACCESO A LA OBRA */}
+      <section id="acceso" className="border-y border-border bg-card px-6 py-16 md:px-12 md:py-24">
+        <div className="mx-auto max-w-4xl">
+          <p className="text-center font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+            Descargas
+          </p>
+          <h2 className="mt-4 text-center font-display text-4xl font-light text-balance md:text-5xl">
+            Acceso a la <em className="text-[var(--bronce)]">obra</em>
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-muted-foreground">
+            Para mantener viva la causa, sus hechos y protagonistas, esta obra está disponible de forma internacional para toda la ciudadanía a través de las siguientes plataformas:
+          </p>
+
+          <div className="mt-10 overflow-hidden rounded-sm border border-border bg-background shadow-page">
+            <table className="w-full text-left text-sm">
+              <thead className="bg-muted font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                <tr>
+                  <th className="px-4 py-3">Plataforma</th>
+                  <th className="px-4 py-3">Instrucciones y enlaces</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                <tr>
+                  <td className="px-4 py-4 font-medium">Google Play Libros</td>
+                  <td className="px-4 py-4 text-muted-foreground">
+                    Busque por título: <em>"Testimonio de una Trilogía"</em> o por autor: <em>"José Luis Martínez Eyheramendi"</em>.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-4 font-medium">Biblioteca Histórica y Cultural</td>
+                  <td className="px-4 py-4">
+                    <a
+                      href={trilogiaPdf.url}
+                      download="testimonio-de-una-trilogia.pdf"
+                      className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
+                    >
+                      Descargar Libro Gratis (PDF)
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-4 font-medium">Dossier Escolar</td>
+                  <td className="px-4 py-4">
+                    <a
+                      href={dossierEscolarPdf.url}
+                      download="La_Gesta_de_Malvinas_en_las_Aulas.pdf"
+                      className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
+                    >
+                      Descargar material para aulas (PDF)
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
