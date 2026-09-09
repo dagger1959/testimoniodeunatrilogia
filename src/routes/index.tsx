@@ -84,7 +84,7 @@ function Index() {
               <span className="text-2xl md:text-4xl lg:text-5xl">GUERRA DE MALVINAS (VERSIÓN DIGITAL 2.0)</span>
             </h1>
             <p className="mt-6 max-w-2xl font-display text-xl italic text-background/90 md:text-2xl">
-              El testimonio de la Fuerza Aérea Sur 1982 contada desde el continente: la historia completa detrás de cada misión.
+              Una obra documental y vivencial · Acceso 100% libre y gratuito · Fines de divulgación histórica
             </p>
             <p className="mt-2 font-mono text-xs uppercase tracking-[0.3em] text-background/70">
               Pers. Civil Tec. Prof. FAA VGM José Luis Martínez Eyheramendi
