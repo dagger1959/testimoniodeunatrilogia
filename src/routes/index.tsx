@@ -84,7 +84,11 @@ function Index() {
               <span className="text-2xl md:text-4xl lg:text-5xl">GUERRA DE MALVINAS (VERSIÓN DIGITAL 2.0)</span>
             </h1>
             <p className="mt-6 max-w-2xl font-display text-xl italic text-background/90 md:text-2xl">
-              Una obra documental y vivencial · Acceso 100% libre y gratuito · Fines de divulgación histórica
+              Acceso 100% libre y gratuito<br />
+              Fines de divulgación histórica
+            </p>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-background/80 md:text-lg">
+              Para mantener viva la causa, sus hechos y protagonistas, esta obra está disponible de forma internacional para toda la ciudadanía a través de las siguientes plataformas:
             </p>
             <p className="mt-2 font-mono text-xs uppercase tracking-[0.3em] text-background/70">
               Pers. Civil Tec. Prof. FAA VGM José Luis Martínez Eyheramendi
@@ -769,14 +773,13 @@ function Index() {
       <section id="descarga" className="px-6 py-24 md:px-12 md:py-36">
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-            Acceso 100% libre y gratuito
+            Descargas
           </p>
           <h2 className="mt-4 font-display text-5xl font-light text-balance md:text-6xl">
-            Fines de <em className="text-[var(--bronce)]">divulgación histórica</em>
+            Acceso a la <em className="text-[var(--bronce)]">obra</em>
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Para mantener viva la causa, sus hechos y protagonistas, esta obra está disponible de forma internacional
-            para toda la ciudadanía a través de las siguientes plataformas:
+            Elegí la plataforma que prefieras para descargar o consultar la obra:
           </p>
 
           <div className="mt-10 overflow-hidden rounded-sm border border-border">
