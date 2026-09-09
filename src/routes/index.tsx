@@ -822,52 +822,6 @@ function Index() {
           <h2 className="mt-4 font-display text-5xl font-light text-balance md:text-6xl">
             Acceso a la <em className="text-[var(--bronce)]">obra</em>
           </h2>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Elegí la plataforma que prefieras para descargar o consultar la obra:
-          </p>
-
-          <div className="mt-10 overflow-hidden rounded-sm border border-border">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-muted font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                <tr>
-                  <th className="px-4 py-3">Plataforma</th>
-                  <th className="px-4 py-3">Instrucciones y enlaces</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-border">
-                <tr>
-                  <td className="px-4 py-4 font-medium">Google Play Libros</td>
-                  <td className="px-4 py-4 text-muted-foreground">
-                    Busque por título: <em>"Testimonio de una Trilogía"</em> o por autor: <em>"José Luis Martínez Eyheramendi"</em>.
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-4 font-medium">Biblioteca Histórica y Cultural</td>
-                  <td className="px-4 py-4">
-                    <a
-                      href={trilogiaPdf.url}
-                      download="testimonio-de-una-trilogia.pdf"
-                      className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
-                    >
-                      Descargar Libro Gratis (PDF)
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-4 font-medium">Dossier Escolar</td>
-                  <td className="px-4 py-4">
-                    <a
-                      href={dossierEscolarPdf.url}
-                      download="La_Gesta_de_Malvinas_en_las_Aulas.pdf"
-                      className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
-                    >
-                      Descargar material para aulas (PDF)
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
           <p className="mt-10 font-display text-2xl italic text-foreground/90">
             "Manteniendo viva la causa, sus hechos y protagonistas."
