@@ -23,6 +23,7 @@ import heroesSecundarioPdf from "@/assets/heroes-del-cielo-y-de-la-tierra.pdf.as
 import recopiladoFasPdf from "@/assets/recopilado-comprender-fas.pdf.asset.json";
 import analisisVeteranosPdf from "@/assets/analisis-juridico-veteranos-fuerza-aerea.pdf.asset.json";
 import autonomiaInterfuerzasPdf from "@/assets/autonomia-tension-interfuerzas.pdf.asset.json";
+import los649HeroesPdf from "@/assets/los-649-heroes-nacionales.pdf.asset.json";
 import videoChicos from "@/assets/video-chicos.mp4.asset.json";
 import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
 import fuerzaAereaBatallaVideo from "@/assets/fuerza-aerea-sur-batalla.mp4.asset.json";
@@ -1476,6 +1477,14 @@ function Index() {
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
                 Autonomía y Tensión Interfuerzas
+              </a>
+              <a
+                href={los649HeroesPdf.url}
+                download="los-649-heroes-nacionales.pdf"
+                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
+              >
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
+                Los 649 Héroes Nacionales
               </a>
             </div>
             <p className="mt-4 text-sm text-muted-foreground italic">
