@@ -61,7 +61,7 @@ function Index() {
           <a href="#trilogia" className="hover:opacity-70">Trilogía</a>
           <a href="#galeria" className="hover:opacity-70">Galería</a>
           <a href="#dossier" className="hover:opacity-70">Dossier</a>
-          <a href="#descarga" className="hover:opacity-70">Descarga</a>
+          <a href="#acceso" className="hover:opacity-70">Descarga</a>
           <a href="#colaborar" className="hover:opacity-70">Colaborar</a>
           <a href="#difundir" className="hover:opacity-70">Difundir</a>
           <a href="#comentarios" className="hover:opacity-70">Comentarios</a>
