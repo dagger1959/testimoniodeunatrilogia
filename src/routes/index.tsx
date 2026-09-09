@@ -523,6 +523,101 @@ function Index() {
             </div>
           </section>
 
+          {/* ¿POR QUÉ NO OPERARON DESDE LAS ISLAS MALVINAS? */}
+          <section id="por-que-no-operaron" className="mx-auto mt-20 max-w-5xl px-6 md:px-12">
+            <div className="divider-ornament mb-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+              Pregunta histórica
+            </div>
+            <h2 className="font-display text-3xl font-light leading-tight text-balance md:text-5xl">
+              ¿Por qué los aviones de la Fuerza Aérea Sur no operaron desde las Islas Malvinas?
+            </h2>
+            <p className="mt-4 font-display text-xl italic text-foreground/80 md:text-2xl">
+              Una respuesta técnica, operativa y logística que la historia no puede ignorar
+            </p>
+
+            <figure className="mt-10">
+              <img
+                src={porQueNoOperaronImg}
+                alt="Sistema de combate de la Fuerza Aérea Sur desde el continente: Mirage IIIEA, M-5 Dagger, A-4B/C Skyhawk y Canberra B.Mk.62"
+                width={1600}
+                height={900}
+                className="w-full rounded-sm border border-border shadow-page"
+                loading="lazy"
+              />
+              <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                Sistema de combate de la Fuerza Aérea Sur desde el continente · Atlántico Sur 1982
+              </figcaption>
+            </figure>
+
+            <div className="mt-10 space-y-6 text-lg leading-relaxed text-foreground/85">
+              <p>
+                Existe una interrogante recurrente al analizar la actuación de la Fuerza Aérea Argentina durante la Guerra de Malvinas: <strong className="font-medium">¿por qué los Mirage IIIEA, M-5 IAI Dagger, A-4B, A-4C y Canberra no establecieron sus bases de combate en las islas?</strong>
+              </p>
+              <p>
+                La respuesta no responde a una falta de voluntad ni de coraje operacional. Obedece estrictamente a las <strong className="font-medium">limitaciones físicas, técnicas y logísticas</strong> que impone la guerra aérea moderna.
+              </p>
+              <p>
+                Los principales sistemas de armas de la Fuerza Aérea Sur (FAS) operaron desde el continente no por omisión, sino porque esa era la única manera de sostenerlos operativos. Comprender este factor no resta mérito a su actuación; al contrario, evidencia la magnitud del esfuerzo técnico y humano desplegado para proyectar el poder aeroespacial desde el territorio continental hacia el Atlántico Sur.
+              </p>
+
+              <h3 className="mt-8 font-display text-2xl font-light">1. La pista de Puerto Argentino: capacidad vs. requerimiento</h3>
+              <p>
+                La Base Aérea Militar (BAM) Malvinas contaba con una pista de aproximadamente 1.200 metros de longitud. Para aeronaves de altas prestaciones como el Mirage IIIEA, el Dagger o el Canberra, esta infraestructura resultaba insuficiente para sostener operaciones continuas de combate.
+              </p>
+              <p>Desplegar un sistema de armas a un aeródromo militar exige mucho más que la capacidad de aterrizar y despegar. Requiere una infraestructura integral capaz de garantizar:</p>
+              <ul className="list-disc space-y-2 pl-6">
+                <li><strong>Carrera de despegue y aterrizaje con peso máximo:</strong> Los aviones debían despegar cargados con armamento pesado y tanques suplementarios de combustible, requiriendo márgenes de pista sustancialmente mayores.</li>
+                <li><strong>Sistemas de apoyo y arranque en tierra:</strong> Medios como el M-5 Dagger dependían de equipos externos de puesta en marcha que debían ser trasladados y mantenidos en la isla.</li>
+                <li><strong>Infraestructura de reabastecimiento masivo:</strong> Capacidad de almacenamiento, filtrado y bombeo de miles de litros de combustible JP-1 bajo condiciones climáticas extremas.</li>
+                <li><strong>Talleres y depósitos:</strong> Espacios protegidos para inspecciones técnicas, reparaciones mayoradas, almacenamiento de repuestos críticos y manipulación segura de armamento complejo.</li>
+              </ul>
+              <p className="font-display text-xl italic">Una pista no constituye por sí sola una base aérea operativa; solo es la cara visible de un complejo entramado técnico.</p>
+
+              <h3 className="mt-8 font-display text-2xl font-light">2. El avión no es autónomo: la dependencia del apoyo en tierra</h3>
+              <p>
+                Sostener la operatividad del A-4B, A-4C, Mirage, Dagger o Canberra exigía una cadena logística ininterrumpida. La falta de espacio, la vulnerabilidad ante el bombardeo naval o aéreo enemigo y la imposibilidad de trasladar talleres pesados a las islas habrían neutralizado la flota en cuestión de días.
+              </p>
+              <p>Cada salida desde el continente implicaba un ciclo operativo de alta complejidad:</p>
+              <p className="text-center font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">
+                Planificación ➔ Mantenimiento ➔ Armado ➔ Navegación ➔ Ataque ➔ Recuperación
+              </p>
+              <p>
+                La distancia entre las bases continentales y los objetivos en las islas (que oscilaba entre los 400 y 700 kilómetros según la base de origen) impuso volar al límite absoluto de la autonomía, requiriendo en el caso de los A-4 el reabastecimiento en vuelo mediante los aviones tanque KC-130 Hércules. La distancia no fue un obstáculo para eludir el combate; fue una variable táctica integrada a la planificación.
+              </p>
+
+              <h3 className="mt-8 font-display text-2xl font-light">3. La Fuerza Aérea Sur como sistema integral de combate</h3>
+              <p>
+                Creada el 5 de abril de 1982 bajo el comando del Brigadier General Ernesto Horacio Crespo, la Fuerza Aérea Sur fue estructurada como un sistema indivisible.
+              </p>
+              <p>
+                La guerra aérea no comenzaba cuando el piloto aceleraba en la pista ni terminaba al soltar las bombas sobre la flota enemiga. Se gestaba horas antes en los talleres de mantenimiento, en los depósitos de armamento, en las salas de planificación y en la línea de vuelo.
+              </p>
+              <p>De este modo se consolidó la <strong className="font-medium">Trilogía Operacional</strong>:</p>
+              <ul className="list-disc space-y-2 pl-6">
+                <li><strong>El Avión:</strong> La máquina exigida hasta los límites de su envolvente de vuelo.</li>
+                <li><strong>El Piloto:</strong> El profesional que ejecutó la misión asumiendo el máximo riesgo.</li>
+                <li><strong>El Personal de Tierra:</strong> Los mecánicos, armeros, abastecedores y especialistas que garantizaron la disponibilidad técnica de cada aeronave.</li>
+              </ul>
+              <p className="font-display text-xl italic">Sin el trabajo en tierra, la aeronave no despega; sin aeronave, el piloto no cumple la misión; y sin misión, el poder aéreo no se manifiesta.</p>
+
+              <h3 className="mt-8 font-display text-2xl font-light">Conclusión</h3>
+              <p>
+                El hecho de que los cazabombarderos y bombarderos no hayan operado desde las Islas Malvinas no significa que estuvieran al margen de la batalla por la soberanía. El combate se libró en el aire, pero su cimiento estuvo firmemente asentado en las bases continentales de San Julián, Río Gallegos, Río Grande, Comodoro Rivadavia y Trelew.
+              </p>
+              <p>
+                Evaluar la actuación de la Fuerza Aérea Argentina en 1982 exige mirar la totalidad del sistema. Detrás de cada impacto registrado en la flota británica existió una estructura técnica continental que hizo posible lo que la doctrina militar de la época consideraba irrealizable.
+              </p>
+              <p className="font-display text-xl italic">
+                En Malvinas no combatió únicamente un avión o un piloto: combatió la Fuerza Aérea Argentina como un todo.
+              </p>
+
+              <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+                VGM FAA José Luis Martínez<br />
+                Fuerza Aérea Argentina
+              </p>
+            </div>
+          </section>
+
           <div className="mx-auto mt-16 max-w-4xl">
             <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
               Video de la Trilogía Operativa
