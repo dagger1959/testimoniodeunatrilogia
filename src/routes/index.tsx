@@ -5,6 +5,7 @@ import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
 import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
 import folletoAsset from "@/assets/galeria/fuerza-aerea-sur-folleto.jpeg.asset.json";
 import bastaDeAgraviosAsset from "@/assets/galeria/basta-de-agravios-fuerza-aerea-sur.jpg.asset.json";
+import homenajeHeroesAsset from "@/assets/galeria/homenaje-649-heroes-nacionales.png.asset.json";
 import libroImg from "@/assets/libro-tapa.png";
 import qrAcceso from "@/assets/qr-acceso.png";
 const heroImg = heroAsset.url;
@@ -13,6 +14,7 @@ const pilotoImg = pilotoAsset.url;
 const avionImg = avionAsset.url;
 const folletoImg = folletoAsset.url;
 const bastaDeAgraviosImg = bastaDeAgraviosAsset.url;
+const homenajeHeroesImg = homenajeHeroesAsset.url;
 import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
 import dossierEscolarPdf from "@/assets/La_Gesta_de_Malvinas_en_las_Aulas.pdf.asset.json";
 import leyResolucionesPdf from "@/assets/ley-23118-resoluciones-faa.pdf.asset.json";
@@ -1395,6 +1397,123 @@ function Index() {
 
           <p className="mt-10 text-center font-mono text-xs uppercase tracking-[0.25em] text-[var(--bronce)]">
             PC FAA VGM Martínez José Luis
+          </p>
+        </div>
+      </section>
+
+      {/* HOMENAJE A LOS 649 HÉROES NACIONALES */}
+      <section id="homenaje" className="border-y border-border bg-card">
+        <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
+          <div className="mb-12 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Memoria permanente</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
+              Homenaje permanente a los Héroes del Atlántico Sur e Islas Malvinas
+            </h2>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/85">
+              Memoria, honor y gratitud. Hoy, mañana y siempre.
+            </p>
+          </div>
+
+          <figure className="relative border border-border bg-background p-2 shadow-page">
+            <img
+              src={homenajeHeroesImg}
+              alt="Homenaje permanente a los 649 Héroes Nacionales de Malvinas"
+              width={1200}
+              height={1697}
+              loading="lazy"
+              className="w-full"
+            />
+            <figcaption className="px-2 pb-2 pt-3 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+              Ilustración de homenaje · 649 Héroes Nacionales
+            </figcaption>
+          </figure>
+
+          <div className="mt-16 space-y-6 text-lg leading-relaxed text-foreground/85">
+            <p>Las fechas pasan. Los aniversarios pasan. La memoria no.</p>
+            <p>
+              Este homenaje no nace de un aniversario ni pretende quedar limitado a una fecha del calendario. Es un reconocimiento permanente a quienes participaron en la defensa de nuestra Nación durante el Conflicto del Atlántico Sur e Islas Malvinas y, especialmente, a quienes entregaron su vida por la Patria.
+            </p>
+            <p className="font-display text-2xl italic text-[var(--bronce)]">Malvinas debe ser recordada todos los días.</p>
+            <p>
+              Porque la memoria de quienes combatieron, de quienes cumplieron su misión y de quienes quedaron para siempre en las islas y en el mar no puede depender de una efeméride. Es parte de nuestra historia, de nuestra identidad y de nuestra responsabilidad como argentinos.
+            </p>
+
+            <h3 className="mt-10 font-display text-3xl font-light italic">Malvinas es una Causa Nacional</h3>
+            <p>
+              Las Islas Malvinas no pertenecen únicamente al pasado ni a una generación determinada. Son una Causa Nacional que debemos conocer, comprender y transmitir a las nuevas generaciones.
+            </p>
+            <p>
+              Por eso este espacio está destinado especialmente a nuestros estudiantes y docentes: para acercar documentos, testimonios, fotografías, experiencias y hechos históricos que permitan conocer lo ocurrido durante 1982 y comprender que detrás de cada operación, cada vuelo, cada misión y cada acción hubo hombres y mujeres que asumieron responsabilidades y cumplieron con su deber.
+            </p>
+            <p>La historia no debe transmitirse solamente desde los libros. También debe conservarse a través de quienes la vivieron.</p>
+
+            <h3 className="mt-10 font-display text-3xl font-light italic">A los 649 Héroes Nacionales</h3>
+            <p>
+              Nuestro homenaje más profundo es para los 649 argentinos que entregaron su vida durante el Conflicto del Atlántico Sur. La Ley Nacional N.º 24.950 los reconoció como Héroes Nacionales.
+            </p>
+            <p>
+              Sus nombres no pertenecen exclusivamente a una Fuerza Armada, a una unidad militar ni a una generación. Pertenecen para siempre a la Nación Argentina.
+            </p>
+            <p>
+              Son 649 nombres que forman parte de nuestra historia. Son 649 vidas entregadas por la Patria. Son 649 razones para mantener viva la memoria. Y son 649 nombres que debemos enseñar a nuestros hijos y a nuestros alumnos para que nunca se conviertan simplemente en una cifra.
+            </p>
+
+            <h3 className="mt-10 font-display text-3xl font-light italic">Memoria para todos los que cumplieron con su deber</h3>
+            <p>
+              Este homenaje alcanza a todos los hombres y mujeres que participaron en la defensa de nuestra Nación durante el conflicto: integrantes de las Fuerzas Armadas, soldados conscriptos, personal militar, personal civil, cuadros permanentes y todos aquellos que, desde sus distintas responsabilidades, contribuyeron al esfuerzo nacional.
+            </p>
+            <p>Cada uno ocupó un lugar dentro de una historia que fue colectiva.</p>
+            <p>
+              En la Fuerza Aérea Sur, esa realidad se expresó en un sistema integrado donde pilotos y personal de tierra fueron parte de una misma misión. Porque detrás de cada avión hubo mecánicos, especialistas, técnicos, armeros, abastecedores y numerosos hombres que trabajaron silenciosamente para que una aeronave pudiera despegar y cumplir su misión.
+            </p>
+            <div className="my-8 border-l-2 border-[var(--ocre)] pl-6">
+              <p className="font-display text-xl italic leading-relaxed">
+                Sin personal de tierra, no hay avión.<br />
+                Sin avión, no hay piloto.<br />
+                Sin piloto, no hay misión.
+              </p>
+            </div>
+            <p>
+              La guerra también se libró desde allí: desde las plataformas, los talleres, las pistas, los puestos de comando y cada lugar donde un hombre cumplió con responsabilidad la tarea que le había sido asignada.
+            </p>
+
+            <h3 className="mt-10 font-display text-3xl font-light italic">Transmitir para no olvidar</h3>
+            <p>El tiempo no debe borrar aquello que ocurrió. Al contrario: cuanto más lejos queda un acontecimiento, mayor es nuestra responsabilidad de conservar sus testimonios y transmitirlos correctamente.</p>
+            <p>Por eso este dossier no pretende solamente recordar. Pretende enseñar.</p>
+            <p>
+              Pretende que un joven que nunca vivió 1982 pueda conocer quiénes fueron aquellos hombres y mujeres, qué hicieron, qué responsabilidades asumieron y qué significó para ellos defender a la Patria.
+            </p>
+            <p>
+              Pretende que los 649 caídos tengan nombre, historia y memoria. Pretende que quienes regresaron puedan transmitir su experiencia. Y pretende que las nuevas generaciones comprendan que la historia de Malvinas no es una página cerrada, sino una parte viva de nuestra identidad nacional.
+            </p>
+
+            <h3 className="mt-10 font-display text-3xl font-light italic">Un homenaje que no termina</h3>
+            <p>
+              El 14 de junio de 1982 cesaron los combates. Pero nunca terminó nuestro deber de recordar. Mientras exista un argentino dispuesto a nombrarlos, mientras un docente explique sus historias, mientras un estudiante pregunte quiénes fueron y mientras sus nombres permanezcan en nuestra memoria, aquellos hombres seguirán presentes.
+            </p>
+            <p>Por eso este homenaje no tiene fecha de vencimiento.</p>
+            <p>
+              No es solamente para el 2 de abril. No es solamente para el 14 de junio. No es solamente para un aniversario. Es para todos los días.
+            </p>
+            <p>
+              Porque recordar a nuestros héroes no es mirar permanentemente hacia atrás. Es enseñar a las nuevas generaciones quiénes fuimos, qué defendimos y qué valores debemos conservar.
+            </p>
+
+            <div className="my-10 border-t border-border pt-10 text-center font-display text-2xl italic leading-relaxed text-foreground/90">
+              <p>Por los 649 Héroes Nacionales.</p>
+              <p>Por quienes combatieron.</p>
+              <p>Por quienes regresaron.</p>
+              <p>Por quienes cumplieron con su deber.</p>
+              <p>Por las generaciones que deben conocer la verdad.</p>
+              <p className="mt-6 text-[var(--bronce)]">Memoria eterna. Honor permanente. Gratitud para siempre.</p>
+              <p className="mt-4 text-3xl">Las Malvinas fueron, son y serán argentinas.</p>
+              <p className="mt-4 text-xl">Prohibido olvidar.</p>
+              <p className="mt-6 text-3xl text-[var(--celeste)]">¡Viva la Patria!</p>
+            </div>
+          </div>
+
+          <p className="mt-12 text-center font-mono text-xs uppercase tracking-[0.25em] text-[var(--bronce)]">
+            PC FAA VGM José Luis Martínez · II Escuadrón Aeromóvil M5 IAI Dagger “La Marinete” · Fuerza Aérea Sur
           </p>
         </div>
       </section>
