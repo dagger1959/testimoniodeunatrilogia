@@ -7,6 +7,7 @@ import folletoAsset from "@/assets/galeria/fuerza-aerea-sur-folleto.jpeg.asset.j
 import bastaDeAgraviosAsset from "@/assets/galeria/basta-de-agravios-fuerza-aerea-sur.jpg.asset.json";
 import homenajeHeroesAsset from "@/assets/galeria/homenaje-649-heroes-nacionales.png.asset.json";
 import porQueNoOperaronAsset from "@/assets/galeria/IMG_7337.jpeg.asset.json";
+import palabrasDelAutorAsset from "@/assets/galeria/palabras-del-autor.jpeg.asset.json";
 import libroImg from "@/assets/libro-tapa.png";
 import qrAcceso from "@/assets/qr-acceso.png";
 const heroImg = heroAsset.url;
