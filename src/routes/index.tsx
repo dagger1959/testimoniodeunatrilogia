@@ -98,6 +98,70 @@ function Index() {
         </div>
       </section>
 
+      {/* PALABRAS DEL AUTOR */}
+      <section id="palabras-del-autor" className="bg-[var(--papel)] px-6 py-16 md:px-12 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+              Palabras del autor
+            </p>
+            <h2 className="mt-3 font-display text-4xl font-light md:text-5xl">
+              UN APORTE A LA <em className="text-[var(--bronce)]">MEMORIA</em> (1982)
+            </h2>
+          </div>
+
+          <div className="overflow-hidden rounded-sm border border-border bg-background shadow-page">
+            <div className="grid md:grid-cols-2">
+              <div className="relative flex items-center justify-center bg-muted/30 p-8 md:p-12">
+                <figure className="relative w-full max-w-md">
+                  <img
+                    src={palabrasDelAutorImg}
+                    alt="VGM José Luis Martínez junto al M-5 Dagger La Marinete"
+                    width={800}
+                    height={1000}
+                    className="h-auto w-full rounded-sm border border-border"
+                    loading="lazy"
+                  />
+                  <figcaption className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                    VGM José Luis Martínez · M-5 IAI Dagger "La Marinete"
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div className="flex flex-col justify-center p-8 md:p-12">
+                <h3 className="font-display text-2xl font-light italic md:text-3xl">
+                  Un Aporte a la Memoria y la Verdad Histórica
+                </h3>
+                <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Por el VGM José Luis Martínez
+                </p>
+
+                <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/85">
+                  <p>
+                    En aquellos intensos días de abril de 1982, guiado por una convicción profunda, comencé a registrar cada vivencia, a elaborar modestos escritos de época y a reunir un archivo fotográfico en el mismo lugar de los hechos. Con el paso del tiempo, comprendí que haber podido documentar esa realidad fue un privilegio y una responsabilidad: la de dar luz a vivencias y aspectos operativos que necesitaban ser contados.
+                  </p>
+                  <p>
+                    Aquellas anotaciones iniciales maduraron con los años en investigaciones minuciosas y publicaciones que hoy encuentran en internet el canal definitivo para su difusión. Esta plataforma digital nace para poner a disposición de todos —y muy especialmente de las futuras generaciones— un archivo documental completo: libros, escritos de época, registros fotográficos e investigaciones centradas en la Trilogía Operativa (Avión, Piloto y Personal de Tierra) de la Fuerza Aérea Sur.
+                  </p>
+                  <p>
+                    El Conflicto del Atlántico Sur fue mucho más de lo ocurrido estrictamente en las Islas Malvinas y sus alrededores; involucró un despliegue humano, técnico y logístico continental de enorme magnitud que merece ser conocido en toda su dimensión.
+                  </p>
+                  <p>
+                    Ojalá este espacio sirva como un aporte humilde pero riguroso al conocimiento de nuestra historia militar y como un homenaje permanente a la memoria de quienes formaron parte de esta gesta.
+                  </p>
+                </div>
+
+                <div className="mt-10 border-t border-border pt-6">
+                  <p className="font-display text-xl italic">
+                    PC FAA VGM MARTÍNEZ José Luis
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ACCESO A LA OBRA */}
       <section id="acceso" className="border-y border-border bg-card px-6 py-16 md:px-12 md:py-24">
         <div className="mx-auto max-w-4xl">
