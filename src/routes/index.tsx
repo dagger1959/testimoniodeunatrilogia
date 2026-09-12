@@ -61,6 +61,7 @@ function Index() {
           BAM San Julián · 1982
         </div>
         <nav className="hidden gap-8 font-mono text-[11px] uppercase tracking-[0.25em] text-background mix-blend-difference md:flex">
+          <a href="#palabras-del-autor" className="hover:opacity-70">Autor</a>
           <a href="#obra" className="hover:opacity-70">La Obra</a>
           <a href="#trilogia" className="hover:opacity-70">Trilogía</a>
           <a href="#galeria" className="hover:opacity-70">Galería</a>
