@@ -99,7 +99,7 @@ function Index() {
       </section>
 
       {/* PALABRAS DEL AUTOR */}
-      <section id="palabras-del-autor" className="bg-[var(--papel)] px-6 py-16 md:px-12 md:py-24">
+      <section id="palabras-del-autor" className="bg-muted px-6 py-16 md:px-12 md:py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
