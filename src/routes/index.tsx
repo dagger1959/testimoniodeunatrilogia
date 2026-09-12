@@ -18,6 +18,7 @@ const folletoImg = folletoAsset.url;
 const bastaDeAgraviosImg = bastaDeAgraviosAsset.url;
 const homenajeHeroesImg = homenajeHeroesAsset.url;
 const porQueNoOperaronImg = porQueNoOperaronAsset.url;
+const palabrasDelAutorImg = palabrasDelAutorAsset.url;
 import trilogiaPdf from "@/assets/trilogia.pdf.asset.json";
 import dossierEscolarPdf from "@/assets/La_Gesta_de_Malvinas_en_las_Aulas.pdf.asset.json";
 import leyResolucionesPdf from "@/assets/ley-23118-resoluciones-faa.pdf.asset.json";
