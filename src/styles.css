@@ -25,6 +25,7 @@
   --color-celeste: var(--celeste);
   --color-ocre: var(--ocre);
   --color-bronce: var(--bronce);
+  --color-rojo: var(--rojo);
 
   --shadow-elegant: 0 30px 80px -30px oklch(0.15 0.02 240 / 0.5);
   --shadow-page: 0 40px 100px -40px oklch(0.1 0.02 240 / 0.6);
@@ -47,6 +48,7 @@
   --celeste: oklch(0.72 0.09 230);
   --ocre: oklch(0.62 0.11 65);
   --bronce: oklch(0.45 0.06 55);
+  --rojo: oklch(0.55 0.18 25);
 
   --radius: 0.25rem;
 }
