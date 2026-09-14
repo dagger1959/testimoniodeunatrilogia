@@ -80,11 +80,14 @@ function Index() {
           alt="IAI M-5 Dagger en la BAM San Julián, 1982"
           width={1920}
           height={1280}
-          className="absolute inset-0 h-full w-full object-cover opacity-85"
+          className="absolute inset-0 h-full w-full object-cover"
           fetchPriority="high"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/85" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/50" />
+        {/* Oscurecimiento suave y localizado: bordes y base */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/25 via-transparent to-black/20" />
+        {/* Máscara radial centrada para legibilidad del texto sin tapar el avión */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.38)_0%,transparent_65%)]" />
 
         <div className="relative z-10 mx-auto w-full max-w-5xl px-6 py-28 text-center md:px-12 md:py-32">
           <div className="mb-5 inline-flex items-center gap-3">
