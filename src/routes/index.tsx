@@ -74,28 +74,54 @@ function Index() {
       </header>
 
       {/* HERO */}
-      <section className="relative isolate h-[100vh] min-h-[720px] w-full overflow-hidden">
-        <img src={heroImg} alt="Personal de tierra y Mirage en la BAM San Julián al amanecer" width={1920} height={1280} className="absolute inset-0 h-full w-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-background" />
-        <div className="absolute inset-x-0 bottom-0 px-6 pb-16 md:px-12 md:pb-24">
-          <div className="mx-auto max-w-6xl">
-            <div className="mb-6 flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.3em] text-background/80">
-              <span className="h-px w-10 bg-background/60" />
-              40° Aniversario · Atlántico Sur
-            </div>
-            <h1 className="font-display text-3xl font-light leading-[1.05] text-background text-balance md:text-5xl lg:text-6xl">
-              UNA OBRA DOCUMENTAL Y VIVENCIAL<br />
-              <span className="italic text-[var(--celeste)]">TESTIMONIO DE UNA TRILOGÍA</span><br />
-              <span className="text-2xl md:text-4xl lg:text-5xl">GUERRA DE MALVINAS (VERSIÓN DIGITAL 2.0)</span>
-            </h1>
-            <p className="mt-6 max-w-2xl font-display text-xl italic text-background/90 md:text-2xl">
-              Acceso 100% libre y gratuito<br />
-              Fines de divulgación histórica
-            </p>
-            <p className="mt-2 font-mono text-xs uppercase tracking-[0.3em] text-background/70">
-              Pers. Civil Tec. Prof. FAA VGM José Luis Martínez Eyheramendi
-            </p>
+      <section className="relative isolate flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-black">
+        <img
+          src={heroImg}
+          alt="IAI M-5 Dagger en la BAM San Julián, 1982"
+          width={1920}
+          height={1280}
+          className="absolute inset-0 h-full w-full object-cover opacity-85"
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/50" />
+
+        <div className="relative z-10 mx-auto w-full max-w-5xl px-6 py-28 text-center md:px-12 md:py-32">
+          <div className="mb-5 inline-flex items-center gap-3">
+            <span className="h-px w-8 bg-[var(--rojo)]" />
+            <span className="font-mono text-[11px] font-medium uppercase tracking-[0.35em] text-[var(--celeste)] md:text-xs">
+              Malvinas 1982
+            </span>
+            <span className="h-px w-8 bg-[var(--rojo)]" />
           </div>
+
+          <h1 className="font-display text-[1.65rem] font-light uppercase leading-[1.12] tracking-[0.02em] text-white text-balance sm:text-3xl md:text-5xl lg:text-6xl">
+            La guerra aérea también se libró desde el continente
+          </h1>
+
+          <div className="mx-auto mt-5 flex max-w-xl items-center justify-center gap-3 text-white/80 md:mt-6">
+            <span className="h-px flex-1 bg-white/30" />
+            <span className="font-mono text-xs uppercase tracking-[0.25em] text-[var(--celeste)] md:text-sm">
+              Avión · Piloto · Personal de Tierra
+            </span>
+            <span className="h-px flex-1 bg-white/30" />
+          </div>
+
+          <h2 className="mt-5 font-display text-2xl font-light italic text-white md:mt-7 md:text-4xl lg:text-5xl">
+            Testimonio de una Trilogía
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">
+            Una obra documental y vivencial sobre la Fuerza Aérea Sur y los Escuadrones Aeromóviles de Guerra — probados en combate real.
+          </p>
+
+          <p className="mt-5 font-mono text-[11px] uppercase tracking-[0.2em] text-white/70">
+            Acceso libre y gratuito · Divulgación histórica
+          </p>
+
+          <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.25em] text-white/60">
+            Pers. Civil Técnico Profesional FAA · VGM José Luis Martínez
+          </p>
         </div>
       </section>
 
