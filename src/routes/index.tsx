@@ -340,6 +340,7 @@ function IndexComponent() {
       {/* PIE DE PÁGINA */}
       <footer className="py-8 bg-slate-900 text-center text-xs text-slate-500 border-t border-slate-800">
         <p>FUERZA AÉREA SUR 1982 — PROBADA EN COMBATE</p>
+        // ajuste menor de sincronización
         <p className="mt-1">Preservación Histórica e Investigación Abierta</p>
       </footer>
     </div>
