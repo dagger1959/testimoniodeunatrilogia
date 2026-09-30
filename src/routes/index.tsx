@@ -346,3 +346,4 @@ function IndexComponent() {
     </div>
   );
 }
+// ajuste menor de sincronización
