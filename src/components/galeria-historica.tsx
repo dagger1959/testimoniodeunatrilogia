@@ -66,6 +66,26 @@ export function GaleriaHistorica() {
         <p className="mt-10 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
           Archivo personal · VGM FAA José Luis Martínez
         </p>
+
+        <div className="mt-8 text-center">
+          <a
+            href="https://photos.app.goo.gl/m4vhfxvKv4HVCijP6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 border border-border bg-background px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
+          >
+            <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <circle cx="8.5" cy="8.5" r="1.5" />
+              <path d="M21 15l-5-5L5 21" />
+            </svg>
+            Ver álbum completo de fotografías históricas
+          </a>
+          <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+            Álbum externo · Google Fotos
+          </p>
+        </div>
+
       </div>
 
       {activa !== null && (
