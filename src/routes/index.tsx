@@ -46,11 +46,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Testimonio de una Trilogía — Guerra de Malvinas 1982" },
-      { name: "description", content: "Archivo histórico, documental y educativo sobre la Fuerza Aérea Sur, su Trilogía Operativa y el personal de tierra en Malvinas 1982." },
-      { property: "og:title", content: "Testimonio de una Trilogía — Guerra de Malvinas 1982" },
-      { property: "og:description", content: "Archivo histórico, documental y educativo sobre la Fuerza Aérea Sur, su Trilogía Operativa y el personal de tierra en Malvinas 1982." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: "description", content: "Obra histórica, documental y vivencial sobre el Personal de Tierra de la Fuerza Aérea Sur en la BAM San Julián. Descarga libre y gratuita en PDF." },
     ],
   }),
   component: Index,
@@ -59,24 +55,24 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground paper-texture">
-      {/* NAVEGACIÓN */}
-      <header className="sticky inset-x-0 top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
-        <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-4 px-6 md:px-12">
-          <a href="#inicio" className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground">Fuerza Aérea Sur · 1982</a>
-          <nav className="hidden items-center gap-4 font-mono text-[9px] uppercase tracking-[0.12em] text-muted-foreground xl:flex">
-            {[
-              ["inicio", "Inicio"], ["fas-1982", "FAS 1982"], ["trilogia", "La Trilogía"], ["fuerza-aerea-sur", "Escuadrones"], ["por-que-no-operaron", "Bases"], ["misiones", "Misiones"], ["archivo", "Archivo"], ["aula-malvinas", "Aula Malvinas"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"],
-            ].map(([id, label]) => <a key={id} href={`#${id}`} className="transition-colors hover:text-foreground">{label}</a>)}
-          </nav>
-          <details className="relative xl:hidden">
-            <summary className="cursor-pointer list-none border border-border px-3 py-2 font-mono text-[10px] uppercase tracking-[0.15em]">Menú</summary>
-            <nav className="absolute right-0 top-12 z-50 w-64 border border-border bg-background p-3 shadow-page">
-              {[
-                ["inicio", "Inicio"], ["fas-1982", "FAS 1982"], ["trilogia", "La Trilogía"], ["fuerza-aerea-sur", "Escuadrones"], ["por-que-no-operaron", "Bases"], ["misiones", "Misiones"], ["archivo", "Archivo"], ["aula-malvinas", "Aula Malvinas"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"],
-              ].map(([id, label]) => <a key={id} href={`#${id}`} className="block border-b border-border px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] last:border-0">{label}</a>)}
-            </nav>
-          </details>
+      {/* NAV */}
+      <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-6 py-6 md:px-12">
+        <div className="font-mono text-[11px] uppercase tracking-[0.25em] text-background mix-blend-difference">
+          BAM San Julián · 1982
         </div>
+        <nav className="hidden flex-wrap justify-end gap-x-5 gap-y-2 font-mono text-[10px] uppercase tracking-[0.2em] text-background mix-blend-difference lg:flex">
+          <a href="#inicio" className="hover:opacity-70">Inicio</a>
+          <a href="#fas-1982" className="hover:opacity-70">FAS 1982</a>
+          <a href="#trilogia" className="hover:opacity-70">La Trilogía</a>
+          <a href="#escuadrones" className="hover:opacity-70">Escuadrones</a>
+          <a href="#bases" className="hover:opacity-70">Bases</a>
+          <a href="#misiones" className="hover:opacity-70">Misiones</a>
+          <a href="#archivo" className="hover:opacity-70">Archivo</a>
+          <a href="#aula-malvinas" className="hover:opacity-70">Aula Malvinas</a>
+          <a href="#reconocimiento" className="hover:opacity-70">Reconocimiento</a>
+          <a href="#el-libro" className="hover:opacity-70">El Libro</a>
+          <a href="#el-autor" className="hover:opacity-70">El Autor</a>
+        </nav>
       </header>
 
       {/* HERO */}
@@ -198,396 +194,11 @@ function Index() {
         </div>
       </section>
 
-      {/* QUÉ FUE LA FUERZA AÉREA SUR */}
-      <section id="fas-1982" className="border-y border-border bg-card px-6 py-20 md:px-12 md:py-28">
-        <div className="mx-auto max-w-5xl">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Historia y sistema operacional</p>
-          <h2 className="mt-4 font-display text-4xl font-light md:text-6xl">¿Qué fue la Fuerza Aérea Sur?</h2>
-          <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/85">
-            <p>Creada el 5 de abril de 1982 bajo la conducción del Brigadier Ernesto Crespo, la Fuerza Aérea Sur asumió la proyección operacional del poder aeroespacial argentino desde el continente.</p>
-            <p>Desde donde operó la Fuerza Aérea Sur (FAS) se planificó, alistó y ejecutó la mayoría de las operaciones aéreas, para las cuales se desplegaron diferentes sistemas de armas que constituyeron los llamados escuadrones aeromóviles.</p>
-            <p>Las Bases de Despliegue no fueron simples lugares de estacionamiento: fueron parte del dispositivo mediante el cual se sostuvo la capacidad operacional. Desde ellas se prepararon, mantuvieron, abastecieron y lanzaron medios aéreos.</p>
-            <p className="font-display text-xl italic">La guerra aérea no comenzaba cuando el avión cruzaba la costa. La misión comenzaba mucho antes.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* INTRO */}
-      <section id="obra" className="px-6 py-24 md:px-12 md:py-36">
-        <div className="mx-auto max-w-5xl">
-          <div className="divider-ornament mb-12 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-            La trilogía probada en combate
-          </div>
-          <p className="font-display text-2xl font-light leading-[1.3] text-balance md:text-4xl">
-            El poder aéreo nace mucho antes del despegue.
-          </p>
-          <div className="mt-8 space-y-6 text-lg leading-relaxed text-foreground/85">
-            <p>
-              Durante el <strong className="font-medium">Conflicto del Atlántico Sur de 1982</strong>, la Fuerza Aérea Sur escribió una de las páginas más extraordinarias de la historia militar argentina. Aquellas acciones que asombraron al mundo no fueron obra del azar ni del esfuerzo de un solo hombre: fueron el resultado de una <strong className="font-medium">trilogía operativa</strong>, inseparable e indispensable, forjada en el sacrificio, la disciplina y el compromiso.
-            </p>
-            <p className="font-display text-xl font-light italic md:text-2xl">
-              AVIÓN · PILOTO · PERSONAL DE TIERRA
-            </p>
-            <p>
-              <strong className="font-medium">Tres protagonistas. Una sola misión.</strong><br />
-              Cada uno dependía del otro para cumplir su cometido.
-            </p>
-            <ul className="list-none space-y-2 pl-0">
-              <li>Sin el personal de tierra, no hay avión operativo.</li>
-              <li>Sin el avión, no hay piloto en combate.</li>
-              <li>Sin el piloto, no hay misión cumplida.</li>
-            </ul>
-            <p className="font-display text-xl italic">
-              Esta es la verdadera esencia del poder aéreo.
-            </p>
-            <p>
-              Mucho antes de que una aeronave acelerara por la pista, existía un trabajo silencioso e incansable que rara vez ocupó los titulares. En hangares, plataformas y talleres, mecánicos, técnicos, armamentistas, electricistas, especialistas en aviónica, abastecedores y personal logístico trabajaban día y noche bajo una enorme presión, sabiendo que de la calidad de su tarea dependían el éxito de la misión y, muchas veces, la vida de quienes despegaban hacia el combate.
-            </p>
-            <p>
-              Cada avión que regresó… y cada avión que no volvió… llevaba consigo el esfuerzo, la capacidad profesional y la entrega de hombres y mujeres que también combatieron desde tierra.
-            </p>
-            <p>
-              Esta página nace con el propósito de preservar esa memoria, difundir documentos, testimonios, fotografías, videos y material de investigación que permitan comprender la verdadera dimensión del esfuerzo realizado por la <strong className="font-medium">Fuerza Aérea Sur</strong> durante la Guerra del Atlántico Sur.
-            </p>
-            <p>
-              Es también un reconocimiento a quienes permanecieron durante décadas en un injusto silencio, pese a haber sido parte fundamental de una de las campañas aéreas más importantes de la historia contemporánea.
-            </p>
-            <p>
-              Porque la historia no pertenece únicamente a quienes empuñaron los mandos de un avión. También pertenece a quienes, con sus manos, su conocimiento y su vocación de servicio, hicieron posible que cada misión pudiera despegar.
-            </p>
-            <p className="font-display text-xl italic">
-              La Trilogía Probada en Combate no es solo un concepto. Es el reconocimiento de una verdad histórica: el avión, el piloto y el personal de tierra combatieron como una sola unidad.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* TRILOGÍA */}
-      <section id="trilogia" className="px-6 py-24 md:px-12 md:py-36">
-        <div className="mx-auto max-w-6xl">
-          <div className="mb-16 text-center">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-              Una unidad técnica y humana indisoluble
-            </p>
-            <h2 className="mt-4 font-display text-5xl font-light italic md:text-7xl">
-              La Trilogía Operativa
-            </h2>
-            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
-              En el Teatro de Operaciones, el accionar de la Fuerza Aérea Sur se cimentó en el reconocimiento conceptual
-              de la "Trilogía Operativa", una unidad técnica y humana indisoluble conformada por:
-            </p>
-          </div>
-          <div className="grid gap-px bg-border md:grid-cols-3">
-            {[
-              { num: "I", title: "El Avión", img: avionImg, text: "El sistema de armas IAI M-5 Dagger (Mirage V), tecnología probada en combate que fue llevada al límite de su capacidad operativa." },
-              { num: "II", title: "El Piloto", img: pilotoImg, text: "El ejecutor de la misión, quien en la soledad de su cabina asumió la responsabilidad final del ataque." },
-              { num: "III", title: "El Personal de Tierra", img: tierraImg, text: "Los especialistas, de diferentes especialidades, personal Militar, Civil y conscriptos — la gran mayoría perteneciente a la VI Brigada Aérea - Grupo Técnico 6 (GT6) y demás organismos necesarios para las actividades aéreas. Conocidos históricamente como 'Los Magos'." },
-            ].map((p) => (
-              <article key={p.num} className="group relative overflow-hidden bg-card">
-                <div className="relative aspect-[4/5] overflow-hidden">
-                  <img src={p.img} alt={p.title} width={1280} height={1280} loading="lazy" className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
-                  <div className="absolute left-6 top-6 font-display text-6xl italic text-background mix-blend-difference">{p.num}</div>
-                </div>
-                <div className="p-8">
-                  <h3 className="font-display text-3xl font-light">{p.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-          {/* FUERZA AÉREA SUR — MANIFIESTO */}
-          <section id="fuerza-aerea-sur" className="mt-20 border-y border-border bg-card">
-            <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
-              <div className="mb-12 text-center">
-                <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Reconocimiento operativo</p>
-                <h2 className="mt-4 font-display text-4xl font-light md:text-6xl">
-                  FUERZA AÉREA SUR
-                </h2>
-                <p className="mt-3 font-display text-2xl font-light italic text-[var(--bronce)] md:text-3xl">
-                  ESCUADRONES AEROMÓVILES DE GUERRA
-                </p>
-                <p className="mt-2 font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
-                  PROBADOS EN COMBATE REAL
-                </p>
-              </div>
-
-              <figure className="mx-auto mb-12 max-w-4xl">
-                <img
-                  src={folletoImg}
-                  alt="Folleto informativo de la Fuerza Aérea Sur 1982: Escuadrones Aeromóviles de Guerra probados en combate real"
-                  width={1600}
-                  height={900}
-                  loading="lazy"
-                  className="w-full border border-border bg-background shadow-page"
-                />
-                <figcaption className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                  Folleto de difusión · Fuerza Aérea Sur 1982
-                </figcaption>
-              </figure>
-
-              <div className="mb-12 border-l-2 border-[var(--ocre)] pl-6">
-                <p className="font-display text-2xl italic leading-snug text-foreground/90 md:text-3xl">
-                  LA DISCUSIÓN TERMINA DONDE COMIENZAN LOS HECHOS
-                </p>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                  Basándonos en los análisis doctrinarios, las normas operativas militares y las declaraciones testimoniales y documentales emitidas por nuestros propios mandos de la época —en especial los testimonios del Brigadier Ernesto Horacio Crespo y del Comando de la Fuerza Aérea Sur—, sostenemos que existen fundamentos probatorios categóricos para demostrar por qué todos los integrantes de los Escuadrones Aeromóviles de la Fuerza Aérea Sur (FAS) debemos ser reconocidos formalmente como Veteranos de Guerra, y por qué nos constituimos en Escuadrones Aeromóviles de Guerra, probados en combate real.
-                </p>
-              </div>
-
-            </div>
-          </section>
-
-          {/* ¿POR QUÉ NO OPERARON DESDE LAS ISLAS MALVINAS? */}
-          <section id="por-que-no-operaron" className="mx-auto mt-20 max-w-5xl px-6 md:px-12">
-            <div className="divider-ornament mb-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-              Pregunta histórica
-            </div>
-            <h2 className="font-display text-3xl font-light leading-tight text-balance md:text-5xl">
-              ¿Desde dónde operó la Fuerza Aérea Sur?
-            </h2>
-            <p className="mt-4 font-display text-xl italic text-foreground/80 md:text-2xl">
-              La guerra aérea también se libró desde el continente
-            </p>
-
-            <figure className="mt-10">
-              <img
-                src={porQueNoOperaronImg}
-                alt="Sistema de combate de la Fuerza Aérea Sur desde el continente: Mirage IIIEA, M-5 Dagger, A-4B/C Skyhawk y Canberra B.Mk.62"
-                width={1600}
-                height={900}
-                className="w-full rounded-sm border border-border shadow-page"
-                loading="lazy"
-              />
-              <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                Sistema de combate de la Fuerza Aérea Sur desde el continente · Atlántico Sur 1982
-              </figcaption>
-            </figure>
-
-            <div className="mt-10 space-y-6 text-lg leading-relaxed text-foreground/85">
-              <p>
-                Existe una interrogante recurrente al analizar la actuación de la Fuerza Aérea Argentina durante la Guerra de Malvinas: <strong className="font-medium">¿por qué los Mirage IIIEA, M-5 IAI Dagger, A-4B, A-4C y Canberra no establecieron sus bases de combate en las islas?</strong>
-              </p>
-              <p>
-                La respuesta no responde a una falta de voluntad ni de coraje operacional. Obedece estrictamente a las <strong className="font-medium">limitaciones físicas, técnicas y logísticas</strong> que impone la guerra aérea moderna.
-              </p>
-              <p>
-                Los principales sistemas de armas de la Fuerza Aérea Sur (FAS) operaron desde el continente no por omisión, sino porque esa era la única manera de sostenerlos operativos. Comprender este factor no resta mérito a su actuación; al contrario, evidencia la magnitud del esfuerzo técnico y humano desplegado para proyectar el poder aeroespacial desde el territorio continental hacia el Atlántico Sur.
-              </p>
-
-              <h3 className="mt-8 font-display text-2xl font-light">1. La pista de Puerto Argentino: capacidad vs. requerimiento</h3>
-              <p>
-                La Base Aérea Militar (BAM) Malvinas contaba con una pista de aproximadamente 1.200 metros de longitud. Para aeronaves de altas prestaciones como el Mirage IIIEA, el Dagger o el Canberra, esta infraestructura resultaba insuficiente para sostener operaciones continuas de combate.
-              </p>
-              <p>Desplegar un sistema de armas a un aeródromo militar exige mucho más que la capacidad de aterrizar y despegar. Requiere una infraestructura integral capaz de garantizar:</p>
-              <ul className="list-disc space-y-2 pl-6">
-                <li><strong>Carrera de despegue y aterrizaje con peso máximo:</strong> Los aviones debían despegar cargados con armamento pesado y tanques suplementarios de combustible, requiriendo márgenes de pista sustancialmente mayores.</li>
-                <li><strong>Sistemas de apoyo y arranque en tierra:</strong> Medios como el M-5 Dagger dependían de equipos externos de puesta en marcha que debían ser trasladados y mantenidos en la isla.</li>
-                <li><strong>Infraestructura de reabastecimiento masivo:</strong> Capacidad de almacenamiento, filtrado y bombeo de miles de litros de combustible JP-1 bajo condiciones climáticas extremas.</li>
-                <li><strong>Talleres y depósitos:</strong> Espacios protegidos para inspecciones técnicas, reparaciones mayoradas, almacenamiento de repuestos críticos y manipulación segura de armamento complejo.</li>
-              </ul>
-              <p className="font-display text-xl italic">Una pista no constituye por sí sola una base aérea operativa; solo es la cara visible de un complejo entramado técnico.</p>
-
-              <h3 className="mt-8 font-display text-2xl font-light">2. El avión no es autónomo: la dependencia del apoyo en tierra</h3>
-              <p>
-                Sostener la operatividad del A-4B, A-4C, Mirage, Dagger o Canberra exigía una cadena logística ininterrumpida. La falta de espacio, la vulnerabilidad ante el bombardeo naval o aéreo enemigo y la imposibilidad de trasladar talleres pesados a las islas habrían neutralizado la flota en cuestión de días.
-              </p>
-              <p>Cada salida desde el continente implicaba un ciclo operativo de alta complejidad:</p>
-              <p className="text-center font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">
-                Planificación ➔ Mantenimiento ➔ Armado ➔ Navegación ➔ Ataque ➔ Recuperación
-              </p>
-              <p>
-                La distancia entre las bases continentales y los objetivos en las islas (que oscilaba entre los 400 y 700 kilómetros según la base de origen) impuso volar al límite absoluto de la autonomía, requiriendo en el caso de los A-4 el reabastecimiento en vuelo mediante los aviones tanque KC-130 Hércules. La distancia no fue un obstáculo para eludir el combate; fue una variable táctica integrada a la planificación.
-              </p>
-
-              <h3 className="mt-8 font-display text-2xl font-light">3. La Fuerza Aérea Sur como sistema integral de combate</h3>
-              <p>
-                Creada el 5 de abril de 1982 bajo el comando del Brigadier General Ernesto Horacio Crespo, la Fuerza Aérea Sur fue estructurada como un sistema indivisible.
-              </p>
-              <p>
-                La guerra aérea no comenzaba cuando el piloto aceleraba en la pista ni terminaba al soltar las bombas sobre la flota enemiga. Se gestaba horas antes en los talleres de mantenimiento, en los depósitos de armamento, en las salas de planificación y en la línea de vuelo.
-              </p>
-              <p>De este modo se consolidó la <strong className="font-medium">Trilogía Operacional</strong>:</p>
-              <ul className="list-disc space-y-2 pl-6">
-                <li><strong>El Avión:</strong> La máquina exigida hasta los límites de su envolvente de vuelo.</li>
-                <li><strong>El Piloto:</strong> El profesional que ejecutó la misión asumiendo el máximo riesgo.</li>
-                <li><strong>El Personal de Tierra:</strong> Los mecánicos, armeros, abastecedores y especialistas que garantizaron la disponibilidad técnica de cada aeronave.</li>
-              </ul>
-              <p className="font-display text-xl italic">Sin el trabajo en tierra, la aeronave no despega; sin aeronave, el piloto no cumple la misión; y sin misión, el poder aéreo no se manifiesta.</p>
-
-              <h3 className="mt-8 font-display text-2xl font-light">Conclusión</h3>
-              <p>
-                El hecho de que los cazabombarderos y bombarderos no hayan operado desde las Islas Malvinas no significa que estuvieran al margen de la batalla por la soberanía. El combate se libró en el aire, pero su cimiento estuvo firmemente asentado en las bases continentales de San Julián, Río Gallegos, Río Grande, Comodoro Rivadavia y Trelew.
-              </p>
-              <p>
-                Evaluar la actuación de la Fuerza Aérea Argentina en 1982 exige mirar la totalidad del sistema. Detrás de cada impacto registrado en la flota británica existió una estructura técnica continental que hizo posible lo que la doctrina militar de la época consideraba irrealizable.
-              </p>
-              <p className="font-display text-xl italic">
-                En Malvinas no combatió únicamente un avión o un piloto: combatió la Fuerza Aérea Argentina como un todo.
-              </p>
-
-              <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-                VGM FAA José Luis Martínez<br />
-                Fuerza Aérea Argentina
-              </p>
-            </div>
-          </section>
-
-      {/* BAM SAN JULIÁN */}
-      <section className="border-y border-border bg-card">
-        <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
-          <div className="mb-10 text-center">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Sacrificio en tierra</p>
-            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
-              El Sacrificio en la BAM San Julián
-            </h2>
-          </div>
-          <div className="space-y-6 text-lg leading-relaxed text-foreground/85">
-            <p>
-              Es imperativo honrar el rol del <strong className="font-medium">II Escuadrón Aeromóvil "La Marinete"</strong> en la Base Aérea Militar San Julián.
-            </p>
-            <p>
-              En aquel invierno de 1982, el personal de mantenimiento desafió condiciones extremas con <strong className="font-medium">vientos de 60 km/h</strong>
-              y temperaturas de hasta <strong className="font-medium">19 grados bajo cero</strong>. Sin hangares, protegiendo sus herramientas en carpas
-              y alineando las bombas al costado de la plataforma, estos especialistas demostraron que sin su esfuerzo técnico y logístico,
-              el esfuerzo en el aire no habría sido posible.
-            </p>
-            <blockquote className="my-10 border-l-2 border-[var(--ocre)] pl-6 font-display text-2xl italic leading-snug text-foreground/90">
-              "Sin su esfuerzo técnico y logístico, el esfuerzo en el aire no habría sido posible."
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      {/* MISIONES Y OPERACIONES */}
-      <section id="misiones" className="px-6 py-20 md:px-12 md:py-28">
-        <div className="mx-auto max-w-5xl">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Acciones de combate y logística</p>
-          <h2 className="mt-4 font-display text-4xl font-light md:text-6xl">Misiones y Operaciones</h2>
-          <div className="mt-8 space-y-5 text-lg leading-relaxed text-foreground/85">
-            <p>Desde las inspecciones al amanecer a 15 °C bajo cero hasta el desarme de espoletas activadas de bombas no lanzadas, el alistamiento diario garantizó una disponibilidad operativa ininterrumpida frente a la flota enemiga.</p>
-            <p>Cada salida desde el continente implicaba un ciclo operativo de alta complejidad:</p>
-            <p className="text-center font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">Planificación ➔ Mantenimiento ➔ Armado ➔ Navegación ➔ Ataque ➔ Recuperación</p>
-            <p>La distancia entre las bases continentales y los objetivos en las islas impuso volar al límite absoluto de la autonomía, requiriendo en el caso de los A-4 el reabastecimiento en vuelo mediante los aviones tanque KC-130 Hércules. La distancia no fue un obstáculo para eludir el combate; fue una variable táctica integrada a la planificación.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* ARCHIVO AUDIOVISUAL */}
-      <section id="archivo-audiovisual" className="border-y border-border bg-card">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:px-12 md:py-28">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Memoria en imágenes y testimonios</p>
-          <h2 className="mt-4 font-display text-4xl font-light md:text-6xl">Archivo Audiovisual</h2>
-        </div>
-      </section>
-
-          <div className="mx-auto mt-16 max-w-4xl">
-            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              Video de la Trilogía Operativa
-            </p>
-            <video
-              src={trilogiaOperativaVideo.url}
-              controls
-              playsInline
-              preload="metadata"
-              className="aspect-video w-full bg-black border border-border"
-            />
-          </div>
-
-          <div className="mx-auto mt-12 max-w-4xl">
-            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              Por qué fue tan importante la Trilogía
-            </p>
-            <video
-              src={historiaFuerzaAereaVideo.url}
-              controls
-              playsInline
-              preload="metadata"
-              className="aspect-video w-full bg-black border border-border"
-            />
-          </div>
-
-          <div className="mx-auto mt-12 max-w-4xl">
-            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              Fuerza Aérea Sur 1982 — Dando batalla
-            </p>
-            <video
-              src={fuerzaAereaBatallaVideo.url}
-              controls
-              playsInline
-              preload="metadata"
-              className="aspect-video w-full bg-black border border-border"
-            />
-          </div>
-
-          <div className="mx-auto mt-12 max-w-4xl">
-            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              La Fuerza Aérea Sur probada en combate
-            </p>
-            <video
-              src={fuerzaAereaProbadaCombateVideo.url}
-              controls
-              playsInline
-              preload="metadata"
-              className="aspect-video w-full bg-black border border-border"
-            />
-          </div>
-
-          <div className="mx-auto mt-12 max-w-4xl">
-            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              No fueron ni 1, ni 2, ni 3...
-            </p>
-            <video
-              src={noFueronVideo.url}
-              controls
-              playsInline
-              preload="metadata"
-              className="aspect-video w-full bg-black border border-border"
-            />
-          </div>
-
-          <div className="mx-auto mt-12 max-w-4xl">
-            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              La verdad que incomoda — Fuerza Aérea Sur
-            </p>
-            <video
-              src={verdadIncomodaVideo.url}
-              controls
-              playsInline
-              preload="metadata"
-              className="aspect-video w-full bg-black border border-border"
-            />
-          </div>
-
-          <div className="mx-auto mt-12 max-w-4xl">
-            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              Fuerza Aérea Argentina — PC VGM Martínez José Luis
-            </p>
-            <video
-              src={martinezVideo.url}
-              controls
-              playsInline
-              preload="metadata"
-              className="aspect-video w-full bg-black border border-border"
-            />
-          </div>
-
-          <p className="mx-auto mt-16 max-w-3xl text-center font-display text-2xl italic leading-snug text-foreground/80 md:text-3xl">
-            Representaron el "último eslabón humano" antes del despegue, siendo los encargados de artillar, reparar
-            y dar el saludo final con el pulgar en alto a sus pilotos.
-          </p>
-        </div>
-      </section>
-
-      {/* VIDEO FUERZA AÉREA SUR */}
-      <section className="border-y border-border bg-card">
+      {/* ¿QUÉ FUE LA FUERZA AÉREA SUR? */}
+      <section id="fas-1982" className="border-y border-border bg-card">
         <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
           <div className="mb-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Archivo audiovisual</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">¿Qué fue la Fuerza Aérea Sur?</p>
             <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
               Fuerza Aérea Sur
             </h2>
@@ -742,17 +353,435 @@ function Index() {
         </div>
       </section>
 
+      {/* LA TRILOGÍA */}
+      <div id="trilogia">
+      <section className="px-6 py-24 md:px-12 md:py-36">
+        <div className="mx-auto max-w-5xl">
+          <div className="divider-ornament mb-12 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+            La trilogía probada en combate
+          </div>
+          <p className="font-display text-2xl font-light leading-[1.3] text-balance md:text-4xl">
+            El poder aéreo nace mucho antes del despegue.
+          </p>
+          <div className="mt-8 space-y-6 text-lg leading-relaxed text-foreground/85">
+            <p>
+              Durante el <strong className="font-medium">Conflicto del Atlántico Sur de 1982</strong>, la Fuerza Aérea Sur escribió una de las páginas más extraordinarias de la historia militar argentina. Aquellas acciones que asombraron al mundo no fueron obra del azar ni del esfuerzo de un solo hombre: fueron el resultado de una <strong className="font-medium">trilogía operativa</strong>, inseparable e indispensable, forjada en el sacrificio, la disciplina y el compromiso.
+            </p>
+            <p className="font-display text-xl font-light italic md:text-2xl">
+              AVIÓN · PILOTO · PERSONAL DE TIERRA
+            </p>
+            <p>
+              <strong className="font-medium">Tres protagonistas. Una sola misión.</strong><br />
+              Cada uno dependía del otro para cumplir su cometido.
+            </p>
+            <ul className="list-none space-y-2 pl-0">
+              <li>Sin el personal de tierra, no hay avión operativo.</li>
+              <li>Sin el avión, no hay piloto en combate.</li>
+              <li>Sin el piloto, no hay misión cumplida.</li>
+            </ul>
+            <p className="font-display text-xl italic">
+              Esta es la verdadera esencia del poder aéreo.
+            </p>
+            <p>
+              Mucho antes de que una aeronave acelerara por la pista, existía un trabajo silencioso e incansable que rara vez ocupó los titulares. En hangares, plataformas y talleres, mecánicos, técnicos, armamentistas, electricistas, especialistas en aviónica, abastecedores y personal logístico trabajaban día y noche bajo una enorme presión, sabiendo que de la calidad de su tarea dependían el éxito de la misión y, muchas veces, la vida de quienes despegaban hacia el combate.
+            </p>
+            <p>
+              Cada avión que regresó… y cada avión que no volvió… llevaba consigo el esfuerzo, la capacidad profesional y la entrega de hombres y mujeres que también combatieron desde tierra.
+            </p>
+            <p>
+              Esta página nace con el propósito de preservar esa memoria, difundir documentos, testimonios, fotografías, videos y material de investigación que permitan comprender la verdadera dimensión del esfuerzo realizado por la <strong className="font-medium">Fuerza Aérea Sur</strong> durante la Guerra del Atlántico Sur.
+            </p>
+            <p>
+              Es también un reconocimiento a quienes permanecieron durante décadas en un injusto silencio, pese a haber sido parte fundamental de una de las campañas aéreas más importantes de la historia contemporánea.
+            </p>
+            <p>
+              Porque la historia no pertenece únicamente a quienes empuñaron los mandos de un avión. También pertenece a quienes, con sus manos, su conocimiento y su vocación de servicio, hicieron posible que cada misión pudiera despegar.
+            </p>
+            <p className="font-display text-xl italic">
+              La Trilogía Probada en Combate no es solo un concepto. Es el reconocimiento de una verdad histórica: el avión, el piloto y el personal de tierra combatieron como una sola unidad.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="px-6 py-24 md:px-12 md:py-36">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-16 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+              Una unidad técnica y humana indisoluble
+            </p>
+            <h2 className="mt-4 font-display text-5xl font-light italic md:text-7xl">
+              La Trilogía Operativa
+            </h2>
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+              En el Teatro de Operaciones, el accionar de la Fuerza Aérea Sur se cimentó en el reconocimiento conceptual
+              de la "Trilogía Operativa", una unidad técnica y humana indisoluble conformada por:
+            </p>
+          </div>
+          <div className="grid gap-px bg-border md:grid-cols-3">
+            {[
+              { num: "I", title: "El Avión", img: avionImg, text: "El sistema de armas IAI M-5 Dagger (Mirage V), tecnología probada en combate que fue llevada al límite de su capacidad operativa." },
+              { num: "II", title: "El Piloto", img: pilotoImg, text: "El ejecutor de la misión, quien en la soledad de su cabina asumió la responsabilidad final del ataque." },
+              { num: "III", title: "El Personal de Tierra", img: tierraImg, text: "Los especialistas, de diferentes especialidades, personal Militar, Civil y conscriptos — la gran mayoría perteneciente a la VI Brigada Aérea - Grupo Técnico 6 (GT6) y demás organismos necesarios para las actividades aéreas. Conocidos históricamente como 'Los Magos'." },
+            ].map((p) => (
+              <article key={p.num} className="group relative overflow-hidden bg-card">
+                <div className="relative aspect-[4/5] overflow-hidden">
+                  <img src={p.img} alt={p.title} width={1280} height={1280} loading="lazy" className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                  <div className="absolute left-6 top-6 font-display text-6xl italic text-background mix-blend-difference">{p.num}</div>
+                </div>
+                <div className="p-8">
+                  <h3 className="font-display text-3xl font-light">{p.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="mx-auto mt-16 max-w-3xl space-y-2 text-center font-display text-2xl italic text-foreground/90 md:text-3xl">
+            <p>SIN PERSONAL DE TIERRA, NO HAY AVIÓN.</p>
+            <p>SIN AVIÓN, NO HAY PILOTO.</p>
+            <p>SIN PILOTO, NO HAY MISIÓN.</p>
+            <p className="pt-6 font-mono text-xs not-italic uppercase tracking-[0.3em] text-[var(--bronce)]">Tres protagonistas · Una sola misión</p>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      {/* ESCUADRONES AEROMÓVILES DE GUERRA */}
+      <section id="escuadrones" className="border-y border-border bg-card">
+            <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
+              <div className="mb-12 text-center">
+                <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Reconocimiento operativo</p>
+                <h2 className="mt-4 font-display text-4xl font-light md:text-6xl">
+                  FUERZA AÉREA SUR
+                </h2>
+                <p className="mt-3 font-display text-2xl font-light italic text-[var(--bronce)] md:text-3xl">
+                  ESCUADRONES AEROMÓVILES DE GUERRA
+                </p>
+                <p className="mt-2 font-mono text-xs uppercase tracking-[0.3em] text-muted-foreground">
+                  PROBADOS EN COMBATE REAL
+                </p>
+              </div>
+
+              <figure className="mx-auto mb-12 max-w-4xl">
+                <img
+                  src={folletoImg}
+                  alt="Folleto informativo de la Fuerza Aérea Sur 1982: Escuadrones Aeromóviles de Guerra probados en combate real"
+                  width={1600}
+                  height={900}
+                  loading="lazy"
+                  className="w-full border border-border bg-background shadow-page"
+                />
+                <figcaption className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  Folleto de difusión · Fuerza Aérea Sur 1982
+                </figcaption>
+              </figure>
+
+              <div className="mb-12 border-l-2 border-[var(--ocre)] pl-6">
+                <p className="font-display text-2xl italic leading-snug text-foreground/90 md:text-3xl">
+                  LA DISCUSIÓN TERMINA DONDE COMIENZAN LOS HECHOS
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                  Basándonos en los análisis doctrinarios, las normas operativas militares y las declaraciones testimoniales y documentales emitidas por nuestros propios mandos de la época —en especial los testimonios del Brigadier Ernesto Horacio Crespo y del Comando de la Fuerza Aérea Sur—, sostenemos que existen fundamentos probatorios categóricos para demostrar por qué todos los integrantes de los Escuadrones Aeromóviles de la Fuerza Aérea Sur (FAS) debemos ser reconocidos formalmente como Veteranos de Guerra, y por qué nos constituimos en Escuadrones Aeromóviles de Guerra, probados en combate real.
+                </p>
+              </div>
+
+              <div className="space-y-14 text-lg leading-relaxed text-foreground/85">
+                <div>
+                  <h3 className="font-display text-2xl font-light md:text-3xl">
+                    2. DE ESCUADRONES AEROMÓVILES A ESCUADRONES AEROMÓVILES DE GUERRA
+                  </h3>
+                  <p className="mt-4">
+                    Antes del conflicto, los Escuadrones Aeromóviles constituían unidades destinadas al despliegue y al adiestramiento táctico. Con la activación de la Fuerza Aérea Sur y el inicio de las operaciones de guerra, esa realidad cambió radicalmente. Nos transformamos, en los hechos, en:
+                  </p>
+                  <p className="my-6 text-center font-display text-2xl font-light italic text-[var(--bronce)] md:text-3xl">
+                    ESCUADRONES AEROMÓVILES DE GUERRA
+                  </p>
+                  <p className="mt-2">
+                    Y no por una denominación honorífica. Por haber sido empleados en combate real.
+                  </p>
+
+                  <div className="mt-6 space-y-6">
+                    <div>
+                      <h4 className="font-medium">2.1. Alineación con el plan operativo de guerra</h4>
+                      <p className="mt-2">
+                        Dejamos de ser unidades destinadas exclusivamente al adiestramiento para convertirnos en elementos operativos integrados a la ejecución de las operaciones aéreas de combate en el Atlántico Sur.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium">2.2. Operatividad bajo fuego real y adaptación táctica</h4>
+                      <p className="mt-2">
+                        Durante el conflicto debimos adaptar procedimientos, armamento, mantenimiento, logística y empleo operativo a las exigencias concretas de una guerra. Se modificaron procedimientos de empleo de armamento, se desarrollaron tácticas de vuelo a muy baja altura para reducir la exposición a la detección enemiga y se implementaron procedimientos de reabastecimiento en vuelo mediante los KC-130 Hércules, entre muchas otras adaptaciones realizadas en condiciones reales de combate.
+                      </p>
+                    </div>
+                    <div>
+                      <h4 className="font-medium">2.3. La prueba definitiva: el combate</h4>
+                      <p className="mt-2">
+                        Nuestros escuadrones aeromóviles —Dagger, A-4B, A-4C, A-4Q, Mirage, Pucará, Learjet, Hércules y helicópteros— participaron en las operaciones de guerra, sufrieron pérdidas humanas y materiales y mantuvieron su actividad operacional hasta el final del conflicto. Eso constituye la prueba definitiva:
+                      </p>
+                      <p className="mt-4 text-center font-display text-2xl italic text-foreground/90 md:text-3xl">
+                        FUIMOS PROBADOS EN COMBATE REAL.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      {/* ¿DESDE DÓNDE OPERÓ LA FAS? */}
+      <section id="bases" className="px-6 py-24 md:px-12 md:py-32">
+          <div className="mb-14 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Bases continentales</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">¿Desde dónde operó la Fuerza Aérea Sur?</h2>
+            <p className="mt-3 font-display text-2xl font-light italic text-[var(--bronce)] md:text-3xl">La guerra aérea también se libró desde el continente</p>
+          </div>
+          <section id="por-que-no-operaron" className="mx-auto mt-4 max-w-5xl px-6 md:px-12">
+            <div className="divider-ornament mb-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+              Pregunta histórica
+            </div>
+            <h2 className="font-display text-3xl font-light leading-tight text-balance md:text-5xl">
+              ¿Por qué los aviones de la Fuerza Aérea Sur no operaron desde las Islas Malvinas?
+            </h2>
+            <p className="mt-4 font-display text-xl italic text-foreground/80 md:text-2xl">
+              Una respuesta técnica, operativa y logística que la historia no puede ignorar
+            </p>
+
+            <figure className="mt-10">
+              <img
+                src={porQueNoOperaronImg}
+                alt="Sistema de combate de la Fuerza Aérea Sur desde el continente: Mirage IIIEA, M-5 Dagger, A-4B/C Skyhawk y Canberra B.Mk.62"
+                width={1600}
+                height={900}
+                className="w-full rounded-sm border border-border shadow-page"
+                loading="lazy"
+              />
+              <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                Sistema de combate de la Fuerza Aérea Sur desde el continente · Atlántico Sur 1982
+              </figcaption>
+            </figure>
+
+            <div className="mt-10 space-y-6 text-lg leading-relaxed text-foreground/85">
+              <p>
+                Existe una interrogante recurrente al analizar la actuación de la Fuerza Aérea Argentina durante la Guerra de Malvinas: <strong className="font-medium">¿por qué los Mirage IIIEA, M-5 IAI Dagger, A-4B, A-4C y Canberra no establecieron sus bases de combate en las islas?</strong>
+              </p>
+              <p>
+                La respuesta no responde a una falta de voluntad ni de coraje operacional. Obedece estrictamente a las <strong className="font-medium">limitaciones físicas, técnicas y logísticas</strong> que impone la guerra aérea moderna.
+              </p>
+              <p>
+                Los principales sistemas de armas de la Fuerza Aérea Sur (FAS) operaron desde el continente no por omisión, sino porque esa era la única manera de sostenerlos operativos. Comprender este factor no resta mérito a su actuación; al contrario, evidencia la magnitud del esfuerzo técnico y humano desplegado para proyectar el poder aeroespacial desde el territorio continental hacia el Atlántico Sur.
+              </p>
+
+              <h3 className="mt-8 font-display text-2xl font-light">1. La pista de Puerto Argentino: capacidad vs. requerimiento</h3>
+              <p>
+                La Base Aérea Militar (BAM) Malvinas contaba con una pista de aproximadamente 1.200 metros de longitud. Para aeronaves de altas prestaciones como el Mirage IIIEA, el Dagger o el Canberra, esta infraestructura resultaba insuficiente para sostener operaciones continuas de combate.
+              </p>
+              <p>Desplegar un sistema de armas a un aeródromo militar exige mucho más que la capacidad de aterrizar y despegar. Requiere una infraestructura integral capaz de garantizar:</p>
+              <ul className="list-disc space-y-2 pl-6">
+                <li><strong>Carrera de despegue y aterrizaje con peso máximo:</strong> Los aviones debían despegar cargados con armamento pesado y tanques suplementarios de combustible, requiriendo márgenes de pista sustancialmente mayores.</li>
+                <li><strong>Sistemas de apoyo y arranque en tierra:</strong> Medios como el M-5 Dagger dependían de equipos externos de puesta en marcha que debían ser trasladados y mantenidos en la isla.</li>
+                <li><strong>Infraestructura de reabastecimiento masivo:</strong> Capacidad de almacenamiento, filtrado y bombeo de miles de litros de combustible JP-1 bajo condiciones climáticas extremas.</li>
+                <li><strong>Talleres y depósitos:</strong> Espacios protegidos para inspecciones técnicas, reparaciones mayoradas, almacenamiento de repuestos críticos y manipulación segura de armamento complejo.</li>
+              </ul>
+              <p className="font-display text-xl italic">Una pista no constituye por sí sola una base aérea operativa; solo es la cara visible de un complejo entramado técnico.</p>
+
+              <h3 className="mt-8 font-display text-2xl font-light">2. El avión no es autónomo: la dependencia del apoyo en tierra</h3>
+              <p>
+                Sostener la operatividad del A-4B, A-4C, Mirage, Dagger o Canberra exigía una cadena logística ininterrumpida. La falta de espacio, la vulnerabilidad ante el bombardeo naval o aéreo enemigo y la imposibilidad de trasladar talleres pesados a las islas habrían neutralizado la flota en cuestión de días.
+              </p>
+              <p>Cada salida desde el continente implicaba un ciclo operativo de alta complejidad:</p>
+              <p className="text-center font-mono text-sm uppercase tracking-[0.15em] text-muted-foreground">
+                Planificación ➔ Mantenimiento ➔ Armado ➔ Navegación ➔ Ataque ➔ Recuperación
+              </p>
+              <p>
+                La distancia entre las bases continentales y los objetivos en las islas (que oscilaba entre los 400 y 700 kilómetros según la base de origen) impuso volar al límite absoluto de la autonomía, requiriendo en el caso de los A-4 el reabastecimiento en vuelo mediante los aviones tanque KC-130 Hércules. La distancia no fue un obstáculo para eludir el combate; fue una variable táctica integrada a la planificación.
+              </p>
+
+              <h3 className="mt-8 font-display text-2xl font-light">3. La Fuerza Aérea Sur como sistema integral de combate</h3>
+              <p>
+                Creada el 5 de abril de 1982 bajo el comando del Brigadier General Ernesto Horacio Crespo, la Fuerza Aérea Sur fue estructurada como un sistema indivisible.
+              </p>
+              <p>
+                La guerra aérea no comenzaba cuando el piloto aceleraba en la pista ni terminaba al soltar las bombas sobre la flota enemiga. Se gestaba horas antes en los talleres de mantenimiento, en los depósitos de armamento, en las salas de planificación y en la línea de vuelo.
+              </p>
+              <p>De este modo se consolidó la <strong className="font-medium">Trilogía Operacional</strong>:</p>
+              <ul className="list-disc space-y-2 pl-6">
+                <li><strong>El Avión:</strong> La máquina exigida hasta los límites de su envolvente de vuelo.</li>
+                <li><strong>El Piloto:</strong> El profesional que ejecutó la misión asumiendo el máximo riesgo.</li>
+                <li><strong>El Personal de Tierra:</strong> Los mecánicos, armeros, abastecedores y especialistas que garantizaron la disponibilidad técnica de cada aeronave.</li>
+              </ul>
+              <p className="font-display text-xl italic">Sin el trabajo en tierra, la aeronave no despega; sin aeronave, el piloto no cumple la misión; y sin misión, el poder aéreo no se manifiesta.</p>
+
+              <h3 className="mt-8 font-display text-2xl font-light">Conclusión</h3>
+              <p>
+                El hecho de que los cazabombarderos y bombarderos no hayan operado desde las Islas Malvinas no significa que estuvieran al margen de la batalla por la soberanía. El combate se libró en el aire, pero su cimiento estuvo firmemente asentado en las bases continentales de San Julián, Río Gallegos, Río Grande, Comodoro Rivadavia y Trelew.
+              </p>
+              <p>
+                Evaluar la actuación de la Fuerza Aérea Argentina en 1982 exige mirar la totalidad del sistema. Detrás de cada impacto registrado en la flota británica existió una estructura técnica continental que hizo posible lo que la doctrina militar de la época consideraba irrealizable.
+              </p>
+              <p className="font-display text-xl italic">
+                En Malvinas no combatió únicamente un avión o un piloto: combatió la Fuerza Aérea Argentina como un todo.
+              </p>
+
+              <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+                VGM FAA José Luis Martínez<br />
+                Fuerza Aérea Argentina
+              </p>
+            </div>
+          </section>
+      </section>
+
+      {/* BAM SAN JULIÁN */}
+      <section id="san-julian" className="border-y border-border bg-card">
+        <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
+          <div className="mb-10 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Sacrificio en tierra</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">
+              El Sacrificio en la BAM San Julián
+            </h2>
+          </div>
+          <div className="space-y-6 text-lg leading-relaxed text-foreground/85">
+            <p>
+              Es imperativo honrar el rol del <strong className="font-medium">II Escuadrón Aeromóvil "La Marinete"</strong> en la Base Aérea Militar San Julián.
+            </p>
+            <p>
+              En aquel invierno de 1982, el personal de mantenimiento desafió condiciones extremas con <strong className="font-medium">vientos de 60 km/h</strong>
+              y temperaturas de hasta <strong className="font-medium">19 grados bajo cero</strong>. Sin hangares, protegiendo sus herramientas en carpas
+              y alineando las bombas al costado de la plataforma, estos especialistas demostraron que sin su esfuerzo técnico y logístico,
+              el esfuerzo en el aire no habría sido posible.
+            </p>
+            <blockquote className="my-10 border-l-2 border-[var(--ocre)] pl-6 font-display text-2xl italic leading-snug text-foreground/90">
+              "Sin su esfuerzo técnico y logístico, el esfuerzo en el aire no habría sido posible."
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      {/* MISIONES Y OPERACIONES */}
+      <section id="misiones" className="px-6 py-24 md:px-12 md:py-32">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-14 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Preparación · Despegues · Combate</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">Misiones y Operaciones</h2>
+          </div>
+          <div className="mx-auto mt-16 max-w-4xl">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Video de la Trilogía Operativa
+            </p>
+            <video
+              src={trilogiaOperativaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+          <p className="mx-auto mt-16 max-w-3xl text-center font-display text-2xl italic leading-snug text-foreground/80 md:text-3xl">
+            Representaron el "último eslabón humano" antes del despegue, siendo los encargados de artillar, reparar
+            y dar el saludo final con el pulgar en alto a sus pilotos.
+          </p>
+        </div>
+      </section>
+
+      {/* ARCHIVO AUDIOVISUAL */}
+      <section id="archivo-audiovisual" className="border-y border-border bg-card px-6 py-24 md:px-12 md:py-32">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-14 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Videos</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">Archivo Audiovisual</h2>
+          </div>
+          <div className="grid gap-x-8 md:grid-cols-2 [&>div]:mt-12">
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Por qué fue tan importante la Trilogía
+            </p>
+            <video
+              src={historiaFuerzaAereaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Fuerza Aérea Sur 1982 — Dando batalla
+            </p>
+            <video
+              src={fuerzaAereaBatallaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              La Fuerza Aérea Sur probada en combate
+            </p>
+            <video
+              src={fuerzaAereaProbadaCombateVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              No fueron ni 1, ni 2, ni 3...
+            </p>
+            <video
+              src={noFueronVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              La verdad que incomoda — Fuerza Aérea Sur
+            </p>
+            <video
+              src={verdadIncomodaVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Fuerza Aérea Argentina — PC VGM Martínez José Luis
+            </p>
+            <video
+              src={martinezVideo.url}
+              controls
+              playsInline
+              preload="metadata"
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+          </div>
+        </div>
+      </section>
+
       {/* GALERÍA HISTÓRICA */}
       <GaleriaHistorica />
 
       {/* ARCHIVO DOCUMENTAL */}
-      <section id="archivo" className="border-y border-border bg-muted/20">
-        <div className="mx-auto max-w-6xl px-6 pt-20 text-center md:px-12 md:pt-28">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Biblioteca histórica y de investigación</p>
-          <h2 className="mt-4 font-display text-4xl font-light md:text-6xl">Archivo Documental</h2>
-        </div>
+      <div id="archivo">
+      <section className="px-6 pt-24 md:px-12 md:pt-32">
+          <div className="mb-14 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Descargas · Documentos · Investigación</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">Archivo Documental</h2>
+          </div>
       </section>
-
       {/* ACCESO A LA OBRA */}
       <section id="acceso" className="border-y border-border bg-card px-6 py-16 md:px-12 md:py-24">
         <div className="mx-auto max-w-4xl">
@@ -849,8 +878,6 @@ function Index() {
         </div>
       </section>
 
-
-
       {/* BLOG */}
       <section className="border-y border-border bg-card">
         <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
@@ -876,12 +903,16 @@ function Index() {
           </p>
         </div>
       </section>
+      </div>
+
       {/* EXPEDIENTE DEL RECONOCIMIENTO */}
-      <section id="reconocimiento" className="border-y border-border bg-card">
-        <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[var(--bronce)]">Expediente documental</p>
-          <h2 className="mt-4 font-display text-4xl font-light md:text-6xl">El Expediente del Reconocimiento</h2>
-          <p className="mt-5 font-display text-2xl italic text-foreground/85">La discusión termina donde comienzan los hechos</p>
+      <div id="reconocimiento">
+      <section className="border-y border-border bg-card">
+            <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
+          <div className="mb-14 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Fundamentos · Normativa · Doctrina</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">Expediente del Reconocimiento</h2>
+          </div>
               <div className="space-y-14 text-lg leading-relaxed text-foreground/85">
                 <div>
                   <h3 className="font-display text-2xl font-light md:text-3xl">
@@ -940,46 +971,6 @@ function Index() {
                     </div>
                   </div>
                 </div>
-
-                <div>
-                  <h3 className="font-display text-2xl font-light md:text-3xl">
-                    2. DE ESCUADRONES AEROMÓVILES A ESCUADRONES AEROMÓVILES DE GUERRA
-                  </h3>
-                  <p className="mt-4">
-                    Antes del conflicto, los Escuadrones Aeromóviles constituían unidades destinadas al despliegue y al adiestramiento táctico. Con la activación de la Fuerza Aérea Sur y el inicio de las operaciones de guerra, esa realidad cambió radicalmente. Nos transformamos, en los hechos, en:
-                  </p>
-                  <p className="my-6 text-center font-display text-2xl font-light italic text-[var(--bronce)] md:text-3xl">
-                    ESCUADRONES AEROMÓVILES DE GUERRA
-                  </p>
-                  <p className="mt-2">
-                    Y no por una denominación honorífica. Por haber sido empleados en combate real.
-                  </p>
-
-                  <div className="mt-6 space-y-6">
-                    <div>
-                      <h4 className="font-medium">2.1. Alineación con el plan operativo de guerra</h4>
-                      <p className="mt-2">
-                        Dejamos de ser unidades destinadas exclusivamente al adiestramiento para convertirnos en elementos operativos integrados a la ejecución de las operaciones aéreas de combate en el Atlántico Sur.
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-medium">2.2. Operatividad bajo fuego real y adaptación táctica</h4>
-                      <p className="mt-2">
-                        Durante el conflicto debimos adaptar procedimientos, armamento, mantenimiento, logística y empleo operativo a las exigencias concretas de una guerra. Se modificaron procedimientos de empleo de armamento, se desarrollaron tácticas de vuelo a muy baja altura para reducir la exposición a la detección enemiga y se implementaron procedimientos de reabastecimiento en vuelo mediante los KC-130 Hércules, entre muchas otras adaptaciones realizadas en condiciones reales de combate.
-                      </p>
-                    </div>
-                    <div>
-                      <h4 className="font-medium">2.3. La prueba definitiva: el combate</h4>
-                      <p className="mt-2">
-                        Nuestros escuadrones aeromóviles —Dagger, A-4B, A-4C, A-4Q, Mirage, Pucará, Learjet, Hércules y helicópteros— participaron en las operaciones de guerra, sufrieron pérdidas humanas y materiales y mantuvieron su actividad operacional hasta el final del conflicto. Eso constituye la prueba definitiva:
-                      </p>
-                      <p className="mt-4 text-center font-display text-2xl italic text-foreground/90 md:text-3xl">
-                        FUIMOS PROBADOS EN COMBATE REAL.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
                 <div>
                   <h3 className="font-display text-2xl font-light md:text-3xl">
                     3. LA TRILOGÍA INDIVISIBLE
@@ -1088,10 +1079,6 @@ function Index() {
                 </p>
               </div>
             </div>
-          </section>
-
-
-        </div>
       </section>
 
       {/* LA VERDAD DOCUMENTADA */}
@@ -1350,8 +1337,6 @@ function Index() {
           </div>
         </div>
       </section>
-
-
 
       {/* MARCO DOCTRINARIO Y NORMATIVO */}
       <section id="marco-doctrinario" className="border-y border-border bg-card">
@@ -1642,12 +1627,16 @@ function Index() {
           </p>
         </div>
       </section>
+      </div>
 
-      <section id="aula-malvinas" className="px-6 pt-20 text-center md:px-12 md:pt-28">
-        <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Material educativo gratuito</p>
-        <h2 className="mt-4 font-display text-4xl font-light md:text-6xl">Aula Malvinas</h2>
+      {/* AULA MALVINAS */}
+      <div id="aula-malvinas">
+      <section className="px-6 pt-24 md:px-12 md:pt-32">
+          <div className="mb-14 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Material educativo gratuito</p>
+            <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">Aula Malvinas</h2>
+          </div>
       </section>
-
       {/* HOMENAJE A LOS 649 HÉROES NACIONALES */}
       <section id="homenaje" className="border-y border-border bg-card">
         <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
@@ -1881,8 +1870,9 @@ function Index() {
           </div>
         </div>
       </section>
+      </div>
 
-      {/* LIBRO + DESCRIPCIÓN */}
+      {/* EL LIBRO */}
       <section id="el-libro" className="border-y border-border bg-card">
         <div className="mx-auto grid max-w-6xl gap-16 px-6 py-24 md:grid-cols-[1fr_1.2fr] md:px-12 md:py-32">
           <div className="relative">
@@ -1920,15 +1910,7 @@ function Index() {
       </section>
 
       {/* EL AUTOR */}
-      <section id="el-autor" className="border-y border-border bg-background px-6 py-20 md:px-12 md:py-28">
-        <div className="mx-auto max-w-5xl">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Testimonio y trayectoria</p>
-          <h2 className="mt-4 font-display text-4xl font-light md:text-6xl">El Autor</h2>
-          <h3 className="mt-8 font-display text-2xl font-light">José Luis Martínez · Pers. Civil Técnico Profesional FAA · VGM</h3>
-          <p className="mt-5 text-lg leading-relaxed text-foreground/85">Egresado como Técnico Electromecánico de ENET N°1, ingresó a la Fuerza Aérea Argentina en 1980. En 1982 prestó servicio dentro del Escuadrón Control del Grupo Técnico 6 y desplegó a la Base Aérea Militar San Julián con el II Escuadrón Aeromóvil M-5 Dagger "La Marinete". Dedicado a la preservación del archivo histórico documental de la Fuerza Aérea Sur.</p>
-        </div>
-      </section>
-
+      <div id="el-autor">
       {/* COLABORACIÓN VOLUNTARIA */}
       <section id="colaborar" className="bg-card">
         <div className="mx-auto max-w-4xl px-6 py-24 text-center md:px-12 md:py-32">
@@ -1977,7 +1959,7 @@ function Index() {
           </div>
         </div>
       </section>
-
+      </div>
 
       {/* DIFUNDIR — QR Y FOLLETO DIGITAL */}
       <section id="difundir" className="border-y border-border bg-background">
@@ -2041,6 +2023,7 @@ function Index() {
       </section>
 
       <LibroDeVisitas />
+
       {/* VALORES Y CIERRE INSTITUCIONAL */}
       <section className="relative isolate overflow-hidden bg-primary text-primary-foreground">
         <div className="absolute inset-0 opacity-20">
