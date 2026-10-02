@@ -1957,6 +1957,32 @@ function Index() {
               Contacto: <a href="mailto:dagger1959@gmail.com" className="underline underline-offset-4 hover:text-[var(--bronce)]">dagger1959@gmail.com</a>
             </p>
           </div>
+
+          <div className="mx-auto mt-12 max-w-2xl border-t border-border pt-10 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Distinciones</p>
+            <h3 className="mt-3 font-display text-2xl font-light italic text-foreground/90">
+              Mis distintivos y distinciones
+            </h3>
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              Galería externa con los distintivos de campaña y las distinciones recibidas durante y después del conflicto del Atlántico Sur.
+            </p>
+            <a
+              href="https://photos.app.goo.gl/ZPjoa6it9JyhmBgw5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-3 border border-border bg-background px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
+            >
+              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <circle cx="12" cy="8" r="6" />
+                <path d="M15.5 13l1.5 8-5-3-5 3 1.5-8" />
+              </svg>
+              Ver distintivos y distinciones
+            </a>
+            <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Álbum externo · Google Fotos
+            </p>
+          </div>
+
         </div>
       </section>
       </div>
