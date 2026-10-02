@@ -1078,6 +1078,7 @@ function Index() {
                   Integrante del II Escuadrón Aeromóvil de Guerra (EAG) M5 IAI Dagger “La Marinete”
                 </p>
               </div>
+            </div>
       </section>
 
       {/* LA VERDAD DOCUMENTADA */}
