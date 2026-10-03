@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import heroAsset from "@/assets/galeria/dagger-marinete.jpg.asset.json";
 import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
 import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
@@ -41,6 +42,7 @@ import martinezVideo from "@/assets/martinez-jose-luis.mp4.asset.json";
 import fuerzaAereaSurVideo from "@/assets/fuerza-aerea-sur-video.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 import { LibroDeVisitas, ContadorVisitas } from "@/components/libro-de-visitas";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -53,6 +55,8 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="archive-legacy-theme min-h-screen bg-background text-foreground paper-texture">
       {/* NAVEGACIÓN DOCUMENTAL */}
@@ -68,24 +72,34 @@ function Index() {
               <a key={id} href={`#${id}`} className="transition-colors hover:text-foreground">{label}</a>
             ))}
           </nav>
-          <details className="relative xl:hidden">
-            <summary className="cursor-pointer list-none border border-border px-3 py-2 font-mono text-[10px] uppercase tracking-[0.15em]">
+          <div className="relative xl:hidden">
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              aria-expanded={mobileMenuOpen}
+              aria-controls="menu-secciones"
+              onClick={() => setMobileMenuOpen((open) => !open)}
+              className="rounded-none font-mono text-[10px] uppercase tracking-[0.15em]"
+            >
               Menú
-            </summary>
-            <nav aria-label="Secciones principales" className="absolute right-0 top-12 z-50 max-h-[calc(100svh-5rem)] w-64 overflow-y-auto border border-border bg-background p-3 shadow-page">
-              {[
-                ["inicio", "Inicio"], ["fas-1982", "FAS 1982"], ["trilogia", "La Trilogía"], ["escuadrones", "Escuadrones"], ["bases", "Bases"], ["misiones", "Misiones"], ["archivo", "Archivo"], ["aula-malvinas", "Aula Malvinas"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"],
-              ].map(([id, label]) => (
-                <a key={id} href={`#${id}`} className="block border-b border-border px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] last:border-0">
-                  {label}
-                </a>
-              ))}
-              <div className="mt-2 border-t border-border pt-2">
-                <a href="#colaborar" className="block px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Colaborar</a>
-                <a href="#difundir" className="block px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Difundir</a>
-              </div>
-            </nav>
-          </details>
+            </Button>
+            {mobileMenuOpen && (
+              <nav id="menu-secciones" aria-label="Secciones principales" className="absolute right-0 top-12 z-50 max-h-[calc(100svh-5rem)] w-64 overflow-y-auto border border-border bg-background p-3 shadow-page">
+                {[
+                  ["inicio", "Inicio"], ["fas-1982", "FAS 1982"], ["trilogia", "La Trilogía"], ["escuadrones", "Escuadrones"], ["bases", "Bases"], ["misiones", "Misiones"], ["archivo", "Archivo"], ["aula-malvinas", "Aula Malvinas"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"],
+                ].map(([id, label]) => (
+                  <a key={id} href={`#${id}`} onClick={() => setMobileMenuOpen(false)} className="block border-b border-border px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] last:border-0">
+                    {label}
+                  </a>
+                ))}
+                <div className="mt-2 border-t border-border pt-2">
+                  <a href="#colaborar" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Colaborar</a>
+                  <a href="#difundir" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Difundir</a>
+                </div>
+              </nav>
+            )}
+          </div>
         </div>
       </header>
 
