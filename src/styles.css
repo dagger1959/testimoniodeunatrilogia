@@ -61,6 +61,8 @@
     font-family: var(--font-body);
     font-feature-settings: "ss01", "cv11";
   }
+  html { scroll-behavior: smooth; }
+  [id] { scroll-margin-top: 5rem; }
   h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
 }
 
