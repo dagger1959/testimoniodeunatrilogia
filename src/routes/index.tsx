@@ -49,6 +49,10 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Testimonio de una Trilogía — Guerra de Malvinas 1982" },
       { name: "description", content: "Obra histórica, documental y vivencial sobre el Personal de Tierra de la Fuerza Aérea Sur en la BAM San Julián. Descarga libre y gratuita en PDF." },
+      { property: "og:title", content: "Testimonio de una Trilogía — Guerra de Malvinas 1982" },
+      { property: "og:description", content: "Archivo histórico, documental y educativo sobre la Fuerza Aérea Sur, la Trilogía Operativa y el personal de tierra." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
