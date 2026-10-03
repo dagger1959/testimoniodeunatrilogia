@@ -61,6 +61,8 @@
     font-family: var(--font-body);
     font-feature-settings: "ss01", "cv11";
   }
+  html { scroll-behavior: smooth; }
+  [id] { scroll-margin-top: 5rem; }
   h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
 }
 
@@ -83,4 +85,37 @@
     flex: 1;
     background: linear-gradient(to right, transparent, var(--color-border), transparent);
   }
+}
+
+.archive-legacy-theme {
+  --background: oklch(0.16 0.025 250);
+  --foreground: oklch(0.94 0.012 85);
+  --card: oklch(0.2 0.028 250);
+  --card-foreground: oklch(0.94 0.012 85);
+  --primary: oklch(0.66 0.11 70);
+  --primary-foreground: oklch(0.16 0.025 250);
+  --secondary: oklch(0.25 0.03 250);
+  --secondary-foreground: oklch(0.94 0.012 85);
+  --muted: oklch(0.23 0.025 250);
+  --muted-foreground: oklch(0.7 0.02 85);
+  --accent: oklch(0.66 0.11 70);
+  --accent-foreground: oklch(0.16 0.025 250);
+  --border: oklch(0.32 0.025 250);
+  --celeste: oklch(0.75 0.08 230);
+  --ocre: oklch(0.7 0.12 70);
+  --bronce: oklch(0.72 0.1 70);
+  --rojo: oklch(0.6 0.16 25);
+  background-image:
+    radial-gradient(at 20% 0%, oklch(0.25 0.035 245 / 0.5) 0, transparent 45%),
+    radial-gradient(at 80% 100%, oklch(0.25 0.04 70 / 0.25) 0, transparent 50%);
+}
+
+.archive-legacy-theme > section:not(#inicio) h2 {
+  color: var(--color-ocre);
+}
+
+.archive-legacy-theme a:focus-visible,
+.archive-legacy-theme summary:focus-visible {
+  outline: 2px solid var(--color-celeste);
+  outline-offset: 3px;
 }

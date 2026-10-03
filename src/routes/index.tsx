@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import heroAsset from "@/assets/galeria/dagger-marinete.jpg.asset.json";
 import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
 import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
@@ -41,38 +42,69 @@ import martinezVideo from "@/assets/martinez-jose-luis.mp4.asset.json";
 import fuerzaAereaSurVideo from "@/assets/fuerza-aerea-sur-video.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 import { LibroDeVisitas, ContadorVisitas } from "@/components/libro-de-visitas";
+import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Testimonio de una Trilogía — Guerra de Malvinas 1982" },
       { name: "description", content: "Obra histórica, documental y vivencial sobre el Personal de Tierra de la Fuerza Aérea Sur en la BAM San Julián. Descarga libre y gratuita en PDF." },
+      { property: "og:title", content: "Testimonio de una Trilogía — Guerra de Malvinas 1982" },
+      { property: "og:description", content: "Archivo histórico, documental y educativo sobre la Fuerza Aérea Sur, la Trilogía Operativa y el personal de tierra." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
 });
 
 function Index() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-    <div className="min-h-screen bg-background text-foreground paper-texture">
-      {/* NAV */}
-      <header className="absolute inset-x-0 top-0 z-20 flex items-center justify-between px-6 py-6 md:px-12">
-        <div className="font-mono text-[11px] uppercase tracking-[0.25em] text-background mix-blend-difference">
-          BAM San Julián · 1982
+    <div className="archive-legacy-theme min-h-screen bg-background text-foreground paper-texture">
+      {/* NAVEGACIÓN DOCUMENTAL */}
+      <header className="sticky inset-x-0 top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
+        <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-4 px-6 md:px-12">
+          <a href="#inicio" className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground">
+            Fuerza Aérea Sur · 1982
+          </a>
+          <nav aria-label="Secciones principales" className="hidden items-center gap-4 font-mono text-[9px] uppercase tracking-[0.12em] text-muted-foreground xl:flex">
+            {[
+              ["inicio", "Inicio"], ["fas-1982", "FAS 1982"], ["trilogia", "La Trilogía"], ["escuadrones", "Escuadrones"], ["bases", "Bases"], ["misiones", "Misiones"], ["archivo", "Archivo"], ["aula-malvinas", "Aula Malvinas"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"],
+            ].map(([id, label]) => (
+              <a key={id} href={`#${id}`} className="transition-colors hover:text-foreground">{label}</a>
+            ))}
+          </nav>
+          <div className="relative xl:hidden">
+            <Button
+              type="button"
+              variant="outline"
+              size="sm"
+              aria-expanded={mobileMenuOpen}
+              aria-controls="menu-secciones"
+              onClick={() => setMobileMenuOpen((open) => !open)}
+              className="rounded-none font-mono text-[10px] uppercase tracking-[0.15em]"
+            >
+              Menú
+            </Button>
+            {mobileMenuOpen && (
+              <nav id="menu-secciones" aria-label="Secciones principales" className="absolute right-0 top-12 z-50 max-h-[calc(100svh-5rem)] w-64 overflow-y-auto border border-border bg-background p-3 shadow-page">
+                {[
+                  ["inicio", "Inicio"], ["fas-1982", "FAS 1982"], ["trilogia", "La Trilogía"], ["escuadrones", "Escuadrones"], ["bases", "Bases"], ["misiones", "Misiones"], ["archivo", "Archivo"], ["aula-malvinas", "Aula Malvinas"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"],
+                ].map(([id, label]) => (
+                  <a key={id} href={`#${id}`} onClick={() => setMobileMenuOpen(false)} className="block border-b border-border px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] last:border-0">
+                    {label}
+                  </a>
+                ))}
+                <div className="mt-2 border-t border-border pt-2">
+                  <a href="#colaborar" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Colaborar</a>
+                  <a href="#difundir" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Difundir</a>
+                </div>
+              </nav>
+            )}
+          </div>
         </div>
-        <nav className="hidden flex-wrap justify-end gap-x-5 gap-y-2 font-mono text-[10px] uppercase tracking-[0.2em] text-background mix-blend-difference lg:flex">
-          <a href="#inicio" className="hover:opacity-70">Inicio</a>
-          <a href="#fas-1982" className="hover:opacity-70">FAS 1982</a>
-          <a href="#trilogia" className="hover:opacity-70">La Trilogía</a>
-          <a href="#escuadrones" className="hover:opacity-70">Escuadrones</a>
-          <a href="#bases" className="hover:opacity-70">Bases</a>
-          <a href="#misiones" className="hover:opacity-70">Misiones</a>
-          <a href="#archivo" className="hover:opacity-70">Archivo</a>
-          <a href="#aula-malvinas" className="hover:opacity-70">Aula Malvinas</a>
-          <a href="#reconocimiento" className="hover:opacity-70">Reconocimiento</a>
-          <a href="#el-libro" className="hover:opacity-70">El Libro</a>
-          <a href="#el-autor" className="hover:opacity-70">El Autor</a>
-        </nav>
       </header>
 
       {/* HERO */}
