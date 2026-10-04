@@ -108,22 +108,12 @@ function Index() {
       </header>
 
       {/* HERO */}
-      <section id="inicio" className="relative isolate flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-black">
-        <img
-          src={heroImg}
-          alt="M-5 Dagger La Marinete cargado con bombas, con los distintivos de la Fuerza Aérea Sur y del II Escuadrón Aeromóvil, BAM San Julián, 1982"
-          width={1280}
-          height={833}
-          className="absolute inset-0 h-full w-full object-cover brightness-[1.08] contrast-[1.05]"
-          fetchPriority="high"
-        />
-        {/* Oscurecimiento suave y localizado: bordes y base */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/15 via-transparent to-black/10" />
-        {/* Máscara radial centrada para legibilidad del texto sin tapar el avión */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.42)_0%,transparent_70%)]" />
+      <section id="inicio" className="relative isolate w-full overflow-hidden bg-black">
+        {/* Vignette sutil de fondo */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(30,45,60,0.55)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/50" />
 
-        <div className="relative z-10 mx-auto w-full max-w-5xl px-6 py-28 text-center md:px-12 md:py-32">
+        <div className="relative z-10 mx-auto w-full max-w-5xl px-6 pt-20 pb-16 text-center md:px-12 md:pt-28 md:pb-24">
           <div className="mb-5 inline-flex items-center gap-3">
             <span className="h-px w-8 bg-[var(--rojo)]" />
             <span className="font-mono text-[11px] font-medium uppercase tracking-[0.35em] text-[var(--celeste)] md:text-xs">
@@ -159,6 +149,23 @@ function Index() {
           <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.25em] text-white/60">
             Pers. Civil Técnico Profesional FAA · VGM José Luis Martínez
           </p>
+
+          {/* Fotografía completa, enmarcada y sin recortes */}
+          <figure className="mx-auto mt-12 w-full max-w-4xl">
+            <div className="overflow-hidden rounded-sm border border-white/20 bg-black p-2 shadow-[0_25px_70px_-20px_rgba(0,0,0,0.9)] md:p-3">
+              <img
+                src={heroImg}
+                alt="M-5 Dagger La Marinete cargado con bombas, con los distintivos de la Fuerza Aérea Sur y del II Escuadrón Aeromóvil, BAM San Julián, 1982"
+                width={1280}
+                height={833}
+                className="h-auto w-full rounded-sm object-contain brightness-[1.08] contrast-[1.05]"
+                fetchPriority="high"
+              />
+            </div>
+            <figcaption className="mt-4 font-mono text-[10px] uppercase tracking-[0.2em] text-white/60 md:text-[11px]">
+              M-5 Dagger "La Marinete" · BAM San Julián · 1982
+            </figcaption>
+          </figure>
         </div>
       </section>
 
