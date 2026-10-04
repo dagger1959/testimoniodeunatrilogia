@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import heroAsset from "@/assets/galeria/dagger-marinete.jpg.asset.json";
+import heroAsset from "@/assets/portada-dagger-marinete.jpg.asset.json";
 import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
 import pilotoAsset from "@/assets/galeria/pilotos.png.asset.json";
 import avionAsset from "@/assets/galeria/IMG_5334.jpeg.asset.json";
@@ -111,9 +111,9 @@ function Index() {
       <section id="inicio" className="relative isolate flex min-h-[100svh] w-full items-center justify-center overflow-hidden bg-black">
         <img
           src={heroImg}
-          alt="IAI M-5 Dagger en la BAM San Julián, 1982"
-          width={1920}
-          height={1280}
+          alt="M-5 Dagger La Marinete cargado con bombas, con los distintivos de la Fuerza Aérea Sur y del II Escuadrón Aeromóvil, BAM San Julián, 1982"
+          width={1280}
+          height={833}
           className="absolute inset-0 h-full w-full object-cover brightness-[1.08] contrast-[1.05]"
           fetchPriority="high"
         />
