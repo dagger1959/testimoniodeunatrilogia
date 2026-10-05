@@ -1,0 +1,29 @@
+{
+  "name": "Testimonio de una Trilogía — Guerra de Malvinas 1982",
+  "short_name": "Testimonio Trilogía",
+  "description": "Obra histórica y vivencial sobre el Personal de Tierra en la BAM San Julián durante el conflicto del Atlántico Sur. Acceso libre y gratuito.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2b2a26",
+  "theme_color": "#2b2a26",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
