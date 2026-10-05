@@ -730,6 +730,23 @@ function Index() {
             <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">Archivo Audiovisual</h2>
           </div>
           <div className="grid gap-x-8 md:grid-cols-2 [&>div]:mt-12">
+          <div className="w-full md:col-span-2">
+            <p className="mb-2 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Análisis del libro — El conflicto y la actuación de la Fuerza Aérea Sur
+            </p>
+            <p className="mb-4 text-center text-sm text-muted-foreground">
+              Un análisis de la obra sobre la Guerra de Malvinas y el rol de la Fuerza Aérea Sur en 1982.
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/3nFEBN_X_cc"
+              title="Análisis Fuerza Aérea Sur 1982"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
           <div className="w-full">
             <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
               Por qué fue tan importante la Trilogía
