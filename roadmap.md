@@ -6,3 +6,5 @@
 - [x] Move legal, normative, doctrinal, and corollary material after the archive.
 - [x] Reorganize primary and secondary navigation.
 - [x] Verify compilation, anchor order, and desktop/tablet/mobile presentation.
+- [x] Remove stale static root pages that overrode the published site (old "blocks" page).
+- [ ] Republish and confirm the published site shows the cover.
