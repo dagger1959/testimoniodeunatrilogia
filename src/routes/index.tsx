@@ -837,6 +837,48 @@ function Index() {
               className="aspect-video w-full bg-black border border-border"
             />
           </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Pilotos de combate de Malvinas piden por su gente
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/o3a9VsGDgxs?start=78"
+              title="Pilotos combate Malvinas piden por su gente"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              La leyenda Dagger
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/-whNAMM0svk"
+              title="La leyenda Dagger"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              La leyenda
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/bQ8EM_UQqW4"
+              title="La leyenda"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
           </div>
         </div>
       </section>
