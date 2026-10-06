@@ -40,7 +40,6 @@ import noFueronVideo from "@/assets/no-fueron-ni-1-ni-2-ni-3.mp4.asset.json";
 import verdadIncomodaVideo from "@/assets/la-verdad-que-incomoda-fas.mp4.asset.json";
 import cancionVideo from "@/assets/cancion-malvinas.mp4.asset.json";
 import martinezVideo from "@/assets/martinez-jose-luis.mp4.asset.json";
-import reportajeVideo from "@/assets/reportaje-jlm.mp4.asset.json";
 import fuerzaAereaSurVideo from "@/assets/fuerza-aerea-sur-video.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 import { LibroDeVisitas, ContadorVisitas } from "@/components/libro-de-visitas";
@@ -828,10 +827,10 @@ function Index() {
 
           <div className="w-full">
             <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              Video institucional — Reportaje a José Luis Martínez
+              Canción homenaje — Letra de José Luis Martínez
             </p>
             <video
-              src={reportajeVideo.url}
+              src={cancionVideo.url}
               controls
               playsInline
               preload="metadata"
@@ -841,13 +840,42 @@ function Index() {
 
           <div className="w-full">
             <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              Canción homenaje — Letra de José Luis Martínez
+              Pilotos de combate de Malvinas piden por su gente
             </p>
-            <video
-              src={cancionVideo.url}
-              controls
-              playsInline
-              preload="metadata"
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/o3a9VsGDgxs?start=78"
+              title="Pilotos combate Malvinas piden por su gente"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              La leyenda Dagger
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/-whNAMM0svk"
+              title="La leyenda Dagger"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              La leyenda
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/bQ8EM_UQqW4"
+              title="La leyenda"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
               className="aspect-video w-full bg-black border border-border"
             />
           </div>
