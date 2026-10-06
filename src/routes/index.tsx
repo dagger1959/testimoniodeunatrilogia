@@ -40,7 +40,6 @@ import noFueronVideo from "@/assets/no-fueron-ni-1-ni-2-ni-3.mp4.asset.json";
 import verdadIncomodaVideo from "@/assets/la-verdad-que-incomoda-fas.mp4.asset.json";
 import cancionVideo from "@/assets/cancion-malvinas.mp4.asset.json";
 import martinezVideo from "@/assets/martinez-jose-luis.mp4.asset.json";
-import reportajeVideo from "@/assets/reportaje-jlm.mp4.asset.json";
 import fuerzaAereaSurVideo from "@/assets/fuerza-aerea-sur-video.mp4.asset.json";
 import { GaleriaHistorica } from "@/components/galeria-historica";
 import { LibroDeVisitas, ContadorVisitas } from "@/components/libro-de-visitas";
@@ -819,19 +818,6 @@ function Index() {
             </p>
             <video
               src={martinezVideo.url}
-              controls
-              playsInline
-              preload="metadata"
-              className="aspect-video w-full bg-black border border-border"
-            />
-          </div>
-
-          <div className="w-full">
-            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              Video institucional — Reportaje a José Luis Martínez
-            </p>
-            <video
-              src={reportajeVideo.url}
               controls
               playsInline
               preload="metadata"
