@@ -30,6 +30,12 @@ import heroesSecundarioPdf from "@/assets/heroes-del-cielo-y-de-la-tierra.pdf.as
 import recopiladoFasPdf from "@/assets/recopilado-comprender-fas.pdf.asset.json";
 import analisisVeteranosPdf from "@/assets/analisis-juridico-veteranos-fuerza-aerea.pdf.asset.json";
 import autonomiaInterfuerzasPdf from "@/assets/autonomia-tension-interfuerzas.pdf.asset.json";
+import antAutonomia from "@/assets/ant-autonomia-y-tension-interfuerzas.pdf.asset.json";
+import antCrespo from "@/assets/ant-biografia-crespo-y-fuerza-aerea-sur.pdf.asset.json";
+import antMedios from "@/assets/ant-fuerza-aerea-sur-dist-medios.pdf.asset.json";
+import antEstrategico from "@/assets/ant-informe-analisis-estrategico.pdf.asset.json";
+import antTecnico from "@/assets/ant-informe-tecnico-trilogia-operativa.pdf.asset.json";
+import antFas from "@/assets/ant-la-fuerza-aerea-sur.pdf.asset.json";
 import los649HeroesPdf from "@/assets/los-649-heroes-nacionales.pdf.asset.json";
 import videoChicos from "@/assets/video-chicos.mp4.asset.json";
 import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
@@ -935,6 +941,45 @@ function Index() {
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Descargas · Documentos · Investigación</p>
             <h2 className="mt-4 font-display text-4xl font-light italic md:text-6xl">Archivo Documental</h2>
           </div>
+      </section>
+      {/* ANTECEDENTES DE LA FUERZA AÉREA SUR */}
+      <section id="antecedentes-fas" className="px-6 py-16 md:px-12 md:py-20">
+        <div className="mx-auto max-w-5xl">
+          <p className="text-center font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Carpeta documental</p>
+          <h2 className="mt-4 text-center font-display text-4xl font-light text-balance md:text-5xl">Antecedentes de la <em className="text-[var(--bronce)]">Fuerza Aérea Sur</em></h2>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <a href={antAutonomia.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between rounded-sm border border-border bg-background p-5 transition hover:border-[var(--bronce)]">
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">PDF · Antecedente</span>
+                <span className="mt-3 font-display text-xl leading-snug">Autonomía y tensión interfuerzas</span>
+                <span className="mt-4 text-sm text-[var(--bronce)] group-hover:underline">Ver / descargar →</span>
+              </a>
+              <a href={antCrespo.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between rounded-sm border border-border bg-background p-5 transition hover:border-[var(--bronce)]">
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">PDF · Antecedente</span>
+                <span className="mt-3 font-display text-xl leading-snug">Biografía del Brig. Crespo y la Fuerza Aérea Sur</span>
+                <span className="mt-4 text-sm text-[var(--bronce)] group-hover:underline">Ver / descargar →</span>
+              </a>
+              <a href={antMedios.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between rounded-sm border border-border bg-background p-5 transition hover:border-[var(--bronce)]">
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">PDF · Antecedente</span>
+                <span className="mt-3 font-display text-xl leading-snug">Fuerza Aérea Sur — Distribución de medios</span>
+                <span className="mt-4 text-sm text-[var(--bronce)] group-hover:underline">Ver / descargar →</span>
+              </a>
+              <a href={antEstrategico.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between rounded-sm border border-border bg-background p-5 transition hover:border-[var(--bronce)]">
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">PDF · Antecedente</span>
+                <span className="mt-3 font-display text-xl leading-snug">Informe de análisis estratégico</span>
+                <span className="mt-4 text-sm text-[var(--bronce)] group-hover:underline">Ver / descargar →</span>
+              </a>
+              <a href={antTecnico.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between rounded-sm border border-border bg-background p-5 transition hover:border-[var(--bronce)]">
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">PDF · Antecedente</span>
+                <span className="mt-3 font-display text-xl leading-snug">Informe técnico — Trilogía Operativa</span>
+                <span className="mt-4 text-sm text-[var(--bronce)] group-hover:underline">Ver / descargar →</span>
+              </a>
+              <a href={antFas.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between rounded-sm border border-border bg-background p-5 transition hover:border-[var(--bronce)]">
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">PDF · Antecedente</span>
+                <span className="mt-3 font-display text-xl leading-snug">La Fuerza Aérea Sur</span>
+                <span className="mt-4 text-sm text-[var(--bronce)] group-hover:underline">Ver / descargar →</span>
+              </a>
+          </div>
+        </div>
       </section>
       {/* ACCESO A LA OBRA */}
       <section id="acceso" className="border-y border-border bg-card px-6 py-16 md:px-12 md:py-24">
