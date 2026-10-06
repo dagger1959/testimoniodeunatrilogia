@@ -879,6 +879,48 @@ function Index() {
               className="aspect-video w-full bg-black border border-border"
             />
           </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Reportaje a José Luis Martínez
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/6HkipfP_HaI"
+              title="Reportaje a José Luis Martínez"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              Más de la leyenda
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/CayHMujce3g"
+              title="Más de la leyenda"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
+
+          <div className="w-full">
+            <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+              La leyenda sigue viva
+            </p>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/laGJla_S0Xs"
+              title="La leyenda sigue viva"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="aspect-video w-full bg-black border border-border"
+            />
+          </div>
           </div>
         </div>
       </section>
