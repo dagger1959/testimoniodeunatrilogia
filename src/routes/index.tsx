@@ -11,6 +11,7 @@ import porQueNoOperaronAsset from "@/assets/galeria/IMG_7337.jpeg.asset.json";
 import palabrasDelAutorAsset from "@/assets/galeria/palabras-del-autor.jpeg.asset.json";
 import libroImg from "@/assets/libro-tapa.png";
 import qrAcceso from "@/assets/qr-acceso.png";
+import libroCodigosAsset from "@/assets/libro-y-codigos-qr.jpg.asset.json";
 const heroImg = heroAsset.url;
 const tierraImg = tierraAsset.url;
 const pilotoImg = pilotoAsset.url;
@@ -1405,9 +1406,12 @@ function Index() {
 
             <div className="mt-8 flex flex-col items-center gap-6">
               <img
-                src={qrAcceso}
-                alt="Código QR de acceso al libro"
-                className="h-32 w-32 rounded-sm border border-border bg-white p-2"
+                src={libroCodigosAsset.url}
+                alt="Testimonio de una Trilogía: portada del libro y códigos QR para acceder al archivo histórico y descargar el PDF completo"
+                width={858}
+                height={768}
+                loading="lazy"
+                className="h-auto w-full max-w-2xl rounded-sm border border-border"
               />
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
                 Escanea el código QR o ingresa a
