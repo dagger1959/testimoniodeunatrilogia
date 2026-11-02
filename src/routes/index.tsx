@@ -1431,7 +1431,7 @@ function Index() {
                   href="https://dagger1959.github.io/la-trilogia-fuerza-aerea-sur-1982/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
+                  className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground break-all"
                 >
                   dagger1959.github.io/la-trilogia-fuerza-aerea-sur-1982
                 </a>
@@ -1441,7 +1441,7 @@ function Index() {
                   href="https://dagger1959.github.io/FAS_la_Trilogia_PROBADA_EN_COMBATE_/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
+                  className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground break-all"
                 >
                   dagger1959.github.io/FAS_la_Trilogia_PROBADA_EN_COMBATE_
                 </a>
@@ -1451,7 +1451,7 @@ function Index() {
                   href="https://testimoniodeunatrilogia.lovable.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
+                  className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground break-all"
                 >
                   testimoniodeunatrilogia.lovable.app
                 </a>
