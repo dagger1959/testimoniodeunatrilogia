@@ -981,99 +981,483 @@ function Index() {
           </div>
         </div>
       </section>
-      {/* ACCESO A LA OBRA */}
-      <section id="acceso" className="border-y border-border bg-card px-6 py-16 md:px-12 md:py-24">
+      {/* CRÍTICA LITERARIA Y ANÁLISIS HISTÓRICO */}
+      <section id="critica" className="border-y border-border bg-card px-6 py-20 md:px-12 md:py-28">
         <div className="mx-auto max-w-4xl">
           <p className="text-center font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-            Descargas
+            Reseña crítica del libro
           </p>
           <h2 className="mt-4 text-center font-display text-4xl font-light text-balance md:text-5xl">
-            Acceso a la <em className="text-[var(--bronce)]">obra</em>
+            Crítica Literaria y <em className="text-[var(--bronce)]">Análisis Histórico</em>
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-relaxed text-muted-foreground">
-            Para mantener viva la causa, sus hechos y protagonistas, esta obra está disponible de forma internacional para toda la ciudadanía a través de las siguientes plataformas:
+          <p className="mt-4 text-center font-display text-xl italic text-muted-foreground">
+            Testimonio de una Trilogía — Guerra de Malvinas
           </p>
 
-          <div className="mt-10 overflow-hidden rounded-sm border border-border bg-background shadow-page">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-muted font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                <tr>
-                  <th className="px-4 py-3">Plataforma</th>
-                  <th className="px-4 py-3">Instrucciones y enlaces</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-border">
-                <tr>
-                  <td className="px-4 py-4 font-medium">Google Play Libros</td>
-                  <td className="px-4 py-4 text-muted-foreground">
-                    Busque por título: <em>"Testimonio de una Trilogía"</em> o por autor: <em>"José Luis Martínez Eyheramendi"</em>.
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-4 font-medium">Biblioteca Histórica y Cultural</td>
-                  <td className="px-4 py-4">
-                    <a
-                      href={trilogiaPdf.url}
-                      download="testimonio-de-una-trilogia.pdf"
-                      className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
-                    >
-                      Descargar Libro Gratis (PDF)
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-4 py-4 font-medium">Dossier Escolar</td>
-                  <td className="px-4 py-4">
-                    <a
-                      href={dossierEscolarPdf.url}
-                      download="La_Gesta_de_Malvinas_en_las_Aulas.pdf"
-                      className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
-                    >
-                      Descargar material para aulas (PDF)
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          {/* FICHA TÉCNICA */}
+          <div className="mt-16">
+            <h3 className="font-display text-2xl font-light md:text-3xl">
+              Ficha Técnica y Marco Contextual de la Obra
+            </h3>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              <em>Testimonio de una Trilogía: Guerra de Malvinas</em>, obra del Veterano de Guerra de la
+              Fuerza Aérea Argentina (VGM FAA) José Luis Martínez, constituye un documento testimonial e
+              historiográfico sobre la actuación del II Escuadrón Aeromóvil M5-IAI Dagger “La Marinete”
+              durante el conflicto bélico del Atlántico Sur en 1982. Editada por la Escuela Superior de
+              Guerra Aérea (ESGA) de la Fuerza Aérea Argentina en su primera edición de diciembre de 2021,
+              la obra abarca un volumen de 364 páginas respaldadas por abundante material documental,
+              cartográfico y fotográfico inédito. El texto no se configura como una ficción literaria ni
+              como una reconstrucción académica desvinculada del terreno, sino como la transcripción
+              directa y contextualizada de los diarios personales que el autor redactó en tiempo real
+              durante su despliegue en la Base Aérea Militar (B.A.M.) San Julián. A través de esta
+              estructura, Martínez articula la vivencia cotidiana del personal civil en armas y del cuerpo
+              técnico en tierra, ofreciendo una perspectiva frecuentemente relegada en la historiografía
+              militar tradicional.
+            </p>
+
+            <div className="mt-8 overflow-hidden rounded-sm border border-border bg-background shadow-page">
+              <table className="w-full text-left text-sm">
+                <thead className="bg-muted font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  <tr>
+                    <th className="px-4 py-3">Parámetro</th>
+                    <th className="px-4 py-3">Detalle Institucional y Editorial</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  <tr>
+                    <td className="px-4 py-4 font-medium">Título Completo</td>
+                    <td className="px-4 py-4 text-muted-foreground">Testimonio de una Trilogía: Guerra de Malvinas</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-4 font-medium">Autor</td>
+                    <td className="px-4 py-4 text-muted-foreground">José Luis Martínez (Personal Civil Técnico / VGM FAA)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-4 font-medium">Editorial</td>
+                    <td className="px-4 py-4 text-muted-foreground">Escuela Superior de Guerra Aérea (ESGA) - Fuerza Aérea Argentina</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-4 font-medium">Fecha de Publicación</td>
+                    <td className="px-4 py-4 text-muted-foreground">Diciembre de 2021 (1.ª edición)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-4 font-medium">Extensión e ISBN</td>
+                    <td className="px-4 py-4 text-muted-foreground">364 páginas | ISBN 978-987-98348-3-1</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-4 font-medium">Unidad Operativa</td>
+                    <td className="px-4 py-4 text-muted-foreground">II Escuadrón Aeromóvil M5-IAI Dagger “La Marinete” (B.A.M. San Julián)</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-4 font-medium">Enfoque Narrativo</td>
+                    <td className="px-4 py-4 text-muted-foreground">Diario testimonial, registro técnico, análisis geopolítico y memoria de combate</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
-      </section>
 
-      {/* DESCARGA */}
-      <section id="descarga" className="px-6 py-24 md:px-12 md:py-36">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-            Descargas
-          </p>
-          <h2 className="mt-4 font-display text-5xl font-light text-balance md:text-6xl">
-            Acceso a la <em className="text-[var(--bronce)]">obra</em>
-          </h2>
-
-          <p className="mt-10 font-display text-2xl italic text-foreground/90">
-            "Manteniendo viva la causa, sus hechos y protagonistas."
-          </p>
-
-          <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href={trilogiaPdf.url}
-              download="testimonio-de-una-trilogia.pdf"
-              className="group inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
-            >
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-              Descargar PDF
-            </a>
-            <a
-              href="https://misvivenciasenlaguerrademalvinas.blogspot.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-3 border border-foreground/30 px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:border-foreground"
-            >
-              Visitar el blog
-            </a>
+          {/* ESTRUCTURA, CONTEXTO Y VOZ */}
+          <div className="mt-16">
+            <h3 className="font-display text-2xl font-light md:text-3xl">
+              Análisis de la Estructura, Contexto Histórico y Voz Narrativa
+            </h3>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              La arquitectura narrativa de <em>Testimonio de una Trilogía</em> se vertebra en torno a dos
+              grandes ejes complementarios que conviven orgánicamente a lo largo del texto. El primer pilar
+              está constituido por el núcleo diarístico y epistolar, el cual abarca desde la sorpresiva
+              noticia del 2 de abril de 1982 hasta el cese de hostilidades el 14 de junio, proyectándose
+              hacia las jornadas inmediatas de repliegue. Este registro conserva la frescura, la inmediatez
+              e incluso las inevitables contradicciones emocionales experimentadas en el frente continental
+              de operaciones. El segundo pilar lo conforma un robusto aparato documental e historiográfico
+              integrado por prólogos institucionales, transcripciones de mensajes telegrafiados de estado
+              mayor, análisis geopolíticos postconflicto, fichas de seguimiento individual de aeronaves,
+              relatos de oficiales comandantes y testimonios de combatientes británicos. Esta dimensión
+              dual permite que la obra funcione simultáneamente como una memoria íntima de campaña y como
+              un volumen de consulta histórica sobre el empleo del poder aéreo en el Atlántico Sur.
+              <sup className="text-[var(--bronce)]">[1]</sup>
+            </p>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              En lo tocante al contexto espacial y táctico, el libro sitúa su núcleo operativo en la Base
+              Aérea Militar San Julián, emplazada en la provincia de Santa Cruz. La decisión estratégica de
+              la Fuerza Aérea Sur (FAS) de desplegar los sistemas de armas M5 Dagger y A-4C Skyhawk en
+              bases continentales obedeció a severas limitaciones técnicas de la pista de Puerto Argentino.
+              Dicha instalación insular, de apenas 1200 metros de longitud, resultaba vulnerable a los
+              bombardeos navales y carecía de la infraestructura de reabastecimiento e insumos de arranque
+              autónomo requeridos por los reactores de combate supersónicos. En consecuencia, las
+              tripulaciones debieron operar en el límite absoluto del radio de acción de las aeronaves,
+              despegando con pesos que excedían las especificaciones de fábrica mediante el uso de tres
+              tanques suplementarios de combustible de 1300 litros. Asimismo, la permanente amenaza de
+              incursiones de comandos del Special Air Service (SAS) o ataques con bombarderos estratégicos
+              Avro Vulcan posicionó al litoral patagónico como un frente de combate directo.
+              <sup className="text-[var(--bronce)]">[1]</sup>
+            </p>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              El gran valor diferencial de la voz narrativa reside en la condición específica del autor.
+              José Luis Martínez no relata la contienda desde la cabina de un caza ni desde la distancia
+              jerárquica del Estado Mayor, sino desde su posición de joven técnico de 23 años perteneciente
+              al Escuadrón Control de la VI Brigada Aérea de Tandil, convocado y desplegado al sur bajo el
+              régimen de la Ley de Defensa Nacional como personal civil en armas. Su perspectiva se erige
+              como el nexo entre la gestión logística de los depósitos de pertrechos y las decisiones
+              tácticas volcadas en las pizarras de la Sala de Situación. Su prosa, desprovista de artificios
+              barrocos pero impregnada de rigor metodológico y de un honesto sentimiento patriótico,
+              transita fluidamente de la precisión contable propia del seguimiento de inspecciones
+              aeronáuticas a la emotividad cruda que provoca la ausencia de los cazadores que no regresaron
+              de sus misiones.
+            </p>
           </div>
-          <p className="mt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-            PDF · Edición digital 2.0 · Escuela Superior de Guerra Aérea
-          </p>
+
+          {/* ESTILO Y TRILOGÍA */}
+          <div className="mt-16">
+            <h3 className="font-display text-2xl font-light md:text-3xl">
+              Estilo Literario, Tono y el Concepto de “La Trilogía”
+            </h3>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              El concepto articulador de la obra, explicitado en su título, sostiene que la eficacia
+              operacional de la aviación de caza no depende únicamente del vector aéreo o de la destreza
+              individual del piloto, sino de una simbiótica e indivisible tríada. El primer vértice lo
+              constituye la máquina de acero —el cazabombardero M5-IAI Dagger— con sus atributos supersónicos
+              Mach 2, sus limitaciones aerodinámicas y sus estrictas necesidades de mantenimiento. El segundo
+              vértice está representado por el piloto o “Halcón”, quien conduce la aeronave en perfiles de
+              ataque rasante a 540 nudos y ejecuta el lanzamiento del armamento bajo el fuego enemigo.
+              Finalmente, el tercer vértice, bautizado internamente como “Los Magos”, abarca al escalón
+              técnico integrado por oficiales, suboficiales, personal civil y soldados conscriptos. Este
+              equipo en tierra asegura la operatividad de los sistemas mediante el alistamiento, armado,
+              reparación e inspección constante de las células y motores. Martínez demuestra que la falla o
+              ausencia de cualquiera de estos componentes anula por completo la capacidad combativa de un
+              escuadrón.
+            </p>
+
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              <div className="rounded-sm border border-border bg-background p-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--bronce)]">El Avión</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+                  Cazabombarderos M5-IAI Dagger (Mirage V de origen israelí).
+                </p>
+                <p className="mt-4 border-t border-border pt-3 text-sm leading-relaxed text-muted-foreground">
+                  Plataforma supersónica equipada con cañones DEFA de 30 mm y bombas EXPAL de 250 kg.
+                </p>
+              </div>
+              <div className="rounded-sm border border-border bg-background p-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--bronce)]">El Piloto</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+                  Oficiales aviadores de caza (Dimeglio, Aguirre Faget, Román, Callejo, entre otros).
+                </p>
+                <p className="mt-4 border-t border-border pt-3 text-sm leading-relaxed text-muted-foreground">
+                  Planificación de rutas, navegación táctica rasante a 15 metros del mar y ataque a la flota.
+                </p>
+              </div>
+              <div className="rounded-sm border border-border bg-background p-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--bronce)]">Los Magos</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+                  Suboficiales de diferentes especialidades, Personal Civil Técnico y Soldados Clase 1963.
+                </p>
+                <p className="mt-4 border-t border-border pt-3 text-sm leading-relaxed text-muted-foreground">
+                  Mantenimiento H-24, alijado de combustible, prueba de circuitos de tiro, armado de espoletas y reparación.
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-8 leading-relaxed text-foreground/80">
+              El tono del volumen bascula de forma magistral entre la rigurosidad técnica y el drama humano.
+              La narrativa entrelaza vocabulario aeronáutico preciso (tales como regímenes de
+              postcombustión, espoletas KAPPA y SSQ, orden fragmentaria, tanques pendulares y maniobras en
+              modo Alfa) con la descripción vívida de las vivencias del personal en tierra. La tensión
+              dramática alcanza su cúspide durante los intervalos de espera que sucedían a cada despegue de
+              combate. El autor recrea la ansiedad con la que los técnicos observaban el horizonte patagónico
+              al cumplirse el tiempo límite de autonomía del combustible JP-1. Si las luces del tren de
+              aterrizaje no emergían tras dos horas y quince minutos de vuelo, el entusiasmo inicial se
+              eclipsaba trágicamente, dando paso al penoso deber de registrar las pérdidas en el parte diario
+              y notificar la baja de los compañeros al Estado Mayor.
+              <sup className="text-[var(--bronce)]">[1]</sup>
+            </p>
+          </div>
+
+          {/* VALOR TESTIMONIAL */}
+          <div className="mt-16">
+            <h3 className="font-display text-2xl font-light md:text-3xl">
+              Valor Testimonial, Documental e Histórico
+            </h3>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              Desde una perspectiva documental, <em>Testimonio de una Trilogía</em> trasciende la memoria
+              anecdótica para erigirse en un archivo primario de incalculable valor. El volumen compila
+              valiosos testimonios e integra un corpus documental compuesto por partes diarios de guerra,
+              actas oficiales de material destruido, radiogramas de estado mayor y un exhaustivo
+              seguimiento de las 39 aeronaves Dagger recibidas por la Fuerza Aérea Argentina. Entre las
+              actas exhibidas destacan los registros detallados de la destrucción de seis aviones monoplazas
+              (matrículas C-403, C-404, C-407, C-410, C-419 y C-430), el consumo de munición de 30 mm y la
+              pérdida de 23 tanques suplementarios de 1300 litros eyectados en maniobras evasivas. Asimismo,
+              la obra aporta un minucioso material fotográfico que documenta el “camino de las bombas”, las
+              cabeceras de pista 07 y 25, los refugios de campaña e imágenes capturadas por las
+              cineametralladoras durante las pasadas de tiro sobre los buques enemigos.
+            </p>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              A la par de los registros contables y operativos, el libro destaca por la polifonía de voces
+              que logra articular. Martínez enriquece su propio diario incorporando valiosas perspectivas
+              cruzadas. Entre ellas figuran los relatos de pilotos protagonistas de las acciones clave, como
+              el Brigadier General Mario Miguel Callejo (quien detalla la maniobra violenta con la que
+              esquivó un misil Sea Dart) y el Comodoro Gustavo Aguirre Faget (quien narra el ataque de la
+              Escuadrilla “Torno” durante el bautismo de fuego del 1 de mayo de 1982). A ello se suman la
+              visión del mando operativo expresada por el Brigadier General Ernesto Horacio Crespo y el
+              Comodoro Carlos Maiztegui, así como revelaciones sobre la geopolítica regional, entre las que
+              sobresalen la transferencia de diez reactores Mirage M5-P por parte de la República del Perú y
+              el apoyo de inteligencia prestado por el régimen chileno a Gran Bretaña. Incluso se incorporan
+              reflexiones de excombatientes británicos como Edward Denmark, quien reconoció expresamente que
+              la labor de los técnicos argentinos en tierra fue la causa directa de las severas bajas
+              padecidas por la Task Force.
+            </p>
+
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
+              <div className="rounded-sm border border-border bg-background p-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--bronce)]">Bautismo de Fuego (1/05/1982)</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+                  Ataque de la Escuadrilla “Torno” (Dimeglio, Aguirre Faget, Román) con bombas de 250 kg.
+                </p>
+                <p className="mt-4 border-t border-border pt-3 text-sm leading-relaxed text-muted-foreground">
+                  Primer impacto confirmado contra unidades navales británicas (HMS Arrow, HMS Alacrity).
+                </p>
+              </div>
+              <div className="rounded-sm border border-border bg-background p-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--bronce)]">Problemas de Espoletas</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+                  Ensayo y reemplazo de espoletas mecánicas KAPPA por electrónicas SSQ y MU de cola.
+                </p>
+                <p className="mt-4 border-t border-border pt-3 text-sm leading-relaxed text-muted-foreground">
+                  Explicación técnica de por qué varias bombas atravesaron los cascos sin detonar.
+                </p>
+              </div>
+              <div className="rounded-sm border border-border bg-background p-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--bronce)]">Ataque al HMS Invincible (30/05/1982)</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+                  Misión conjunta de aeronaves A-4C Skyhawk y Super Étendard armados con Exocet.
+                </p>
+                <p className="mt-4 border-t border-border pt-3 text-sm leading-relaxed text-muted-foreground">
+                  Testimonio directo de los pilotos Ureta e Isaac confirmando el impacto y humo en el portaaviones.
+                </p>
+              </div>
+              <div className="rounded-sm border border-border bg-background p-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--bronce)]">Redespliegue por Amenaza SAS (9/06/1982)</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+                  Traslado masivo nocturno de personal y material desde San Julián a Río Gallegos.
+                </p>
+                <p className="mt-4 border-t border-border pt-3 text-sm leading-relaxed text-muted-foreground">
+                  Evidencia de la vulnerabilidad continental frente a infiltraciones de comandos británicos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* FORTALEZAS */}
+          <div className="mt-16">
+            <h3 className="font-display text-2xl font-light md:text-3xl">
+              Evaluación de Fortalezas Críticas de la Obra
+            </h3>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              La principal fortaleza de <em>Testimonio de una Trilogía</em> reside en su capacidad para
+              visibilizar a un colectivo históricamente relegado de la historiografía bélica: el personal
+              técnico y logístico. Mientras la narrativa hegemónica sobre el conflicto ha concentrado su
+              atención en las proezas de los aviadores en la cabina, el libro demuestra de manera inapelable
+              que ninguna hazaña aérea habría sido posible sin la labor sostenida de “Los Magos”. Hombres
+              que trabajaron ininterrumpidamente bajo climas hostiles, armando bombas, alijando combustible
+              con las manos entumecidas y montando motores a la intemperie, encuentran en este texto una
+              dignificación histórica definitiva.
+              <sup className="text-[var(--bronce)]">[1][2]</sup>
+            </p>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              Otra fortaleza sobresaliente es el rigor didáctico con el que el autor desglosa los aspectos
+              técnicos de la aviación de combate sin perder la accesibilidad para el lector no
+              especializado. La explicación metódica sobre los sistemas de arranque de los motores Atar, el
+              funcionamiento de las espoletas mecánicas y electrónicas, el cálculo de pesos máximos de
+              despegue y las complejidades de la configuración de tanques externos dota al relato de una
+              solidez conceptual encomiable. Esta precisión se combina con una notable autenticidad
+              emocional. Martínez evita la trampa de la idealización heroica desprovista de matices; en su
+              lugar, plasma el cansancio acumulado, el hacinamiento en el gimnasio municipal de San Julián,
+              el frío que calaba los huesos, el miedo a los bombardeos continentales y la tristeza
+              inconsolable que sobrevenía a la confirmación de la muerte de un camarada.
+              <sup className="text-[var(--bronce)]">[1][2]</sup>
+            </p>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              Finalmente, la obra se destaca por su valiente alegato histórico-jurídico sobre la condición
+              del Veterano de Guerra de Malvinas. En los capítulos finales, el autor expone con vehemencia
+              la paradoja sufrida por el personal civil y de apoyo desplegado en el continente. Tras haber
+              sido convocados formalmente, sometidos a la jurisdicción militar, expuestos a riesgos de
+              combate real y condecorados por la Fuerza Aérea y el Congreso de la Nación, estos hombres
+              fueron posteriormente marginados del reconocimiento pleno por legislaciones de posguerra que
+              restringieron dicho estatus exclusivamente al ámbito insular. La argumentación de Martínez,
+              respaldada en testimonios de comandantes y en la doctrina militar que define a la base
+              continental como objetivo estratégico agredido por el enemigo, constituye una pieza de
+              reclamo ético de singular relevancia.
+              <sup className="text-[var(--bronce)]">[1][2]</sup>
+            </p>
+          </div>
+
+          {/* CONTENIDO Y LECTOR */}
+          <div className="mt-16">
+            <h3 className="font-display text-2xl font-light md:text-3xl">
+              Contenido General de la Obra y Recomendaciones para el Lector
+            </h3>
+            <p className="mt-5 leading-relaxed text-foreground/80">
+              Al abordar <em>Testimonio de una Trilogía</em>, el lector se encontrará con una obra exhaustiva
+              que combina el dinamismo de la memoria bélica con la rigurosidad del documento histórico. El
+              volumen se estructura a través de un recorrido que inicia con el marco geopolítico de la causa
+              Malvinas y la descripción de la Operación Rosario, para adentrarse inmediatamente en la
+              bitácora cotidiana del autor. A lo largo de esta cronología, se detallan el proceso de
+              alistamiento de los reactores Dagger en Tandil, las incertidumbres de las primeras
+              movilizaciones al sur, la vertiginosa rutina en la B.A.M. San Julián durante los meses de mayo
+              y junio, las misiones de ataque anti-buque, las dramáticas pérdidas humanas, los accidentes en
+              pista y el posterior cese de hostilidades el 14 de junio. El contenido se complementa con un
+              robusto bloque de anexos que incluye la nómina completa del personal militar, civil y soldados
+              conscriptos del II Escuadrón Aeromóvil; el historial individualizado de cada una de las
+              aeronaves Dagger y Finger adquiridas por la República Argentina; análisis desclasificados
+              sobre la ayuda peruana y chilena durante la contienda; y un apéndice testimonial firmado por
+              altos mandos de la época.
+            </p>
+
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              <div className="rounded-sm border border-border bg-background p-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--bronce)]">Historiadores y Académicos</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+                  Abundante corpus de fuentes primarias, partes de guerra, radiogramas y actas de bajas.
+                </p>
+                <p className="mt-4 border-t border-border pt-3 text-sm leading-relaxed text-muted-foreground">
+                  Imprescindible para reconstruir la logística continental y la toma de decisiones en la Fuerza Aérea Sur.
+                </p>
+              </div>
+              <div className="rounded-sm border border-border bg-background p-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--bronce)]">Aficionados a la Aviación e Historia Militar</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+                  Explicación detallada de configuraciones, aviónica, espoletas, tácticas rasantes e historial de aviones.
+                </p>
+                <p className="mt-4 border-t border-border pt-3 text-sm leading-relaxed text-muted-foreground">
+                  De lectura obligatoria para comprender los aspectos técnicos y limitaciones operativas del cazabombardero M5 Dagger.
+                </p>
+              </div>
+              <div className="rounded-sm border border-border bg-background p-5">
+                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--bronce)]">Público General y Estudiantes</p>
+                <p className="mt-3 text-sm leading-relaxed text-foreground/80">
+                  Relato humano, cercano y emotivo sobre la vida en campaña, la camaradería y el sacrificio cotidiano.
+                </p>
+                <p className="mt-4 border-t border-border pt-3 text-sm leading-relaxed text-muted-foreground">
+                  Altamente recomendado como obra testimonial que humaniza el conflicto a través de los ojos del personal civil en tierra.
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-8 border-l-2 border-[var(--bronce)] pl-5 font-display text-lg italic leading-relaxed text-foreground/90">
+              En conclusión, esta obra se proyecta como una lectura fundamental para cualquier persona
+              interesada en comprender la Guerra de Malvinas en toda su complejidad.
+              <em>Testimonio de una Trilogía</em> no solo satisface las exigencias del investigador riguroso
+              mediante su inapelable sustento documental, sino que conmueve al lector sensible al rescatar
+              del anonimato la abnegación, el patriotismo y el esfuerzo silencioso de aquellos hombres que,
+              desde la fría tierra patagónica, sostuvieron en el aire la leyenda de la aviación de caza
+              argentina.
+            </p>
+          </div>
+
+          {/* ANTECEDENTES */}
+          <div className="mt-16">
+            <h3 className="font-display text-2xl font-light md:text-3xl">Antecedentes</h3>
+            <ol className="mt-6 space-y-3 text-sm leading-relaxed">
+              <li className="flex gap-3">
+                <sup className="text-[var(--bronce)]">[1]</sup>
+                <span className="text-muted-foreground">
+                  <a
+                    href="https://cefadigital.edu.ar/handle/1847939/2445"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
+                  >
+                    Testimonio de una trilogía. Guerra de Malvinas — CEFA Digital
+                  </a>
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <sup className="text-[var(--bronce)]">[2]</sup>
+                <span className="text-muted-foreground">
+                  <a
+                    href="https://www.facebook.com/noventauno/posts/testimonio-de-un-miembro-de-la-3-escuadrilla-aeronaval-participante-del-conflict/1595311408747669/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground"
+                  >
+                    Testimonio de un miembro de la 3° Escuadrilla Aeronaval — noventauno
+                  </a>
+                </span>
+              </li>
+            </ol>
+            <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
+              Las referencias 1 a 4 y 6 del análisis corresponden al registro de CEFA Digital; la 5 al
+              testimonio de la 3° Escuadrilla Aeronaval.
+            </p>
+          </div>
+
+          {/* SI TE INTERESA */}
+          <div className="mt-16 rounded-sm border border-border bg-background p-6 text-center md:p-10">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
+              Si te interesa
+            </p>
+            <h3 className="mt-4 font-display text-3xl font-light text-balance md:text-4xl">
+              Leer o Descargar <em className="text-[var(--bronce)]">Libro Gratis Completo (PDF)</em>
+            </h3>
+            <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-muted-foreground">
+              El acceso es libre y está pensado para que esta historia llegue cada vez más lejos.
+            </p>
+
+            <div className="mt-8 flex flex-col items-center gap-6">
+              <img
+                src={qrAcceso}
+                alt="Código QR de acceso al libro"
+                className="h-32 w-32 rounded-sm border border-border bg-white p-2"
+              />
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+                Escanea el código QR o ingresa a
+              </p>
+            </div>
+
+            <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <a
+                href={trilogiaPdf.url}
+                download="testimonio-de-una-trilogia.pdf"
+                className="group inline-flex items-center gap-3 bg-foreground px-7 py-3.5 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
+              >
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
+                Descargar PDF
+              </a>
+            </div>
+
+            <ul className="mx-auto mt-8 max-w-2xl space-y-2 text-sm">
+              <li>
+                <a
+                  href="https://dagger1959.github.io/la-trilogia-fuerza-aerea-sur-1982/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground break-all"
+                >
+                  dagger1959.github.io/la-trilogia-fuerza-aerea-sur-1982
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://dagger1959.github.io/FAS_la_Trilogia_PROBADA_EN_COMBATE_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground break-all"
+                >
+                  dagger1959.github.io/FAS_la_Trilogia_PROBADA_EN_COMBATE_
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://testimoniodeunatrilogia.lovable.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--bronce)] underline underline-offset-4 hover:text-foreground break-all"
+                >
+                  testimoniodeunatrilogia.lovable.app
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
