@@ -2044,15 +2044,25 @@ function Index() {
           </p>
 
           <figure className="mt-10 border border-border bg-card p-3 md:p-5">
-            <img
-              src={resolucion855Asset.url}
-              alt="Infografía del Conflicto del Atlántico Sur 1982 con el mapa de las seis bases aéreas patagónicas y sus proyecciones hacia las Islas Malvinas, junto al Anexo ALFA de la Resolución N.º 855/2006 con las definiciones de combatiente, veterano, acción efectiva de combate y espacio de interés de un componente aeroespacial"
-              className="h-auto w-full"
-              loading="lazy"
-            />
-            <figcaption className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            <a
+              href={resolucion855Asset.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Abrir la ilustración completa en otra pestaña"
+            >
+              <img
+                src={resolucion855Asset.url}
+                alt="Infografía del Conflicto del Atlántico Sur 1982 con el mapa de las seis bases aéreas patagónicas y sus proyecciones hacia las Islas Malvinas, junto al Anexo ALFA de la Resolución N.º 855/2006 con las definiciones de combatiente, veterano, acción efectiva de combate y espacio de interés de un componente aeroespacial"
+                className="h-auto w-full"
+                loading="lazy"
+              />
+            </a>
+            <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
               Resolución N.º 855/2006 — Anexo «ALFA»: Definiciones · Concepto EICA · Las seis bases
               patagónicas
+              <span className="mt-1 block normal-case tracking-normal text-[var(--bronce)]">
+                Tocá o hacé clic en la imagen para verla completa
+              </span>
             </figcaption>
           </figure>
 
