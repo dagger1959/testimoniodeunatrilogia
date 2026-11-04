@@ -38,6 +38,9 @@ import antMedios from "@/assets/ant-fuerza-aerea-sur-dist-medios.pdf.asset.json"
 import antEstrategico from "@/assets/ant-informe-analisis-estrategico.pdf.asset.json";
 import antTecnico from "@/assets/ant-informe-tecnico-trilogia-operativa.pdf.asset.json";
 import antFas from "@/assets/ant-la-fuerza-aerea-sur.pdf.asset.json";
+import antDeclaracionCrespo from "@/assets/faa-declaracion-crespo-pagina-4.pdf.asset.json";
+import antComandoIndependiente from "@/assets/fas-comando-independiente.pdf.asset.json";
+import dossierTacticoFasPdf from "@/assets/dossier-tactico-fas-1982.pdf.asset.json";
 import los649HeroesPdf from "@/assets/los-649-heroes-nacionales.pdf.asset.json";
 import videoChicos from "@/assets/video-chicos.mp4.asset.json";
 import trilogiaOperativaVideo from "@/assets/trilogia-operativa.mp4.asset.json";
@@ -978,6 +981,18 @@ function Index() {
               <a href={antFas.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between rounded-sm border border-border bg-background p-5 transition hover:border-[var(--bronce)]">
                 <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">PDF · Antecedente</span>
                 <span className="mt-3 font-display text-xl leading-snug">La Fuerza Aérea Sur</span>
+                <span className="mt-4 text-sm text-[var(--bronce)] group-hover:underline">Ver / descargar →</span>
+              </a>
+              <a href={antDeclaracionCrespo.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between rounded-sm border border-border bg-background p-5 transition hover:border-[var(--bronce)]">
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">PDF · Documento desclasificado</span>
+                <span className="mt-3 font-display text-xl leading-snug">Declaración del Brig. Crespo ante la FAA</span>
+                <span className="mt-3 text-sm leading-relaxed text-muted-foreground">Pieza probatoria del accionar de la Fuerza Aérea Sur y de su conducción militar durante el conflicto bélico.</span>
+                <span className="mt-4 text-sm text-[var(--bronce)] group-hover:underline">Ver / descargar →</span>
+              </a>
+              <a href={antComandoIndependiente.url} target="_blank" rel="noopener noreferrer" className="group flex flex-col justify-between rounded-sm border border-border bg-background p-5 transition hover:border-[var(--bronce)]">
+                <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">PDF · Documento desclasificado</span>
+                <span className="mt-3 font-display text-xl leading-snug">FAS — Comando Independiente</span>
+                <span className="mt-3 text-sm leading-relaxed text-muted-foreground">Documento probatorio del accionar de la Fuerza Aérea Sur y de su conducción militar durante el conflicto bélico.</span>
                 <span className="mt-4 text-sm text-[var(--bronce)] group-hover:underline">Ver / descargar →</span>
               </a>
           </div>
@@ -2597,6 +2612,14 @@ function Index() {
               >
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
                 Descargar Dossier Escolar
+              </a>
+              <a
+                href={dossierTacticoFasPdf.url}
+                download="dossier-tactico-fas-1982.pdf"
+                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
+              >
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
+                Dossier Táctico FAS 1982
               </a>
               <a
                 href={ilustracionChicosPdf.url}

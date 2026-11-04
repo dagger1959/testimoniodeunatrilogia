@@ -9,3 +9,5 @@
 - [x] Remove stale static root pages that overrode the published site (old "blocks" page).
 - [x] Add user song video to audiovisual archive.
 - [x] Republish and confirm the published site shows the cover.
+- [x] Add declassified Crespo declaration and FAS Comando Independiente to Antecedentes.
+- [x] Add Dossier Táctico FAS 1982 to the Dossier Escolar downloads.
