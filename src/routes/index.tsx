@@ -12,6 +12,7 @@ import palabrasDelAutorAsset from "@/assets/galeria/palabras-del-autor.jpeg.asse
 import libroImg from "@/assets/libro-tapa.png";
 import qrAcceso from "@/assets/qr-acceso.png";
 import libroCodigosAsset from "@/assets/libro-y-codigos-qr.jpg.asset.json";
+import resolucion855Asset from "@/assets/resolucion-855-y-definiciones.png.asset.json";
 const heroImg = heroAsset.url;
 const tierraImg = tierraAsset.url;
 const pilotoImg = pilotoAsset.url;
@@ -2020,6 +2021,239 @@ function Index() {
                 PC FAA VGM Martínez José Luis
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* DOCTRINA EICA: LA DOCTRINA EXISTE, LA PRUEBA DOCUMENTAL TAMBIÉN */}
+      <section id="doctrina-eica" className="border-y border-border bg-muted/20">
+        <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[var(--bronce)]">
+            Continuación del apartado del dossier
+          </p>
+          <h2 className="mt-4 font-display text-3xl font-light leading-tight md:text-5xl">
+            Conflicto bélico del Atlántico Sur e Islas Malvinas — 1982
+          </h2>
+          <p className="mt-6 font-display text-xl font-light leading-snug text-foreground md:text-2xl">
+            Fuerza Aérea Sur: la doctrina existe. La prueba documental también. ¿Hasta cuándo la
+            exclusión?
+          </p>
+          <p className="mt-4 text-lg leading-relaxed text-foreground/85">
+            ¿Por qué el personal de las seis bases aéreas patagónicas sigue reclamando el
+            reconocimiento que su participación en el conflicto merece?
+          </p>
+
+          <figure className="mt-10 border border-border bg-card p-3 md:p-5">
+            <a
+              href={resolucion855Asset.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Abrir la ilustración completa en otra pestaña"
+            >
+              <img
+                src={resolucion855Asset.url}
+                alt="Infografía del Conflicto del Atlántico Sur 1982 con el mapa de las seis bases aéreas patagónicas y sus proyecciones hacia las Islas Malvinas, junto al Anexo ALFA de la Resolución N.º 855/2006 con las definiciones de combatiente, veterano, acción efectiva de combate y espacio de interés de un componente aeroespacial"
+                className="h-auto w-full"
+                loading="lazy"
+              />
+            </a>
+            <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+              Resolución N.º 855/2006 — Anexo «ALFA»: Definiciones · Concepto EICA · Las seis bases
+              patagónicas
+              <span className="mt-1 block normal-case tracking-normal text-[var(--bronce)]">
+                Tocá o hacé clic en la imagen para verla completa
+              </span>
+            </figcaption>
+          </figure>
+
+          <div className="mt-10 space-y-6 text-lg leading-relaxed text-foreground/85">
+            <p>
+              No hablamos de interpretaciones sentimentales, de reivindicaciones sin fundamento ni de
+              pretender méritos que no nos corresponden.
+            </p>
+            <p className="border-l-2 border-[var(--rojo)] pl-6 font-display text-xl font-light leading-snug text-foreground">
+              Hablamos de documentación oficial, doctrina aeronáutica militar y hechos históricos.
+            </p>
+            <p>
+              Como integrante del II Escuadrón Aeromóvil de Guerra M-V Dagger «La Marinete», conozco
+              desde adentro la realidad del esfuerzo que la Fuerza Aérea Sur desplegó desde el
+              continente durante 1982.
+            </p>
+            <p>
+              Y existe un documento que merece ser analizado con toda la seriedad que el caso exige:
+              la Resolución FAA N.º 855/2006 y las definiciones doctrinarias incorporadas al RAG 21.
+            </p>
+          </div>
+
+          <div className="mt-14 space-y-12">
+            <article>
+              <h3 className="font-display text-2xl font-light">
+                1. La guerra aérea no se detiene en una línea trazada sobre un mapa
+              </h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>
+                  El concepto de Espacio de Interés de un Componente Aeroespacial (EICA) permite
+                  comprender que las operaciones aéreas de combate no pueden analizarse de manera
+                  aislada, desconociendo el sistema operacional que las hizo posibles.
+                </p>
+                <p>
+                  El comando, el control, las bases de despliegue, los medios aéreos y el personal
+                  que los alistaba y sostenía integraban una estructura de operaciones
+                  interdependiente.
+                </p>
+                <p className="border-l-2 border-[var(--ocre)] pl-6 font-display text-xl font-light leading-snug text-foreground">
+                  Sin bases operativas, sin aviones alistados y sin personal de tierra, no había
+                  salidas de combate.
+                </p>
+                <p>
+                  No es una consigna: es una realidad operacional que debe formar parte de cualquier
+                  evaluación seria de lo ocurrido.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">
+                2. Las seis bases patagónicas no fueron espectadoras
+              </h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                  {[
+                    "Trelew",
+                    "Comodoro Rivadavia",
+                    "San Julián",
+                    "Santa Cruz",
+                    "Río Gallegos",
+                    "Río Grande",
+                  ].map((base) => (
+                    <li
+                      key={base}
+                      className="border border-border bg-card px-4 py-3 font-mono text-sm uppercase tracking-[0.15em] text-foreground"
+                    >
+                      {base}
+                    </li>
+                  ))}
+                </ul>
+                <p>
+                  Desde estas bases se sostuvo el despliegue de los medios aéreos que protagonizaron
+                  las operaciones de la Fuerza Aérea Sur.
+                </p>
+                <p>
+                  Allí hubo hombres y mujeres cumpliendo funciones esenciales para el esfuerzo
+                  bélico: técnicos, mecánicos, armeros, especialistas, personal de operaciones y
+                  otros integrantes que contribuyeron al funcionamiento del sistema de combate.
+                </p>
+                <p>
+                  No todos cumplieron las mismas tareas ni estuvieron expuestos a idénticas
+                  circunstancias. Precisamente por eso, el reconocimiento debe sustentarse en los
+                  hechos, las funciones efectivamente desempeñadas y el marco jurídico aplicable, no
+                  en una exclusión geográfica automática.
+                </p>
+                <p className="border-l-2 border-[var(--ocre)] pl-6 font-display text-xl font-light leading-snug text-foreground">
+                  El continente fue la plataforma de lanzamiento del poder aéreo argentino. No fue
+                  sinónimo de ausencia de combate.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">
+                3. El Decreto 509/88: una restricción que debe ser revisada
+              </h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>
+                  La delimitación geográfica utilizada para determinar el reconocimiento de los
+                  veteranos plantea una cuestión de fondo: ¿puede una frontera administrativa
+                  reflejar, por sí sola, la complejidad de las operaciones aéreas de una guerra?
+                </p>
+                <p>
+                  La respuesta exige examinar la normativa, la doctrina militar, las misiones
+                  realizadas y la situación concreta de quienes participaron.
+                </p>
+                <p>
+                  La Resolución 855/2006 constituye un antecedente institucional que merece ser
+                  incorporado a ese análisis. No concede automáticamente el reconocimiento
+                  individual, pero tampoco debería ser ignorada al evaluar los fundamentos técnicos y
+                  operacionales de la exclusión.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">
+                4. Una prueba para el debate judicial y legislativo
+              </h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>
+                  La documentación doctrinaria de la propia Fuerza Aérea debe ser estudiada junto con
+                  los antecedentes administrativos, las actuaciones judiciales y las normas que
+                  regulan la condición de Veterano de Guerra.
+                </p>
+                <p>
+                  En el ámbito judicial, puede aportar elementos relevantes para discutir los
+                  criterios empleados en los casos de reconocimiento, incluido el precedente Gerez,
+                  sin sustituir la valoración que corresponde a los tribunales.
+                </p>
+                <p>
+                  En el ámbito legislativo, constituye un antecedente para impulsar una revisión
+                  fundada de los criterios de reconocimiento y de la aplicación del Decreto 509/88.
+                </p>
+                <p className="border-l-2 border-[var(--rojo)] pl-6 font-display text-xl font-light leading-snug text-foreground">
+                  No pedimos que se borren las diferencias entre las distintas participaciones.
+                  Pedimos que se analicen con justicia, con pruebas y sin discriminaciones
+                  arbitrarias.
+                </p>
+              </div>
+            </article>
+
+            <article>
+              <h3 className="font-display text-2xl font-light">
+                5. La pregunta que sigue pendiente
+              </h3>
+              <div className="mt-4 space-y-4 text-lg leading-relaxed text-foreground/85">
+                <p>
+                  Si la propia doctrina aeronáutica reconoce un espacio de interés operacional que
+                  excede una visión reducida del escenario bélico, ¿por qué no examinar
+                  integralmente esa doctrina al evaluar la situación del personal que sostuvo las
+                  operaciones desde las bases continentales?
+                </p>
+                <p>
+                  ¿Por qué el trabajo indispensable para hacer posible una misión de combate puede
+                  quedar fuera de una evaluación integral por el solo lugar desde el cual se cumplió?
+                </p>
+                <p>
+                  Casi 45 años después, la discusión no debería resolverse con descalificaciones,
+                  etiquetas ni simplificaciones. Debe resolverse mediante documentación, análisis
+                  jurídico riguroso y una decisión institucional que contemple la realidad histórica
+                  y operacional.
+                </p>
+                <p className="border-l-2 border-[var(--rojo)] pl-6 font-display text-xl font-light leading-snug text-foreground">
+                  No somos «casi» nada. Somos personas con una historia, funciones cumplidas y
+                  documentación que merecen ser examinadas.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div className="mt-14 border-t border-border pt-10 space-y-5 text-lg leading-relaxed text-foreground/85">
+            <p>
+              El reconocimiento que reclamamos no debe depender de consignas: debe debatirse sobre la
+              base de los hechos y del derecho.
+            </p>
+            <p className="border-l-2 border-[var(--celeste)] pl-6 font-display text-xl font-light leading-snug text-foreground">
+              La historia se documenta. La doctrina se estudia. El reconocimiento se fundamenta.
+            </p>
+            <p className="border-l-2 border-[var(--ocre)] pl-6 font-display text-xl font-light leading-snug text-foreground">
+              El esfuerzo bélico no terminó en la pista. Y la discusión sobre el reconocimiento
+              tampoco debería terminar en una frontera geográfica.
+            </p>
+            <p className="pt-4 font-mono text-xs uppercase tracking-[0.25em] text-[var(--bronce)]">
+              PC FAA VGM José Luis Martínez
+            </p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+              Integrante del II Escuadrón Aeromóvil de Guerra M-V Dagger «La Marinete» · Fuerza Aérea
+              Sur — Conflicto del Atlántico Sur, 1982
+            </p>
           </div>
         </div>
       </section>
