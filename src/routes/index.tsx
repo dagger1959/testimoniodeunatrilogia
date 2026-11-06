@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import { InvestigacionFas } from "@/components/investigacion-fas";
 import heroAsset from "@/assets/portada-dagger-marinete.jpg.asset.json";
 import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
@@ -93,16 +94,16 @@ function Index() {
             <Button
               type="button"
               variant="outline"
-              size="sm"
               aria-expanded={mobileMenuOpen}
               aria-controls="menu-secciones"
               onClick={() => setMobileMenuOpen((open) => !open)}
-              className="rounded-none font-mono text-[10px] uppercase tracking-[0.15em]"
+              className="h-12 gap-2.5 rounded-none border-2 border-foreground bg-foreground px-5 font-mono text-sm font-semibold uppercase tracking-[0.2em] text-background shadow-page hover:bg-foreground/85 hover:text-background [&_svg]:size-5"
             >
+              {mobileMenuOpen ? <X aria-hidden /> : <Menu aria-hidden />}
               Menú
             </Button>
             {mobileMenuOpen && (
-              <nav id="menu-secciones" aria-label="Secciones principales" className="absolute right-0 top-12 z-50 max-h-[calc(100svh-5rem)] w-64 overflow-y-auto border border-border bg-background p-3 shadow-page">
+              <nav id="menu-secciones" aria-label="Secciones principales" className="absolute right-0 top-[4.25rem] z-50 max-h-[calc(100svh-5.5rem)] w-72 overflow-y-auto border-2 border-border bg-background p-3 shadow-page">
                 {[
                   ["inicio", "Inicio"], ["fas-1982", "FAS 1982"], ["trilogia", "La Trilogía"], ["escuadrones", "Escuadrones"], ["bases", "Bases"], ["misiones", "Misiones"], ["archivo", "Archivo"], ["aula-malvinas", "Aula Malvinas"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"],
                 ].map(([id, label]) => (
@@ -182,9 +183,6 @@ function Index() {
         </div>
       </section>
 
-
-      <InvestigacionFas />
-
       {/* PALABRAS DEL AUTOR */}
       <section id="palabras-del-autor" className="bg-muted px-6 py-16 md:px-12 md:py-24">
         <div className="mx-auto max-w-6xl">
@@ -248,6 +246,8 @@ function Index() {
           </div>
         </div>
       </section>
+
+      <InvestigacionFas />
 
       {/* ¿QUÉ FUE LA FUERZA AÉREA SUR? */}
       <section id="fas-1982" className="border-y border-border bg-card">
