@@ -107,13 +107,13 @@ function Index() {
                 {[
                   ["inicio", "Inicio"], ["fas-1982", "FAS 1982"], ["trilogia", "La Trilogía"], ["escuadrones", "Escuadrones"], ["bases", "Bases"], ["misiones", "Misiones"], ["archivo", "Archivo"], ["aula-malvinas", "Aula Malvinas"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"],
                 ].map(([id, label]) => (
-                  <a key={id} href={`#${id}`} onClick={() => setMobileMenuOpen(false)} className="block border-b border-border px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] last:border-0">
+                  <a key={id} href={`#${id}`} onClick={() => setMobileMenuOpen(false)} className="block border-b border-border px-3 py-2.5 font-mono text-xs uppercase tracking-[0.12em] last:border-0">
                     {label}
                   </a>
                 ))}
                 <div className="mt-2 border-t border-border pt-2">
-                  <a href="#colaborar" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Colaborar</a>
-                  <a href="#difundir" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">Difundir</a>
+                  <a href="#colaborar" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2.5 font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">Colaborar</a>
+                  <a href="#difundir" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2.5 font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">Difundir</a>
                 </div>
               </nav>
             )}
