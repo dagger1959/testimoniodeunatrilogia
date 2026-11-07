@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Plegable } from "@/components/plegable";
+import { AyudasNavegacion } from "@/components/ayudas-navegacion";
 import { InvestigacionFas } from "@/components/investigacion-fas";
 import heroAsset from "@/assets/portada-dagger-marinete.jpg.asset.json";
 import tierraAsset from "@/assets/galeria/IMG_5336.jpeg.asset.json";
@@ -72,25 +74,37 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
+const GRUPOS_MENU: { titulo: string; items: [string, string][] }[] = [
+  { titulo: "Leer", items: [["critica", "Reseña crítica"], ["palabras-del-autor", "Palabras del autor"], ["investigacion-fas", "Trabajo de investigación"], ["fas-1982", "¿Qué fue la FAS?"], ["trilogia", "La Trilogía"], ["escuadrones", "Escuadrones"], ["bases", "Bases"], ["misiones", "Misiones"], ["doctrina-eica", "Conflicto bélico · Res. 855"]] },
+  { titulo: "Ver", items: [["archivo-audiovisual", "Videos"], ["galeria", "Fotos"]] },
+  { titulo: "Consultar", items: [["archivo", "Archivo"], ["antecedentes-fas", "Antecedentes de la FAS"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"]] },
+  { titulo: "Aprender", items: [["aula-malvinas", "Aula Malvinas"], ["dossier", "Dossier escolar"]] },
+];
+
+const PUERTAS: [string, string, string][] = [
+  ["fas-1982", "¿Qué fue la FAS?", "Leer"],
+  ["trilogia", "La Trilogía", "Leer"],
+  ["investigacion-fas", "Investigaciones", "Leer"],
+  ["antecedentes-fas", "Antecedentes de la Fuerza Aérea Sur", "Consultar"],
+  ["archivo-audiovisual", "Videos", "Ver"],
+  ["galeria", "Fotos", "Ver"],
+  ["dossier", "Aula Malvinas · Dossier escolar", "Aprender"],
+  ["el-libro", "El Libro", "Consultar"],
+];
+
 function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="archive-legacy-theme min-h-screen bg-background text-foreground paper-texture">
+      <AyudasNavegacion />
       {/* NAVEGACIÓN DOCUMENTAL */}
       <header className="sticky inset-x-0 top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto flex min-h-16 max-w-7xl items-center justify-between gap-4 px-6 md:px-12">
           <a href="#inicio" className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground">
             Fuerza Aérea Sur · 1982
           </a>
-          <nav aria-label="Secciones principales" className="hidden items-center gap-4 font-mono text-[9px] uppercase tracking-[0.12em] text-muted-foreground xl:flex">
-            {[
-              ["inicio", "Inicio"], ["fas-1982", "FAS 1982"], ["trilogia", "La Trilogía"], ["escuadrones", "Escuadrones"], ["bases", "Bases"], ["misiones", "Misiones"], ["archivo", "Archivo"], ["aula-malvinas", "Aula Malvinas"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"],
-            ].map(([id, label]) => (
-              <a key={id} href={`#${id}`} className="transition-colors hover:text-foreground">{label}</a>
-            ))}
-          </nav>
-          <div className="relative xl:hidden">
+          <div className="relative">
             <Button
               type="button"
               variant="outline"
@@ -104,12 +118,15 @@ function Index() {
             </Button>
             {mobileMenuOpen && (
               <nav id="menu-secciones" aria-label="Secciones principales" className="absolute right-0 top-[4.25rem] z-50 max-h-[calc(100svh-5.5rem)] w-72 overflow-y-auto border-2 border-border bg-background p-3 shadow-page">
-                {[
-                  ["inicio", "Inicio"], ["fas-1982", "FAS 1982"], ["trilogia", "La Trilogía"], ["escuadrones", "Escuadrones"], ["bases", "Bases"], ["misiones", "Misiones"], ["archivo", "Archivo"], ["aula-malvinas", "Aula Malvinas"], ["reconocimiento", "Reconocimiento"], ["el-libro", "El Libro"], ["el-autor", "El Autor"],
-                ].map(([id, label]) => (
-                  <a key={id} href={`#${id}`} onClick={() => setMobileMenuOpen(false)} className="block border-b border-border px-3 py-2.5 font-mono text-xs uppercase tracking-[0.12em] last:border-0">
-                    {label}
-                  </a>
+                {GRUPOS_MENU.map((g) => (
+                  <div key={g.titulo} className="mb-2 border-b border-border pb-2">
+                    <p className="px-3 pt-2 pb-1 font-mono text-[10px] font-semibold uppercase tracking-[0.3em] text-[var(--rojo)]">{g.titulo}</p>
+                    {g.items.map(([id, label]) => (
+                      <a key={id} href={`#${id}`} onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2 font-mono text-xs uppercase tracking-[0.12em] hover:bg-muted">
+                        {label}
+                      </a>
+                    ))}
+                  </div>
                 ))}
                 <div className="mt-2 border-t border-border pt-2">
                   <a href="#colaborar" onClick={() => setMobileMenuOpen(false)} className="block px-3 py-2.5 font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">Colaborar</a>
@@ -183,8 +200,25 @@ function Index() {
         </div>
       </section>
 
+      {/* PUERTAS DE ENTRADA */}
+      <section aria-label="Explorar el archivo" className="border-b border-border bg-background px-6 py-14 md:px-12 md:py-20">
+        <div className="mx-auto max-w-6xl">
+          <p className="text-center font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Explorar el archivo</p>
+          <div className="mt-8 grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4">
+            {PUERTAS.map(([id, titulo, tipo]) => (
+              <a key={id} href={`#${id}`} className="group flex min-h-32 flex-col justify-between border-2 border-border bg-card p-4 transition-colors hover:border-foreground md:min-h-40 md:p-6">
+                <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--celeste)]">{tipo}</span>
+                <span className="mt-3 font-display text-lg leading-tight md:text-2xl">{titulo}</span>
+                <span className="mt-3 h-0.5 w-8 bg-[var(--rojo)] transition-all group-hover:w-14" />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CRÍTICA LITERARIA Y ANÁLISIS HISTÓRICO */}
       <section id="critica" className="border-y border-border bg-card px-6 py-20 md:px-12 md:py-28">
+      <Plegable>
         <div className="mx-auto max-w-4xl">
           <p className="text-center font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
             Reseña crítica del libro
@@ -664,10 +698,12 @@ function Index() {
             </ul>
           </div>
         </div>
+      </Plegable>
       </section>
 
       {/* PALABRAS DEL AUTOR */}
       <section id="palabras-del-autor" className="bg-muted px-6 py-16 md:px-12 md:py-24">
+      <Plegable>
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
@@ -728,12 +764,14 @@ function Index() {
             </div>
           </div>
         </div>
+      </Plegable>
       </section>
 
       <InvestigacionFas />
 
       {/* ¿QUÉ FUE LA FUERZA AÉREA SUR? */}
       <section id="fas-1982" className="border-y border-border bg-card">
+      <Plegable>
         <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
           <div className="mb-16">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">¿Qué fue la Fuerza Aérea Sur?</p>
@@ -889,6 +927,7 @@ function Index() {
             Archivo personal · VGM FAA José Luis Martínez
           </p>
         </div>
+      </Plegable>
       </section>
 
       {/* LA TRILOGÍA */}
@@ -986,6 +1025,7 @@ function Index() {
 
       {/* ESCUADRONES AEROMÓVILES DE GUERRA */}
       <section id="escuadrones" className="border-y border-border bg-card">
+      <Plegable>
             <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
               <div className="mb-12 text-center">
                 <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Reconocimiento operativo</p>
@@ -1064,6 +1104,7 @@ function Index() {
                 </div>
               </div>
             </div>
+      </Plegable>
       </section>
 
       {/* ¿DESDE DÓNDE OPERÓ LA FAS? */}
@@ -2021,6 +2062,7 @@ function Index() {
 
       {/* DOCTRINA EICA: LA DOCTRINA EXISTE, LA PRUEBA DOCUMENTAL TAMBIÉN */}
       <section id="doctrina-eica" className="border-y border-border bg-muted/20">
+      <Plegable>
         <div className="mx-auto max-w-5xl px-6 py-20 md:px-12 md:py-28">
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[var(--bronce)]">
             Continuación del apartado del dossier
@@ -2250,6 +2292,7 @@ function Index() {
             </p>
           </div>
         </div>
+      </Plegable>
       </section>
 
       {/* COROLARIO FINAL DEL DOSSIER */}

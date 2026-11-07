@@ -1,3 +1,4 @@
+import { Plegable } from "@/components/plegable";
 import texto from "@/content/investigacion-fas.md?raw";
 
 function linkify(s: string) {
@@ -63,7 +64,7 @@ export function InvestigacionFas() {
         <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Trabajo de investigación</p>
         <h2 className="mt-4 font-display text-3xl md:text-5xl">Conflicto bélico del Atlántico Sur e Islas Malvinas — 1982</h2>
         <p className="mt-6 font-display text-xl italic text-foreground/90">{titulo}</p>
-        {out}
+        <Plegable>{out}</Plegable>
       </div>
     </section>
   );
