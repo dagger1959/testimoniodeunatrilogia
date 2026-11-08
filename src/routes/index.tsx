@@ -2854,7 +2854,7 @@ function Index() {
       </div>
 
       {/* DIFUNDIR — QR Y FOLLETO DIGITAL */}
-      <section id="difundir" className="border-y border-border bg-background">
+      <section id="difundir" className="border-y border-border bg-secondary/35">
         <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
           <div className="mb-12 text-center">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Compartí la historia</p>
