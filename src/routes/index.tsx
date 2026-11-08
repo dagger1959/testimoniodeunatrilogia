@@ -2854,7 +2854,7 @@ function Index() {
       </div>
 
       {/* DIFUNDIR — QR Y FOLLETO DIGITAL */}
-      <section id="difundir" className="border-y border-border bg-background">
+      <section id="difundir" className="border-y border-border bg-secondary/35">
         <div className="mx-auto max-w-5xl px-6 py-24 md:px-12 md:py-32">
           <div className="mb-12 text-center">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Compartí la historia</p>
@@ -2867,17 +2867,23 @@ function Index() {
           </div>
 
           <div className="mx-auto grid max-w-4xl gap-10 md:grid-cols-[auto_1fr] md:items-center">
-            <div className="mx-auto flex flex-col items-center gap-4">
-              <div className="rounded-sm border-4 border-white bg-white p-3 shadow-page">
+            <div className="mx-auto flex flex-col items-center gap-5">
+              <a
+                href="https://testimoniodeunatrilogia.lovable.app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Abrir el acceso directo a Testimonio de una Trilogía"
+                className="rounded-sm border-2 border-[var(--celeste)] bg-card p-5 shadow-page outline-offset-4 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--celeste)] md:p-6"
+              >
                 <img
                   src={qrAcceso}
                   alt="Código QR para acceder a testimoniodeunatrilogia.lovable.app"
                   width={540}
                   height={540}
-                  className="h-auto w-56 max-w-full"
+                  className="h-auto w-72 max-w-full md:w-80"
                 />
-              </div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground text-center">
+              </a>
+              <p className="text-center font-mono text-xs font-semibold uppercase tracking-[0.18em] text-foreground">
                 Escaneá con la cámara de tu celular
               </p>
             </div>
