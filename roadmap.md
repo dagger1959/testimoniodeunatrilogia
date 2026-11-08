@@ -1,7 +1,7 @@
 # Roadmap
 
-- [ ] Apply the requested reading order, preserving all historical content and resources.
-- [ ] Group remaining writings into expandable entries and verify direct navigation on desktop/mobile.
+- [x] Apply the requested reading order, preserving all historical content and resources.
+- [x] Group remaining writings into expandable entries and verify direct navigation on desktop/mobile.
 
 - [x] Recover the complete historical page content.
 - [x] Reorder existing sections into the approved narrative sequence.
