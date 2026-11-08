@@ -10,4 +10,5 @@
 <!-- LOVABLE:END -->
 
 ## Project rules
+- Grouped archive entries keep their original content mounted in native details; hash navigation opens ancestor entries so existing deep links remain usable.
 - Never add static `index.html` or `404.html` at the project root: the app is rendered by TanStack Start, and a root static page overrides the published site with stale content.
