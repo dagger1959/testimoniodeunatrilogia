@@ -1,5 +1,8 @@
 # Roadmap
 
+- [ ] Apply the requested reading order, preserving all historical content and resources.
+- [ ] Group remaining writings into expandable entries and verify direct navigation on desktop/mobile.
+
 - [x] Recover the complete historical page content.
 - [x] Reorder existing sections into the approved narrative sequence.
 - [x] Group downloads, blog, research, and official records under the documentary archive.
