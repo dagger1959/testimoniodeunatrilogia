@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Wrench, Wind, BookOpen, Shapes, Download } from "lucide-react";
 import { Plegable } from "@/components/plegable";
 import { ArchivoAgrupado, ApartadoArchivo } from "@/components/archivo-agrupado";
 import { AyudasNavegacion } from "@/components/ayudas-navegacion";
@@ -282,7 +282,7 @@ function Index() {
 
                 <div className="mt-10 border-t border-border pt-6">
                   <p className="font-display text-xl italic">
-                    PC FAA VGM MARTÍNEZ José Luis
+                    Pers. Civil Técnico Profesional FAA · VGM José Luis Martínez
                   </p>
                 </div>
               </div>
