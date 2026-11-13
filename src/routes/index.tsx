@@ -18,6 +18,8 @@ import libroImg from "@/assets/libro-tapa.png";
 import qrAcceso from "@/assets/qr-acceso.png";
 import libroCodigosAsset from "@/assets/libro-y-codigos-qr.jpg.asset.json";
 import resolucion855Asset from "@/assets/resolucion-855-y-definiciones.png.asset.json";
+import todosFuimosUnoAsset from "@/assets/galeria/todos-fuimos-uno.jpg.asset.json";
+import componentesAeroespacialesAsset from "@/assets/galeria/componentes-aeroespaciales-eica.jpg.asset.json";
 const heroImg = heroAsset.url;
 const tierraImg = tierraAsset.url;
 const pilotoImg = pilotoAsset.url;
