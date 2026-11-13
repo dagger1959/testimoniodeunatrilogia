@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { Menu, X, Wrench, Wind, BookOpen, Shapes, Download } from "lucide-react";
 import { Plegable } from "@/components/plegable";
 import { ArchivoAgrupado, ApartadoArchivo } from "@/components/archivo-agrupado";
@@ -94,6 +94,39 @@ const PUERTAS: [string, string, string][] = [
   ["dossier", "Aula Malvinas · Dossier escolar", "Aprender"],
   ["el-libro", "El Libro", "Consultar"],
 ];
+
+function EnlaceDescarga({ href, archivo, nombre }: { href: string; archivo: string; nombre: string }) {
+  return (
+    <li>
+      <a
+        href={href}
+        download={archivo}
+        className="group flex items-center justify-between gap-4 border border-border bg-background px-4 py-3 transition-colors hover:border-[var(--bronce)] hover:bg-muted/40"
+      >
+        <span className="text-sm font-medium leading-snug text-foreground">{nombre}</span>
+        <span className="flex shrink-0 items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground group-hover:text-[var(--bronce)]">
+          PDF <Download className="size-3.5" aria-hidden />
+        </span>
+      </a>
+    </li>
+  );
+}
+
+function EjeAula({ numero, titulo, descripcion, icono, children }: { numero: string; titulo: string; descripcion: string; icono: ReactNode; children: ReactNode }) {
+  return (
+    <article className="flex flex-col border border-border bg-card p-6 shadow-page md:p-8">
+      <div className="flex items-start gap-4">
+        <span className="flex size-12 shrink-0 items-center justify-center border border-border bg-muted/40 text-[var(--bronce)]">{icono}</span>
+        <div>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">{numero}</p>
+          <h3 className="mt-1 font-display text-2xl font-light leading-tight">{titulo}</h3>
+        </div>
+      </div>
+      <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{descripcion}</p>
+      <ul className="mt-6 space-y-2">{children}</ul>
+    </article>
+  );
+}
 
 function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
