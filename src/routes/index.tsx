@@ -1959,6 +1959,54 @@ function Index() {
             </EjeAula>
           </div>
 
+          {/* DESPLIEGUE TERRITORIAL Y LOGÍSTICA CONTINENTAL */}
+          <div className="mt-16 border border-border bg-card p-6 shadow-page md:p-10">
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-[var(--bronce)]">
+              Material educativo
+            </p>
+            <h3 className="mt-3 font-display text-3xl font-light leading-tight md:text-4xl">
+              Despliegue territorial y logística continental
+            </h3>
+            <div className="mt-8 grid items-start gap-8 md:grid-cols-2">
+              <figure className="border border-border bg-background p-3">
+                <a
+                  href={componentesAeroespacialesAsset.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Abrir el mapa completo en otra pestaña"
+                >
+                  <img
+                    src={componentesAeroespacialesAsset.url}
+                    alt="Mapa «Componentes Aeroespaciales y EICA: Guerra de Malvinas 1982» con las bases de Trelew, Comodoro Rivadavia, San Julián, Santa Cruz, Río Gallegos y Río Grande, sus proyecciones sobre el Atlántico hacia las Islas Malvinas, la leyenda del Espacio de Interés de un Componente Aeroespacial y las unidades aéreas desplegadas: Skyhawks, Daggers, Mirages, Pucaras y Canberra"
+                    className="h-auto w-full"
+                    loading="lazy"
+                  />
+                </a>
+                <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+                  «Componentes Aeroespaciales y EICA: Guerra de Malvinas 1982»
+                  <span className="mt-1 block normal-case tracking-normal text-[var(--bronce)]">
+                    Tocá o hacé clic en la imagen para verla completa
+                  </span>
+                </figcaption>
+              </figure>
+              <div className="border-l-2 border-[var(--rojo)] bg-muted/30 p-5 md:p-7">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--bronce)]">
+                  Tarjeta explicativa
+                </p>
+                <p className="mt-3 text-base leading-relaxed text-foreground/85 md:text-lg">
+                  <span className="font-display text-lg font-light text-foreground md:text-xl">
+                    Despliegue Continental y Proyección Aérea:
+                  </span>{" "}
+                  Mapa operativo de las seis Bases Aéreas Militares (Trelew, Comodoro Rivadavia, San
+                  Julián, Puerto Santa Cruz, Río Gallegos y Río Grande) desde donde partieron las
+                  escuadrillas hacia las Islas Malvinas. Permite visualizar las distancias recorridas
+                  sobre el mar y los distintos sistemas de armas que operaron gracias al sostén técnico
+                  permanente en tierra.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <p className="mx-auto mt-10 max-w-3xl text-center text-sm italic text-muted-foreground">
             Incluye una ilustración en formato historieta, un video pensado para los más chicos, y un PDF con imágenes de aquellos días, como así también estudios de investigación de documentación desclasificada de documentos oficiales de la Guerra de Malvinas.
           </p>
