@@ -1865,6 +1865,44 @@ function Index() {
             </p>
           </div>
 
+          {/* MARCO HISTÓRICO INTRODUCTORIO — TODOS FUIMOS UNO */}
+          <figure className="mx-auto mt-14 max-w-4xl border border-border bg-card p-3 shadow-page md:p-5">
+            <a
+              href={todosFuimosUnoAsset.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Abrir el gráfico completo en otra pestaña"
+            >
+              <img
+                src={todosFuimosUnoAsset.url}
+                alt="Gráfico «Todos fuimos uno»: distintivo Fuerza Aérea Sur 1982 Probada en Combate, mapa de la Argentina con las seis bases aéreas militares (Trelew, Comodoro Rivadavia, San Julián, Santa Cruz, Río Gallegos y Río Grande), la zona de exclusión total y el Brigadier Crespo saludando; 5 de abril de 1982, bajo su mando se crea la Fuerza Aérea Sur con la misión de planificar y conducir las operaciones aéreas hacia Malvinas"
+                className="h-auto w-full"
+                loading="lazy"
+              />
+            </a>
+            <figcaption className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+              «Todos fuimos uno» — Creación de la Fuerza Aérea Sur · 5 de abril de 1982
+              <span className="mt-1 block normal-case tracking-normal text-[var(--bronce)]">
+                Tocá o hacé clic en la imagen para verla completa
+              </span>
+            </figcaption>
+          </figure>
+
+          <div className="mx-auto mt-6 max-w-4xl border-l-2 border-[var(--rojo)] bg-muted/30 p-5 md:p-7">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-[var(--bronce)]">
+              Marco histórico introductorio
+            </p>
+            <p className="mt-3 text-base leading-relaxed text-foreground/85 md:text-lg">
+              <span className="font-display text-lg font-light text-foreground md:text-xl">
+                Génesis y Unidad de Mando (5 de abril de 1982):
+              </span>{" "}
+              Bajo la conducción del entonces Brigadier Ernesto Horacio Crespo, se crea la Fuerza
+              Aérea Sur (FAS) para planificar y ejecutar las operaciones aéreas sobre el Atlántico
+              Sur. El lema 'Todos fuimos uno' sintetiza la integración indispensable entre el mando
+              estratégico, los pilotos y el personal desplegado en el continente.
+            </p>
+          </div>
+
           <div className="mt-14 grid gap-6 md:grid-cols-2">
             <EjeAula
               numero="Eje 1"
