@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useState, type ReactNode } from "react";
+import { Menu, X, Wrench, Wind, BookOpen, Shapes, Download } from "lucide-react";
 import { Plegable } from "@/components/plegable";
 import { ArchivoAgrupado, ApartadoArchivo } from "@/components/archivo-agrupado";
 import { AyudasNavegacion } from "@/components/ayudas-navegacion";
@@ -94,6 +94,39 @@ const PUERTAS: [string, string, string][] = [
   ["dossier", "Aula Malvinas · Dossier escolar", "Aprender"],
   ["el-libro", "El Libro", "Consultar"],
 ];
+
+function EnlaceDescarga({ href, archivo, nombre }: { href: string; archivo: string; nombre: string }) {
+  return (
+    <li>
+      <a
+        href={href}
+        download={archivo}
+        className="group flex items-center justify-between gap-4 border border-border bg-background px-4 py-3 transition-colors hover:border-[var(--bronce)] hover:bg-muted/40"
+      >
+        <span className="text-sm font-medium leading-snug text-foreground">{nombre}</span>
+        <span className="flex shrink-0 items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground group-hover:text-[var(--bronce)]">
+          PDF <Download className="size-3.5" aria-hidden />
+        </span>
+      </a>
+    </li>
+  );
+}
+
+function EjeAula({ numero, titulo, descripcion, icono, children }: { numero: string; titulo: string; descripcion: string; icono: ReactNode; children: ReactNode }) {
+  return (
+    <article className="flex flex-col border border-border bg-card p-6 shadow-page md:p-8">
+      <div className="flex items-start gap-4">
+        <span className="flex size-12 shrink-0 items-center justify-center border border-border bg-muted/40 text-[var(--bronce)]">{icono}</span>
+        <div>
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">{numero}</p>
+          <h3 className="mt-1 font-display text-2xl font-light leading-tight">{titulo}</h3>
+        </div>
+      </div>
+      <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{descripcion}</p>
+      <ul className="mt-6 space-y-2">{children}</ul>
+    </article>
+  );
+}
 
 function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -282,7 +315,7 @@ function Index() {
 
                 <div className="mt-10 border-t border-border pt-6">
                   <p className="font-display text-xl italic">
-                    PC FAA VGM MARTÍNEZ José Luis
+                    Pers. Civil Técnico Profesional FAA · VGM José Luis Martínez
                   </p>
                 </div>
               </div>
@@ -1815,9 +1848,9 @@ function Index() {
           </div>
       </section>
       {/* DOSSIER ESCOLAR */}
-      <section id="dossier" className="border-y border-border bg-muted/20">
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-24 md:grid-cols-2 md:items-center md:px-12 md:py-32">
-          <div className="order-2 md:order-1">
+      <section id="dossier" className="border-y border-border bg-muted/20 px-6 py-20 md:px-12 md:py-28">
+        <div className="mx-auto max-w-6xl">
+          <div className="mx-auto max-w-3xl text-center">
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted-foreground">Material educativo</p>
             <h2 className="mt-4 font-display text-4xl font-light italic md:text-5xl">
               Dossier Escolar
@@ -1828,114 +1861,67 @@ function Index() {
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               Este material reúne propuestas para trabajar en el aula los fundamentos históricos, jurídicos y operativos del conflicto, con especial énfasis en la Trilogía Operativa y la experiencia de quienes operaron desde las bases continentales.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a
-                href={dossierEscolarPdf.url}
-                download="La_Gesta_de_Malvinas_en_las_Aulas.pdf"
-                className="inline-flex items-center gap-3 bg-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-background transition-all hover:bg-[var(--bronce)]"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-                Descargar Dossier Escolar
-              </a>
-              <a
-                href={dossierTacticoFasPdf.url}
-                download="dossier-tactico-fas-1982.pdf"
-                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-                Dossier Táctico FAS 1982
-              </a>
-              <a
-                href={ilustracionChicosPdf.url}
-                download="ilustracion_para_chicos.pdf"
-                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-                Historieta para chicos
-              </a>
-              <a
-                href={diapositivasPdf.url}
-                download="diapositivas-malvinas.pdf"
-                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-                Diapositivas con imágenes
-              </a>
-              <a
-                href={malvinasEnsenaPdf.url}
-                download="Malvinas_tambien_se_ensena.pdf"
-                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-                Malvinas también se enseña
-              </a>
-              <a
-                href={heroesSecundarioPdf.url}
-                download="heroes-del-cielo-y-de-la-tierra.pdf"
-                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-                Cuadernillo Nivel Secundario
-              </a>
-              <a
-                href={recopiladoFasPdf.url}
-                download="recopilado-comprender-fas.pdf"
-                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-                Cómo funcionó la Fuerza Aérea Sur
-              </a>
-              <a
-                href={analisisVeteranosPdf.url}
-                download="analisis-juridico-veteranos-fuerza-aerea.pdf"
-                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-                Análisis Jurídico e Institucional
-              </a>
-              <a
-                href={autonomiaInterfuerzasPdf.url}
-                download="autonomia-tension-interfuerzas.pdf"
-                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-                Autonomía y Tensión Interfuerzas
-              </a>
-              <a
-                href={los649HeroesPdf.url}
-                download="los-649-heroes-nacionales.pdf"
-                className="inline-flex items-center gap-3 border border-foreground px-8 py-4 font-mono text-xs uppercase tracking-[0.25em] text-foreground transition-all hover:bg-foreground hover:text-background"
-              >
-                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" /></svg>
-                Los 649 Héroes Nacionales
-              </a>
-            </div>
-            <p className="mt-4 text-sm text-muted-foreground italic">
-              Incluye una ilustración en formato historieta, un video pensado para los más chicos, y un PDF con imágenes de aquellos días, como así también estudios de investigación de documentación desclasificada de documentos oficiales de la Guerra de Malvinas.
-            </p>
           </div>
-          <div className="order-1 md:order-2 space-y-6">
-            <div className="relative border border-border bg-card p-2 shadow-page">
-              <div className="aspect-[3/4] w-full overflow-hidden bg-muted">
-                <div className="flex h-full flex-col items-center justify-center gap-3 p-8 text-center">
-                  <span className="font-display text-4xl italic text-foreground/30">La Gesta de Malvinas</span>
-                  <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">en las Aulas</span>
-                </div>
-              </div>
-            </div>
-            <div className="relative border border-border bg-card p-2 shadow-page">
-              <p className="mb-2 px-2 pt-2 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-                Video para los chicos
-              </p>
-              <video
-                src={videoChicos.url}
-                controls
-                playsInline
-                preload="metadata"
-                className="aspect-video w-full bg-black"
-              />
-            </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2">
+            <EjeAula
+              numero="Eje 1"
+              titulo="El personal técnico en tierra"
+              descripcion="Documentos que explican el rol del personal de mantenimiento, armamento y logística que hizo posible cada salida de combate desde el continente."
+              icono={<Wrench className="size-6" aria-hidden />}
+            >
+              <EnlaceDescarga href={dossierTacticoFasPdf.url} archivo="dossier-tactico-fas-1982.pdf" nombre="Dossier Táctico FAS 1982" />
+              <EnlaceDescarga href={autonomiaInterfuerzasPdf.url} archivo="autonomia-tension-interfuerzas.pdf" nombre="Autonomía y Tensión Interfuerzas" />
+              <EnlaceDescarga href={analisisVeteranosPdf.url} archivo="analisis-juridico-veteranos-fuerza-aerea.pdf" nombre="Análisis Jurídico e Institucional" />
+            </EjeAula>
+
+            <EjeAula
+              numero="Eje 2"
+              titulo="La Patagonia en condiciones extremas"
+              descripcion="Registros e imágenes de aquellos días: vientos de 60 km/h, 19 grados bajo cero y trabajo a la intemperie en las bases del sur."
+              icono={<Wind className="size-6" aria-hidden />}
+            >
+              <EnlaceDescarga href={recopiladoFasPdf.url} archivo="recopilado-comprender-fas.pdf" nombre="Cómo funcionó la Fuerza Aérea Sur" />
+              <EnlaceDescarga href={diapositivasPdf.url} archivo="diapositivas-malvinas.pdf" nombre="Diapositivas con imágenes" />
+            </EjeAula>
+
+            <EjeAula
+              numero="Eje 3"
+              titulo="Lectura y debate en el aula"
+              descripcion="Propuestas didácticas para docentes y estudiantes: guías de lectura, cuadernillos y materiales para trabajar la gesta en clase."
+              icono={<BookOpen className="size-6" aria-hidden />}
+            >
+              <EnlaceDescarga href={dossierEscolarPdf.url} archivo="La_Gesta_de_Malvinas_en_las_Aulas.pdf" nombre="Dossier Escolar — La Gesta de Malvinas en las Aulas" />
+              <EnlaceDescarga href={malvinasEnsenaPdf.url} archivo="Malvinas_tambien_se_ensena.pdf" nombre="Malvinas también se enseña" />
+              <EnlaceDescarga href={heroesSecundarioPdf.url} archivo="heroes-del-cielo-y-de-la-tierra.pdf" nombre="Cuadernillo Nivel Secundario" />
+              <EnlaceDescarga href={los649HeroesPdf.url} archivo="los-649-heroes-nacionales.pdf" nombre="Los 649 Héroes Nacionales" />
+            </EjeAula>
+
+            <EjeAula
+              numero="Eje 4"
+              titulo="Para los más chicos"
+              descripcion="Una historieta ilustrada y un video pensados para acercar la historia de Malvinas a los más chicos."
+              icono={<Shapes className="size-6" aria-hidden />}
+            >
+              <EnlaceDescarga href={ilustracionChicosPdf.url} archivo="ilustracion_para_chicos.pdf" nombre="Historieta para chicos" />
+              <li className="border border-border bg-background p-2">
+                <p className="mb-2 px-2 pt-2 font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
+                  Video para los chicos
+                </p>
+                <video
+                  src={videoChicos.url}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="aspect-video w-full bg-black"
+                />
+              </li>
+            </EjeAula>
           </div>
+
+          <p className="mx-auto mt-10 max-w-3xl text-center text-sm italic text-muted-foreground">
+            Incluye una ilustración en formato historieta, un video pensado para los más chicos, y un PDF con imágenes de aquellos días, como así también estudios de investigación de documentación desclasificada de documentos oficiales de la Guerra de Malvinas.
+          </p>
         </div>
       </section>
       </div>
